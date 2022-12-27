@@ -258,19 +258,19 @@ defaultproperties
      BarrelRotationsPerSec=3.000000
      RoundsPerRotation=5
      WindingSound=Sound'WeaponSounds.Minigun.miniempty'
-     FiringSound=Sound'EHSounds.EHminiFire'
+     FiringSound=Sound'tk_EHWeapons.EHSounds.EHminiFire'
      EHMinigunSoundVolume=220
      WindUpTime=0.270000
      FiringForce="minifireb"
      WindingForce="miniempty"
-     DamageType=Class'EHWeaponsE.DamTypeEHMinigunBullet'
+     DamageType=Class'tk_EHWeapons.DamTypeEHMinigunBullet'
      DamageMin=7
      DamageMax=10
      Momentum=0.000000
      bPawnRapidFireAnim=True
      PreFireTime=0.270000
      FireLoopAnimRate=9.000000
-     AmmoClass=Class'EHWeaponsE.EHMinigunAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHMinigunAmmo'
      AmmoPerFire=1
      ShakeRotMag=(X=50.000000,Y=50.000000,Z=50.000000)
      ShakeRotRate=(X=10000.000000,Y=10000.000000,Z=10000.000000)
@@ -279,8 +279,8 @@ defaultproperties
      ShakeOffsetRate=(X=1000.000000,Y=1000.000000,Z=1000.000000)
      ShakeOffsetTime=2.000000
      BotRefireRate=0.990000
-     FlashEmitterClass=Class'EHWeaponsE.EHMinigunMuzFlash1st'
-     SmokeEmitterClass=Class'EHWeaponsE.EHMinigunMuzzleSmoke'
+     FlashEmitterClass=Class'tk_EHWeapons.EHMinigunMuzFlash1st'
+     SmokeEmitterClass=Class'tk_EHWeapons.EHMinigunMuzzleSmoke'
      aimerror=900.000000
      Spread=0.080000
      SpreadStyle=SS_Random

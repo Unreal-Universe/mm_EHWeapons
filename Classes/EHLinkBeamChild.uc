@@ -16,6 +16,6 @@ defaultproperties
      mWaveShift=100000.000000
      mBendStrength=3.000000
      mWaveLockEnd=True
-     Skins(0)=FinalBlend'EHWeaponSkinsB.LinkBeamGreenFB'
+     Skins(0)=FinalBlend'tk_EHWeapons.EHWeaponSkinsB.LinkBeamGreenFB'
      Style=STY_Additive
 }

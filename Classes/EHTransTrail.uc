@@ -1,6 +1,3 @@
-//=============================================================================
-// TransTrail
-//=============================================================================
 class EHTransTrail extends pclSmoke;
 
 defaultproperties
@@ -22,7 +19,7 @@ defaultproperties
      mNumTileColumns=1
      mNumTileRows=1
      Physics=PHYS_Trailer
-     Skins(0)=Texture'EHWeaponSkinsB.EHTransTrailT'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHTransTrailT'
      Style=STY_Additive
      bOwnerNoSee=True
 }

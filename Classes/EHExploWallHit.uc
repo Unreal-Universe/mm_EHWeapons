@@ -1,7 +1,5 @@
 class EHExploWallHit extends Effects;
 
-
-
 var sound ImpactSounds[10];
 
 simulated function PostNetBeginPlay()

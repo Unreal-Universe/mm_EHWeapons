@@ -3,7 +3,7 @@ class DamTypeEHAssaultGrenade extends WeaponDamageType
 
 defaultproperties
 {
-     WeaponClass=Class'EHWeaponsE.EHAssaultRifle'
+     WeaponClass=Class'tk_EHWeapons.EHAssaultRifle'
      DeathString="%o tried to juggle %k's grenade."
      FemaleSuicide="%o jumped on her own grenade."
      MaleSuicide="%o jumped on his own grenade."

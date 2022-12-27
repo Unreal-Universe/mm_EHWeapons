@@ -1,6 +1,3 @@
-//-----------------------------------------------------------
-//
-//-----------------------------------------------------------
 class EHMineAttachment extends xWeaponAttachment;
 
 var xEmitter MuzFlash3rd;
@@ -41,7 +38,7 @@ defaultproperties
      bUseDynamicLights=True
      Mesh=SkeletalMesh'ONSWeapons-A.MineLayer_3rd'
      DrawScale=0.280000
-     Skins(0)=Texture'EHWeaponSkinsB.EHminelayerTEX'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHminelayerTEX'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

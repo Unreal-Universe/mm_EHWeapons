@@ -13,7 +13,7 @@ static function GetHitEffects(out class<xEmitter> HitEffects[4], int VictimHealt
 
 defaultproperties
 {
-     WeaponClass=Class'EHWeaponsE.EHLinkGun'
+     WeaponClass=Class'tk_EHWeapons.EHLinkGun'
      DeathString="%o was served an extra helping of %k's plasma."
      FemaleSuicide="%o fried herself with her own plasma blast."
      MaleSuicide="%o fried himself with his own plasma blast."

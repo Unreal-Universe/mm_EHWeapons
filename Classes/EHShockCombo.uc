@@ -2,9 +2,6 @@ class EHShockCombo extends Actor;
 
 #exec OBJ LOAD FILE=XEffectMat.utx
 
-
-
-
 var EHShockComboFlare Flare;
 
 simulated event PostBeginPlay()

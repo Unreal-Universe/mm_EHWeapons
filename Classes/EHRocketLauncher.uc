@@ -1,11 +1,8 @@
-//=============================================================================
-// EHRocketLaucher
-//=============================================================================
 class EHRocketLauncher extends Weapon
-    config(user);
+    config(tk_EHWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
-#EXEC OBJ LOAD FILE=EHWeaponSkinsB.utx
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
 #EXEC OBJ LOAD FILE=WeaponSounds.uax
 
 const NUM_BARRELS = 3;
@@ -431,8 +428,8 @@ defaultproperties
      CrossHairColor=(R=250,A=255)
      CrosshairX=16.000000
      CrosshairY=16.000000
-     FireModeClass(0)=Class'EHWeaponsE.EHRocketFire'
-     FireModeClass(1)=Class'EHWeaponsE.EHRocketMultiFire'
+     FireModeClass(0)=Class'tk_EHWeapons.EHRocketFire'
+     FireModeClass(1)=Class'tk_EHWeapons.EHRocketMultiFire'
      SelectAnim="Pickup"
      PutDownAnim="PutDown"
      IdleAnimRate=0.500000
@@ -452,17 +449,17 @@ defaultproperties
      CustomCrossHairColor=(B=0,G=0)
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Triad2"
      InventoryGroup=8
-     PickupClass=Class'EHWeaponsE.EHRocketLauncherPickup'
+     PickupClass=Class'tk_EHWeapons.EHRocketLauncherPickup'
      PlayerViewOffset=(Y=8.000000)
      PlayerViewPivot=(Yaw=500,Roll=1000)
      BobDamping=1.500000
-     AttachmentClass=Class'EHWeaponsE.EHRocketAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHRocketAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=253,Y1=146,X2=333,Y2=181)
      ItemName="Enhanced Rocket Launcher"
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.RocketLauncher_1st'
-     Skins(0)=Texture'EHWeaponSkinsB.RocketTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.RocketTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

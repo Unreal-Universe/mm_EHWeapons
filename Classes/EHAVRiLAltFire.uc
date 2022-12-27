@@ -1,4 +1,3 @@
-// EHAVRiL alternate fire. Slight zoom and auto-tracking of target
 class EHAVRiLAltFire extends WeaponFire;
 
 var EHAVRiL Gun;

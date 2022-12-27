@@ -58,13 +58,13 @@ simulated function UpdatePrecacheMaterials()
 
 defaultproperties
 {
-     InventoryType=Class'EHWeaponsE.EHONSPainter'
+     InventoryType=Class'tk_EHWeapons.EHONSPainter'
      RespawnTime=60.000000
      PickupMessage="You got the Enhanced Target Painter."
      StaticMesh=StaticMesh'ONSFullStaticMeshes.TargetPainter.TargetPainterStatic'
      bUseDynamicLights=True
      DrawScale=0.175000
-     Skins(0)=Texture'EHWeaponSkinsB.EHTargetPainterTEX'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHTargetPainterTEX'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

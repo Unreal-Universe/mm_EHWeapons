@@ -259,18 +259,18 @@ defaultproperties
      FireLoopAnim=
      FireEndAnim=
      FireAnimRate=0.500000
-     FireSound=Sound'EHSounds.EHASAltFire'
+     FireSound=Sound'tk_EHWeapons.EHSounds.EHASAltFire'
      ReloadSound=Sound'WeaponSounds.BaseGunTech.BReload9'
      FireForce="EHAssaultRifleAltFire"
      ReloadForce="BReload9"
      FireRate=1.000000
-     AmmoClass=Class'EHWeaponsE.EHGrenadeAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHGrenadeAmmo'
      AmmoPerFire=1
      ShakeRotTime=2.000000
      ShakeOffsetMag=(X=-20.000000)
      ShakeOffsetRate=(X=-1000.000000)
      ShakeOffsetTime=2.000000
-     ProjectileClass=Class'EHWeaponsE.EHGrenade'
+     ProjectileClass=Class'tk_EHWeapons.EHGrenade'
      BotRefireRate=0.250000
      FlashEmitterClass=Class'XEffects.AssaultMuzFlash1st'
 }

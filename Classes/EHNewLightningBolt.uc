@@ -41,6 +41,6 @@ defaultproperties
      bSkipActorPropertyReplication=True
      RemoteRole=ROLE_DumbProxy
      NetPriority=3.000000
-     Skins(0)=Texture'EHWeaponSkinsB.NewLightningBoltT'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.NewLightningBoltT'
      Style=STY_Additive
 }

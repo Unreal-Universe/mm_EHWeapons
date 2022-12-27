@@ -1,6 +1,3 @@
-//-----------------------------------------------------------
-//
-//-----------------------------------------------------------
 class EHMineFire extends BioFire;
 
 var class<Projectile> RedMineClass;
@@ -58,10 +55,10 @@ function PlayFiring()
 
 defaultproperties
 {
-     RedMineClass=Class'EHWeaponsE.EHMineProjectileRED'
-     BlueMineClass=Class'EHWeaponsE.EHMineProjectileBLUE'
+     RedMineClass=Class'tk_EHWeapons.EHMineProjectileRED'
+     BlueMineClass=Class'tk_EHWeapons.EHMineProjectileBLUE'
      FireSound=Sound'ONSVehicleSounds-S.SpiderMines.SpiderMineFire01'
      FireRate=1.100000
-     AmmoClass=Class'EHWeaponsE.EHMineAmmo'
-     ProjectileClass=Class'EHWeaponsE.EHMineProjectile'
+     AmmoClass=Class'tk_EHWeapons.EHMineAmmo'
+     ProjectileClass=Class'tk_EHWeapons.EHMineProjectile'
 }

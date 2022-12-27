@@ -4,9 +4,9 @@ class EHMinePickup extends UTWeaponPickup;
 
 static function StaticPrecache(LevelInfo L)
 {
-	L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.SpiderRed');
-	L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.SpiderBLUE');
-	L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.EHminelayerTEX');
+	L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.SpiderRed');
+	L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.SpiderBLUE');
+	L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.EHminelayerTEX');
 	L.AddPrecacheMaterial(Texture'AW-2004Explosions.Fire.Part_explode2');
 	L.AddPrecacheMaterial(Texture'AW-2004Particles.Weapons.HardSpot');
 	L.AddPrecacheMaterial(Texture'EpicParticles.Smoke.SparkCloud_01aw');
@@ -22,9 +22,9 @@ static function StaticPrecache(LevelInfo L)
 
 simulated function UpdatePrecacheMaterials()
 {
-	Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.SpiderRed');
-	Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.SpiderBLUE');
-    Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.EHminelayerTEX');
+	Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.SpiderRed');
+	Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.SpiderBLUE');
+    Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.EHminelayerTEX');
 	Level.AddPrecacheMaterial(Texture'AW-2004Explosions.Fire.Part_explode2');
 	Level.AddPrecacheMaterial(Texture'AW-2004Particles.Weapons.HardSpot');
 	Level.AddPrecacheMaterial(Texture'EpicParticles.Smoke.SparkCloud_01aw');
@@ -46,7 +46,7 @@ defaultproperties
 {
      StandUp=(Y=0.250000,Z=0.000000)
      MaxDesireability=0.700000
-     InventoryType=Class'EHWeaponsE.EHMineLauncher'
+     InventoryType=Class'tk_EHWeapons.EHMineLauncher'
      PickupMessage="You got the Enhanced Spider Mine Launcher."
      PickupSound=Sound'PickupSounds.FlakCannonPickup'
      PickupForce="EHMinePickup"
@@ -54,7 +54,7 @@ defaultproperties
      StaticMesh=StaticMesh'ONSWeapons-SM.MineLayerPickup'
      bUseDynamicLights=True
      DrawScale=0.300000
-     Skins(0)=Texture'EHWeaponSkinsB.EHminelayerTEX'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHminelayerTEX'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

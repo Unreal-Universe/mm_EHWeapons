@@ -1,17 +1,14 @@
-//=============================================================================
-// EHLightningRiflePickup.
-//=============================================================================
 class EHLightningRiflePickup extends UTWeaponPickup;
 
 #exec OBJ LOAD FILE=WeaponSkins.utx
-#exec OBJ LOAD FILE=EHWeaponSkinsB.utx
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
 
 static function StaticPrecache(LevelInfo L)
 {
     L.AddPrecacheMaterial(Material'XGameShaders.WeaponEnvShader');
-    L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.LightningRifleTex');
-    L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.NewLightningBoltT');
-    L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.NewLightningBoltChild');
+    L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.LightningRifleTex');
+    L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.NewLightningBoltT');
+    L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.NewLightningBoltChild');
     L.AddPrecacheMaterial(Texture'SniperBorder');
     L.AddPrecacheMaterial(Texture'SniperFocus');
 	L.AddPrecacheMaterial(Texture'SniperArrows');
@@ -31,9 +28,9 @@ static function StaticPrecache(LevelInfo L)
 simulated function UpdatePrecacheMaterials()
 {
     Level.AddPrecacheMaterial(Material'EmitterTextures.LargeFlames');
-    Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.LightningRifleTex');
-    Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.NewLightningBoltT');
-    Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.NewLightningBoltChild');
+    Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.LightningRifleTex');
+    Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.NewLightningBoltT');
+    Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.NewLightningBoltChild');
     Level.AddPrecacheMaterial(Material'XGameShaders.WeaponEnvShader');
     Level.AddPrecacheMaterial(Texture'SniperBorder');
     Level.AddPrecacheMaterial(Texture'SniperFocus');
@@ -54,7 +51,7 @@ simulated function UpdatePrecacheMaterials()
 defaultproperties
 {
      MaxDesireability=0.650000
-     InventoryType=Class'EHWeaponsE.EHLightningRifle'
+     InventoryType=Class'tk_EHWeapons.EHLightningRifle'
      PickupMessage="You got the Enhanced Lightning Gun."
      PickupSound=Sound'PickupSounds.SniperRiflePickup'
      PickupForce="EHLightningRiflePickup"
@@ -62,7 +59,7 @@ defaultproperties
      StaticMesh=StaticMesh'WeaponStaticMesh.SniperRiflePickup'
      bUseDynamicLights=True
      DrawScale=0.450000
-     Skins(0)=Texture'EHWeaponSkinsB.LightningRifleTex'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LightningRifleTex'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

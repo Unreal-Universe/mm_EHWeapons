@@ -5,7 +5,7 @@ class EHNewIonEffect extends Emitter;
 defaultproperties
 {
      Begin Object Class=MeshEmitter Name=MeshEmitter0
-         StaticMesh=StaticMesh'EHWeaponsStaticB.Simple.ParticleSphere3'
+         StaticMesh=StaticMesh'tk_EHWeapons.Simple.ParticleSphere3'
          RenderTwoSided=True
          UseParticleColor=True
          FadeOut=True
@@ -24,7 +24,7 @@ defaultproperties
          SecondsBeforeInactive=0.000000
          LifetimeRange=(Min=3.000000,Max=3.000000)
      End Object
-     Emitters(0)=MeshEmitter'EHWeaponsE.EHNewIonEffect.MeshEmitter0'
+     Emitters(0)=MeshEmitter'tk_EHWeapons.EHNewIonEffect.MeshEmitter0'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter0
          RespawnDeadParticles=False
@@ -52,7 +52,7 @@ defaultproperties
          LifetimeRange=(Min=1.500000,Max=1.500000)
          InitialDelayRange=(Min=0.200000,Max=0.200000)
      End Object
-     Emitters(1)=SpriteEmitter'EHWeaponsE.EHNewIonEffect.SpriteEmitter0'
+     Emitters(1)=SpriteEmitter'tk_EHWeapons.EHNewIonEffect.SpriteEmitter0'
 
      Begin Object Class=MeshEmitter Name=MeshEmitter1
          StaticMesh=StaticMesh'AW-2004Particles.Weapons.PlasmaSphere'
@@ -73,10 +73,10 @@ defaultproperties
          SecondsBeforeInactive=0.000000
          LifetimeRange=(Min=2.000000,Max=2.000000)
      End Object
-     Emitters(2)=MeshEmitter'EHWeaponsE.EHNewIonEffect.MeshEmitter1'
+     Emitters(2)=MeshEmitter'tk_EHWeapons.EHNewIonEffect.MeshEmitter1'
 
      Begin Object Class=MeshEmitter Name=MeshEmitter2
-         StaticMesh=StaticMesh'EHWeaponsStaticB.Complex.IonSphere'
+         StaticMesh=StaticMesh'tk_EHWeapons.Complex.IonSphere'
          RenderTwoSided=True
          UseParticleColor=True
          FadeOut=True
@@ -94,10 +94,10 @@ defaultproperties
          SecondsBeforeInactive=0.000000
          LifetimeRange=(Min=3.000000,Max=3.000000)
      End Object
-     Emitters(3)=MeshEmitter'EHWeaponsE.EHNewIonEffect.MeshEmitter2'
+     Emitters(3)=MeshEmitter'tk_EHWeapons.EHNewIonEffect.MeshEmitter2'
 
      Begin Object Class=MeshEmitter Name=MeshEmitter3
-         StaticMesh=StaticMesh'EHWeaponsStaticB.Complex.ExplosionRing'
+         StaticMesh=StaticMesh'tk_EHWeapons.Complex.ExplosionRing'
          RenderTwoSided=True
          UseParticleColor=True
          FadeOut=True
@@ -116,7 +116,7 @@ defaultproperties
          SecondsBeforeInactive=0.000000
          LifetimeRange=(Min=3.000000,Max=3.000000)
      End Object
-     Emitters(4)=MeshEmitter'EHWeaponsE.EHNewIonEffect.MeshEmitter3'
+     Emitters(4)=MeshEmitter'tk_EHWeapons.EHNewIonEffect.MeshEmitter3'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter10
          FadeOut=True
@@ -146,7 +146,7 @@ defaultproperties
          TextureVSubdivisions=2
          LifetimeRange=(Min=1.800000,Max=1.800000)
      End Object
-     Emitters(5)=SpriteEmitter'EHWeaponsE.EHNewIonEffect.SpriteEmitter10'
+     Emitters(5)=SpriteEmitter'tk_EHWeapons.EHNewIonEffect.SpriteEmitter10'
 
      AutoDestroy=True
      LightType=LT_Steady

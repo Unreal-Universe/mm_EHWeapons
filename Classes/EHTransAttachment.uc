@@ -27,8 +27,8 @@ defaultproperties
      bUseDynamicLights=True
      Mesh=SkeletalMesh'NewWeapons2004.NEWTranslauncher_3rd'
      Skins(0)=FinalBlend'EpicParticles.JumpPad.NewTransLaunBoltFB'
-     Skins(1)=Texture'EHWeaponSkinsB.EHNEWTranslocatorTEX'
-     Skins(2)=Texture'EHWeaponSkinsB.EHNEWTranslocatorPUCK'
+     Skins(1)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHNEWTranslocatorTEX'
+     Skins(2)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHNEWTranslocatorPUCK'
      Skins(3)=FinalBlend'WeaponSkins.AmmoPickups.NewTransGlassFB'
      AmbientGlow=12
      bShadowCast=True

@@ -15,6 +15,6 @@ defaultproperties
      ScaleInterp=(Start=0.100000,Mid=1.200000,InTime=0.300000,OutTime=0.300000,InStyle=IS_InvExp,OutStyle=IS_InvExp)
      DrawType=DT_StaticMesh
      StaticMesh=StaticMesh'Editor.TexPropSphere'
-     Skins(0)=Shader'EHWeaponSkinsB.DarkShader'
+     Skins(0)=Shader'tk_EHWeapons.EHWeaponSkinsB.DarkShader'
      bUnlit=True
 }

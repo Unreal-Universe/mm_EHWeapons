@@ -18,7 +18,7 @@ static function IncrementKills(Controller Killer)
 
 defaultproperties
 {
-     WeaponClass=Class'EHWeaponsE.EHFlakCannon'
+     WeaponClass=Class'tk_EHWeapons.EHFlakCannon'
      DeathString="%o was shredded by %k's enhanced flak cannon."
      FemaleSuicide="%o was perforated by her own flak."
      MaleSuicide="%o was perforated by his own flak."

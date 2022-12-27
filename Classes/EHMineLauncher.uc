@@ -1,8 +1,5 @@
-//-----------------------------------------------------------
-//    summon EHWeaponsE.ehminepickup
-//-----------------------------------------------------------
 class EHMineLauncher extends Weapon
-	config(User);
+	config(tk_EHWeaponsClient);
 
 #exec OBJ LOAD FILE=HudContent.utx
 
@@ -244,8 +241,8 @@ defaultproperties
      ReloadDelay=0.400000
      MaxMines=8
      FadedColor=(B=128,G=128,R=128,A=160)
-     FireModeClass(0)=Class'EHWeaponsE.EHMineFire'
-     FireModeClass(1)=Class'EHWeaponsE.EHMineAltFire'
+     FireModeClass(0)=Class'tk_EHWeapons.EHMineFire'
+     FireModeClass(1)=Class'tk_EHWeapons.EHMineAltFire'
      PutDownAnim="PutDown"
      SelectAnimRate=2.000000
      PutDownAnimRate=4.000000
@@ -265,16 +262,16 @@ defaultproperties
      CustomCrossHairTextureName="ONSInterface-TX.MineLayerReticle"
      InventoryGroup=3
      GroupOffset=1
-     PickupClass=Class'EHWeaponsE.EHMinePickup'
+     PickupClass=Class'tk_EHWeapons.EHMinePickup'
      PlayerViewOffset=(X=100.000000,Y=35.500000,Z=-32.500000)
      BobDamping=2.200000
-     AttachmentClass=Class'EHWeaponsE.EHMineAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHMineAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=229,Y1=258,X2=296,Y2=307)
      ItemName="Enhanced Spider Mine Layer"
      bUseDynamicLights=True
      Mesh=SkeletalMesh'ONSWeapons-A.MineLayer_1st'
-     Skins(0)=Texture'EHWeaponSkinsB.EHminelayerTEX'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHminelayerTEX'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

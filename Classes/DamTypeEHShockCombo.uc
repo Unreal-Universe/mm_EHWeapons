@@ -23,7 +23,7 @@ static function IncrementKills(Controller Killer)
 
 defaultproperties
 {
-     WeaponClass=Class'EHWeaponsE.EHShockRifle'
+     WeaponClass=Class'tk_EHWeapons.EHShockRifle'
      DeathString="%o couldn't avoid the blast from %k's shock combo."
      FemaleSuicide="%o made a tactical error with her shock combo."
      MaleSuicide="%o made a tactical error with his shock combo."

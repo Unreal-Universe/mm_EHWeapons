@@ -1,6 +1,3 @@
-//-----------------------------------------------------------
-//
-//-----------------------------------------------------------
 class DamTypeEHAVRiLRocket extends WeaponDamageType
 	abstract;
 
@@ -16,7 +13,7 @@ static function GetHitEffects(out class<xEmitter> HitEffects[4], int VictimHealt
 
 defaultproperties
 {
-     WeaponClass=Class'EHWeaponsE.EHAVRiL'
+     WeaponClass=Class'tk_EHWeapons.EHAVRiL'
      DeathString="%k blew %o away with an ENHANCED AVRiL."
      FemaleSuicide="%o pointed her gun the wrong way."
      MaleSuicide="%o pointed his gun the wrong way."

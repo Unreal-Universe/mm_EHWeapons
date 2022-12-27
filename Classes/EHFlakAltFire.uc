@@ -16,16 +16,16 @@ defaultproperties
      FireAnim="AltFire"
      FireEndAnim=
      FireAnimRate=0.900000
-     FireSound=Sound'EHSounds.EHFlakAltFire'
+     FireSound=Sound'tk_EHWeapons.EHSounds.EHFlakAltFire'
      FireForce="EHFlakCannonAltFire"
      FireRate=1.110000
-     AmmoClass=Class'EHWeaponsE.EHFlakAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHFlakAmmo'
      AmmoPerFire=1
      ShakeRotTime=2.000000
      ShakeOffsetMag=(X=-20.000000)
      ShakeOffsetRate=(X=-1000.000000)
      ShakeOffsetTime=2.000000
-     ProjectileClass=Class'EHWeaponsE.EHFlakShell'
+     ProjectileClass=Class'tk_EHWeapons.EHFlakShell'
      BotRefireRate=0.500000
      WarnTargetPct=0.900000
 }

@@ -1,8 +1,5 @@
-//=============================================================================
-// Enhanced Flak Cannon
-//=============================================================================
 class EHFlakCannon extends Weapon
-    config(user);
+    config(tk_EHWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
 
@@ -93,8 +90,8 @@ function float SuggestDefenseStyle()
 
 defaultproperties
 {
-     FireModeClass(0)=Class'EHWeaponsE.EHFlakFire'
-     FireModeClass(1)=Class'EHWeaponsE.EHFlakAltFire'
+     FireModeClass(0)=Class'tk_EHWeapons.EHFlakFire'
+     FireModeClass(1)=Class'tk_EHWeapons.EHFlakAltFire'
      SelectAnim="Pickup"
      PutDownAnim="PutDown"
      SelectSound=Sound'WeaponSounds.FlakCannon.SwitchToFlakCannon'
@@ -114,11 +111,11 @@ defaultproperties
      CustomCrossHairColor=(B=0,G=128)
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Triad3"
      InventoryGroup=7
-     PickupClass=Class'EHWeaponsE.EHFlakCannonPickup'
+     PickupClass=Class'tk_EHWeapons.EHFlakCannonPickup'
      PlayerViewOffset=(X=-7.000000,Y=8.000000)
      PlayerViewPivot=(Yaw=16884,Roll=200)
      BobDamping=1.400000
-     AttachmentClass=Class'EHWeaponsE.EHFlakAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHFlakAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=169,Y1=172,X2=245,Y2=208)
      ItemName="Enhanced Flak Cannon"
@@ -130,9 +127,9 @@ defaultproperties
      LightRadius=4.000000
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.Flak_1st'
-     Skins(0)=Texture'EHWeaponSkinsB.FlakTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.FlakTex02'
      Skins(1)=Texture'WeaponSkins.Skins.FlakTex1'
-     Skins(2)=Texture'EHWeaponSkinsB.FlakTex02'
+     Skins(2)=Texture'tk_EHWeapons.EHWeaponSkinsB.FlakTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

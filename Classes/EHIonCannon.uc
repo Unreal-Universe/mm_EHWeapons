@@ -1,6 +1,3 @@
-//=============================================================================
-// The EHIonCannon
-//=============================================================================
 class EHIonCannon extends Actor
     placeable;
 
@@ -187,7 +184,7 @@ Begin:
     ShakeView();
     HurtRadius(Damage, DamageRadius*0.125, DamageType, MomentumTransfer, DamageLocation);
     Sleep(0.5);
-	PlayGlobalSound(Sound'EHSounds.EMP_strike_impact');
+	PlayGlobalSound(Sound'tk_EHWeapons.EHSounds.EMP_strike_impact');
     HurtRadius(Damage, DamageRadius*0.300, DamageType, MomentumTransfer, DamageLocation);
     Sleep(0.2);
     HurtRadius(Damage, DamageRadius*0.475, DamageType, MomentumTransfer, DamageLocation);
@@ -207,12 +204,12 @@ function bool IsFiring()
 
 defaultproperties
 {
-     FireSound=Sound'EHSounds.EMP_strike_impact'
-     EHIonEffectClass=Class'EHWeaponsE.EHIonEffect'
+     FireSound=Sound'tk_EHWeapons.EHSounds.EMP_strike_impact'
+     EHIonEffectClass=Class'tk_EHWeapons.EHIonEffect'
      Damage=150
      MomentumTransfer=150000.000000
      DamageRadius=2000.000000
-     DamageType=Class'EHWeaponsE.DamTypeEHIonBlast'
+     DamageType=Class'tk_EHWeapons.DamTypeEHIonBlast'
      ShakeRotMag=(Z=250.000000)
      ShakeRotRate=(Z=2500.000000)
      ShakeRotTime=6.000000

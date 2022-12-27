@@ -1,5 +1,5 @@
 class EHRedeemerII extends Weapon
-    config(user);
+    config(tk_EHWeaponsClient);
 
 function PrebeginPlay()
 {
@@ -65,8 +65,8 @@ function float GetAIRating()
 
 defaultproperties
 {
-     FireModeClass(0)=Class'EHWeaponsE.EHRedeemerIIFire'
-     FireModeClass(1)=Class'EHWeaponsE.EHRedeemerIIGuidedFire'
+     FireModeClass(0)=Class'tk_EHWeapons.EHRedeemerIIFire'
+     FireModeClass(1)=Class'tk_EHWeapons.EHRedeemerIIGuidedFire'
      SelectAnim="Pickup"
      PutDownAnim="PutDown"
      SelectAnimRate=0.667000
@@ -89,18 +89,18 @@ defaultproperties
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Circle2"
      InventoryGroup=0
      GroupOffset=1
-     PickupClass=Class'EHWeaponsE.EHRedeemerIIPickup'
+     PickupClass=Class'tk_EHWeapons.EHRedeemerIIPickup'
      PlayerViewOffset=(X=14.000000,Z=-28.000000)
      PlayerViewPivot=(Pitch=1000,Yaw=-400)
      BobDamping=1.400000
-     AttachmentClass=Class'EHWeaponsE.EHRedeemerIIAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHRedeemerIIAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=4,Y1=350,X2=110,Y2=395)
      ItemName="Enhanced Redeemer"
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.Redeemer_1st'
      DrawScale=1.200000
-     Skins(0)=Texture'EHWeaponSkinsB.RedeemerTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.RedeemerTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

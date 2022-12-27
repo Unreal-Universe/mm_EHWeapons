@@ -1,11 +1,8 @@
-//-----------------------------------------------------------
-//
-//-----------------------------------------------------------
 class EHONSGrenadePickup extends UTWeaponPickup;
 
 static function StaticPrecache(LevelInfo L)
 {
-	L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.EHGrenadeLauncherTEX');
+	L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.EHGrenadeLauncherTEX');
 	L.AddPrecacheMaterial(Texture'VMWeaponsTX.PlayerWeaponsGroup.GrenadeTex');
 	L.AddPrecacheMaterial(Texture'AW-2004Explosions.Fire.Part_explode2');
 	L.AddPrecacheMaterial(Texture'AW-2004Particles.Weapons.HardSpot');
@@ -22,7 +19,7 @@ static function StaticPrecache(LevelInfo L)
 
 simulated function UpdatePrecacheMaterials()
 {
-    Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.EHGrenadeLauncherTEX');
+    Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.EHGrenadeLauncherTEX');
 	Level.AddPrecacheMaterial(Texture'VMWeaponsTX.PlayerWeaponsGroup.GrenadeTex');
 	Level.AddPrecacheMaterial(Texture'AW-2004Explosions.Fire.Part_explode2');
 	Level.AddPrecacheMaterial(Texture'AW-2004Particles.Weapons.HardSpot');
@@ -46,7 +43,7 @@ defaultproperties
 {
      StandUp=(Y=0.250000,Z=0.000000)
      MaxDesireability=0.700000
-     InventoryType=Class'EHWeaponsE.EHONSGrenadeLauncher'
+     InventoryType=Class'tk_EHWeapons.EHONSGrenadeLauncher'
      PickupMessage="You got the Enhanced Grenade Launcher."
      PickupSound=Sound'PickupSounds.FlakCannonPickup'
      PickupForce="EHONSGrenadePickup"
@@ -54,7 +51,7 @@ defaultproperties
      StaticMesh=StaticMesh'ONSWeapons-SM.GrenadeLauncherPickup'
      bUseDynamicLights=True
      DrawScale=0.250000
-     Skins(0)=Texture'EHWeaponSkinsB.EHGrenadeLauncherTEX'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHGrenadeLauncherTEX'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

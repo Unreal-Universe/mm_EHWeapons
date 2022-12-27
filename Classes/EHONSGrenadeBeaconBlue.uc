@@ -25,7 +25,7 @@ defaultproperties
          LifetimeRange=(Min=1.000000,Max=1.000000)
          InitialDelayRange=(Min=0.300000,Max=0.300000)
      End Object
-     Emitters(0)=SpriteEmitter'EHWeaponsE.EHONSGrenadeBeaconBlue.SpriteEmitter2'
+     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHONSGrenadeBeaconBlue.SpriteEmitter2'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter3
          UseColorScale=True
@@ -49,7 +49,7 @@ defaultproperties
          LifetimeRange=(Min=1.000000,Max=1.000000)
          InitialDelayRange=(Min=0.500000,Max=0.500000)
      End Object
-     Emitters(1)=SpriteEmitter'EHWeaponsE.EHONSGrenadeBeaconBlue.SpriteEmitter3'
+     Emitters(1)=SpriteEmitter'tk_EHWeapons.EHONSGrenadeBeaconBlue.SpriteEmitter3'
 
      Begin Object Class=MeshEmitter Name=MeshEmitter0
          StaticMesh=StaticMesh'VMWeaponsSM.PlayerWeaponsGroup.VMGrenade'
@@ -75,7 +75,7 @@ defaultproperties
          LifetimeRange=(Min=1.000000,Max=1.000000)
          InitialDelayRange=(Min=0.500000,Max=0.500000)
      End Object
-     Emitters(2)=MeshEmitter'EHWeaponsE.EHONSGrenadeBeaconBlue.MeshEmitter0'
+     Emitters(2)=MeshEmitter'tk_EHWeapons.EHONSGrenadeBeaconBlue.MeshEmitter0'
 
      TimeTillResetRange=(Min=5.000000,Max=5.000000)
      AutoReset=True

@@ -1,7 +1,5 @@
 class EHFlakGlow extends ScaledSprite;
 
-
-
 function PostBeginPlay()
 {
 	if ( Owner != None )

@@ -1,6 +1,5 @@
 class EHShellSpewer extends xEmitter;
 
-
 var() Sound ShellImpactSnd;
 
 function CollisionSound()

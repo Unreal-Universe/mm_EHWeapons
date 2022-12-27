@@ -46,15 +46,15 @@ static function class<Actor> GetHitEffect( Actor Victim, Vector HitLocation, Vec
 
 defaultproperties
 {
-     HitEffectDefault=Class'EHWeaponsE.EHMinigunHitEffect'
-     HitEffectRock=Class'EHWeaponsE.EHMinigunDirtHitEffect'
-     HitEffectDirt=Class'EHWeaponsE.EHMinigunDirtHitEffect'
-     HitEffectMetal=Class'EHWeaponsE.EHMinigunMetalHitEffect'
-     HitEffectWood=Class'EHWeaponsE.HitSmokeBlack'
+     HitEffectDefault=Class'tk_EHWeapons.EHMinigunHitEffect'
+     HitEffectRock=Class'tk_EHWeapons.EHMinigunDirtHitEffect'
+     HitEffectDirt=Class'tk_EHWeapons.EHMinigunDirtHitEffect'
+     HitEffectMetal=Class'tk_EHWeapons.EHMinigunMetalHitEffect'
+     HitEffectWood=Class'tk_EHWeapons.HitSmokeBlack'
      HitEffectPlant=Class'XEffects.pclImpactSmoke'
      HitEffectFlesh=Class'XEffects.pclredsmoke'
      HitEffectIce=Class'XEffects.pclImpactSmoke'
      HitEffectSnow=Class'XEffects.pclImpactSmoke'
-     HitEffectWater=Class'EHWeaponsE.EHMinigunHitEffect'
+     HitEffectWater=Class'tk_EHWeapons.EHMinigunHitEffect'
      HitEffectGlass=Class'XEffects.pclImpactSmoke'
 }

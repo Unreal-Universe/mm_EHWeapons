@@ -49,6 +49,6 @@ simulated function PostBeginPlay()
 
 defaultproperties
 {
-     MyDamageType=Class'EHWeaponsE.DamTypeEHRocketHoming'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHRocketHoming'
      LifeSpan=10.000000
 }

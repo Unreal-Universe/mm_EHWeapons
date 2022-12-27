@@ -1,7 +1,7 @@
 class EHRedeemerIIWarhead extends Pawn;
 
 #EXEC OBJ LOAD FILE=2K4Hud.utx
-#exec obj load file=EHSounds.uax
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons" PACKAGE="tk_EHWeapons"
 
 var float Damage, DamageRadius, MomentumTransfer;
 var class<DamageType> MyDamageType;
@@ -443,7 +443,7 @@ ignores Trigger, Bump, HitWall, HeadVolumeChange, PhysicsVolumeChange, Falling, 
 
 Begin:
 	Instigator = self;
-    PlaySound(Sound'EHSounds.RIIExplode',SLOT_None,5*TransientSoundVolume);
+    PlaySound(Sound'tk_EHWeapons.EHSounds.RIIExplode',SLOT_None,5*TransientSoundVolume);
     spawn(class'EHExplosionEffects',,, Location, rotator(vect(0,0,1)));
     HurtRadius(Damage, DamageRadius*0.125, MyDamageType, MomentumTransfer, Location);
     Sleep(0.5);
@@ -465,7 +465,7 @@ defaultproperties
      Damage=450.000000
      DamageRadius=4000.000000
      MomentumTransfer=400000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHRedeemerII'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHRedeemerII'
      InnerScopeShader=Shader'2K4Hud.ZoomFX.RDM_InnerScopeShader'
      OuterScopeShader=Shader'2K4Hud.ZoomFX.RDM_OuterScopeShader'
      OuterEdgeShader=Shader'2K4Hud.ZoomFX.RDM_OuterEdgeShader'
@@ -507,7 +507,7 @@ defaultproperties
      bNetInitialRotation=True
      Physics=PHYS_Flying
      NetPriority=3.000000
-     AmbientSound=Sound'EHSounds.EHDeemerFlight'
+     AmbientSound=Sound'tk_EHWeapons.EHSounds.EHDeemerFlight'
      DrawScale=0.500000
      AmbientGlow=96
      bGameRelevant=True

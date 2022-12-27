@@ -45,7 +45,7 @@ defaultproperties
      LightRadius=4.000000
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.Flak_3rd'
-     Skins(0)=Texture'EHWeaponSkinsB.Flak3rdperson2'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.Flak3rdperson2'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

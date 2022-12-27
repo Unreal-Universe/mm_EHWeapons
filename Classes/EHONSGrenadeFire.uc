@@ -1,6 +1,3 @@
-//-----------------------------------------------------------
-//
-//-----------------------------------------------------------
 class EHONSGrenadeFire extends BioFire;
 
 simulated function bool AllowFire()
@@ -32,6 +29,6 @@ defaultproperties
      bRecommendSplashDamage=False
      FireSound=Sound'NewWeaponSounds.NewGrenadeShoot'
      FireRate=0.650000
-     AmmoClass=Class'EHWeaponsE.EHONSGrenadeAmmo'
-     ProjectileClass=Class'EHWeaponsE.EHONSGrenadeProjectile'
+     AmmoClass=Class'tk_EHWeapons.EHONSGrenadeAmmo'
+     ProjectileClass=Class'tk_EHWeapons.EHONSGrenadeProjectile'
 }

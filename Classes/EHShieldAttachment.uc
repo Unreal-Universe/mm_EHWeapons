@@ -64,7 +64,7 @@ defaultproperties
      bHeavy=True
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.ShieldGun_3rd'
-     Skins(0)=Texture'EHWeaponSkinsB.ShieldTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.ShieldTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

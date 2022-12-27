@@ -1,7 +1,5 @@
 class EHMinigunMuzFlash3rd extends xEmitter;
 
-
-
 var int mNumPerFlash;
 
 function Trigger(Actor Other, Pawn EventInstigator)

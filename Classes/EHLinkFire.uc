@@ -18,7 +18,7 @@ var() float MomentumTransfer;
 
 var() float TraceRange;
 var() float LinkFlexibility;
-var float distToStop;////
+var float distToStop;
 
 var		bool bDoHit;
 var()	bool bFeedbackDeath;
@@ -378,10 +378,10 @@ simulated function UpdateLinkColor( EHLinkAttachment.ELinkColor color )
 
 	switch ( Color )
 	{
-		case LC_Green	: FlashEmitter.Skins[0] = Texture'EHWeaponSkinsB.LinkMuzGreen'; break;
-		case LC_Gold	: FlashEmitter.Skins[0] = Texture'EHWeaponSkinsB.LinkMuzYellow';	break;
-		case LC_Red		: FlashEmitter.Skins[0] = Texture'EHWeaponSkinsB.LinkMuzRed'; break;
-		case LC_Blue	: FlashEmitter.Skins[0] = Texture'EHWeaponSkinsB.LinkMuzBlue'; break;
+		case LC_Green	: FlashEmitter.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzGreen'; break;
+		case LC_Gold	: FlashEmitter.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzYellow';	break;
+		case LC_Red		: FlashEmitter.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzRed'; break;
+		case LC_Blue	: FlashEmitter.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzBlue'; break;
 	}
 }
 
@@ -632,7 +632,7 @@ simulated function SetPlayerPhysics()
 
 defaultproperties
 {
-     BeamEffectClass=Class'EHWeaponsE.EHLinkBeamEffect'
+     BeamEffectClass=Class'tk_EHWeapons.EHLinkBeamEffect'
      MakeLinkSound=Sound'WeaponSounds.LinkGun.LinkActivated'
      LinkBreakDelay=0.500000
      LinkScale(1)=0.700000
@@ -641,7 +641,7 @@ defaultproperties
      LinkScale(4)=1.600000
      LinkScale(5)=1.900000
      MakeLinkForce="LinkActivated"
-     DamageType=Class'EHWeaponsE.DamTypeEHLinkShaft'
+     DamageType=Class'tk_EHWeapons.DamTypeEHLinkShaft'
      Damage=9
      MomentumTransfer=2000.000000
      TraceRange=1100.000000
@@ -658,7 +658,7 @@ defaultproperties
      FireEndAnim=
      NoAmmoSound=ProceduralSound'WeaponSounds.PReload5.P1Reload5'
      FireRate=0.120000
-     AmmoClass=Class'EHWeaponsE.EHLinkAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHLinkAmmo'
      AmmoPerFire=1
      ShakeRotMag=(Z=60.000000)
      ShakeRotRate=(Z=4000.000000)
@@ -668,5 +668,5 @@ defaultproperties
      ShakeOffsetTime=3.000000
      BotRefireRate=0.990000
      WarnTargetPct=0.200000
-     FlashEmitterClass=Class'EHWeaponsE.EHLinkMuzFlashBeam1st'
+     FlashEmitterClass=Class'tk_EHWeapons.EHLinkMuzFlashBeam1st'
 }

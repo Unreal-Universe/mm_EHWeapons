@@ -66,7 +66,7 @@ defaultproperties
      RelativeLocation=(X=-30.000000,Z=4.000000)
      RelativeRotation=(Pitch=32768)
      DrawScale=0.160000
-     Skins(0)=Texture'EHWeaponSkinsB.Sniper12'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.Sniper12'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

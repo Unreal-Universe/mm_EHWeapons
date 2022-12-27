@@ -40,7 +40,7 @@ defaultproperties
      bHeavy=True
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.RocketLauncher_3rd'
-     Skins(0)=Texture'EHWeaponSkinsB.RocketTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.RocketTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

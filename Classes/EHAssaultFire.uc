@@ -3,7 +3,6 @@ class EHAssaultFire extends InstantFire;
 var float LastFireTime;
 var float ClickTime;
 
-
 function InitEffects()
 {
     Super.InitEffects();
@@ -44,9 +43,7 @@ simulated function bool AllowFire()
         return false;
     }
 }
-//================================================================
 
-//================================================================
 function StartBerserk()
 {
     DamageMin = default.DamageMin * 1.33;
@@ -71,17 +68,17 @@ function StartSuperBerserk()
 
 defaultproperties
 {
-     DamageType=Class'EHWeaponsE.DamTypeEHAssaultBullet'
+     DamageType=Class'tk_EHWeapons.DamTypeEHAssaultBullet'
      DamageMin=7
      DamageMax=7
      Momentum=0.000000
      bPawnRapidFireAnim=True
      FireLoopAnim=
      FireEndAnim=
-     FireSound=Sound'EHSounds.EHASFire'
+     FireSound=Sound'tk_EHWeapons.EHSounds.EHASFire'
      FireForce="EHAssaultRifleFire"
      FireRate=0.160000
-     AmmoClass=Class'EHWeaponsE.EHAssaultAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHAssaultAmmo'
      AmmoPerFire=1
      ShakeRotMag=(X=50.000000,Y=50.000000,Z=50.000000)
      ShakeRotRate=(X=10000.000000,Y=10000.000000,Z=10000.000000)
@@ -90,7 +87,7 @@ defaultproperties
      ShakeOffsetRate=(X=1000.000000,Y=1000.000000,Z=1000.000000)
      ShakeOffsetTime=2.000000
      BotRefireRate=0.990000
-     FlashEmitterClass=Class'EHWeaponsE.EHAssaultMuzFlash1st'
+     FlashEmitterClass=Class'tk_EHWeapons.EHAssaultMuzFlash1st'
      aimerror=800.000000
      Spread=0.020000
      SpreadStyle=SS_Random

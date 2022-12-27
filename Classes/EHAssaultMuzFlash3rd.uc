@@ -1,6 +1,5 @@
 class EHAssaultMuzFlash3rd extends EHMinigunMuzFlash3rd;
 
-
 //#exec TEXTURE IMPORT NAME=AssaultMuzFlash3rd FILE=textures\muzflarev.tga DXT=1
 
 //defaultproperties

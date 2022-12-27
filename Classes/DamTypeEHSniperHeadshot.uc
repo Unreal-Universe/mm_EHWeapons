@@ -24,7 +24,7 @@ static function IncrementKills(Controller Killer)
 defaultproperties
 {
      KillerMessage=Class'XGame.SpecialKillMessage'
-     WeaponClass=Class'EHWeaponsE.EHSniperRifle'
+     WeaponClass=Class'tk_EHWeapons.EHSniperRifle'
      DeathString="%k put a bullet in %o's skull."
      FemaleSuicide="%o shot herself in the head."
      MaleSuicide="%o shot himself in the head."

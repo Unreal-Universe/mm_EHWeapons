@@ -12,6 +12,6 @@ defaultproperties
      mAttenuate=False
      mAttenKa=75.000000
      LifeSpan=4.000000
-     Skins(0)=FinalBlend'EHWeaponSkinsB.IonBoltFinal'
+     Skins(0)=FinalBlend'tk_EHWeapons.EHWeaponSkinsB.IonBoltFinal'
      Style=STY_Additive
 }

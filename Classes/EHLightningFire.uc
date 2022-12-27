@@ -145,22 +145,22 @@ function PlayFiring()
 
 defaultproperties
 {
-     HitEmitterClass=Class'EHWeaponsE.EHNewLightningBolt'
-     SecHitEmitterClass=Class'EHWeaponsE.EHChildLightningBolt'
+     HitEmitterClass=Class'tk_EHWeapons.EHNewLightningBolt'
+     SecHitEmitterClass=Class'tk_EHWeapons.EHChildLightningBolt'
      NumArcs=3
      SecDamageMult=0.500000
      SecTraceDist=300.000000
      HeadShotDamageMult=2.000000
-     DamageTypeHeadShot=Class'EHWeaponsE.DamTypeEHLightningHeadShot'
-     DamageType=Class'EHWeaponsE.DamTypeEHLightningShot'
+     DamageTypeHeadShot=Class'tk_EHWeapons.DamTypeEHLightningHeadShot'
+     DamageType=Class'tk_EHWeapons.DamTypeEHLightningShot'
      DamageMin=70
      DamageMax=70
      TraceRange=17000.000000
      FireAnimRate=1.250000
-     FireSound=Sound'EHSounds.EHLightningGunFire'
+     FireSound=Sound'tk_EHWeapons.EHSounds.EHLightningGunFire'
      FireForce="LightningGunFire"
      FireRate=1.600000
-     AmmoClass=Class'EHWeaponsE.EHLightningAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHLightningAmmo'
      AmmoPerFire=1
      ShakeRotTime=2.000000
      ShakeOffsetMag=(X=-15.000000,Z=10.000000)

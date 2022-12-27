@@ -103,7 +103,7 @@ defaultproperties
      Mesh=SkeletalMesh'NewWeapons2004.NewLinkGun_3rd'
      RelativeLocation=(X=15.000000,Y=-5.000000,Z=-7.000000)
      RelativeRotation=(Pitch=32768)
-     Skins(0)=Texture'EHWeaponSkinsB.LinkGunTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LinkGunTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

@@ -26,15 +26,15 @@ defaultproperties
      bSplashDamage=True
      bRecommendSplashDamage=True
      TransientSoundVolume=1.000000
-     FireSound=Sound'EHSounds.EHRedeemerFire'
+     FireSound=Sound'tk_EHWeapons.EHSounds.EHRedeemerFire'
      FireForce="redeemer_shoot"
      FireRate=1.000000
-     AmmoClass=Class'EHWeaponsE.EHRedeemerIIAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHRedeemerIIAmmo'
      AmmoPerFire=1
      ShakeRotTime=2.000000
      ShakeOffsetMag=(X=-20.000000)
      ShakeOffsetRate=(X=-1000.000000)
      ShakeOffsetTime=2.000000
-     ProjectileClass=Class'EHWeaponsE.EHRedeemerIIProjectile'
+     ProjectileClass=Class'tk_EHWeapons.EHRedeemerIIProjectile'
      BotRefireRate=0.500000
 }

@@ -1,5 +1,3 @@
-//=============================================================================
-// EHExplosionCrap.
 class EHExplosionCrap extends WallSparks;
 
 defaultproperties

@@ -1,6 +1,3 @@
-//=============================================================================
-// EHFlakChunk.
-//=============================================================================
 class EHFlakChunk extends Projectile;
 
 var xEmitter Trail;
@@ -136,7 +133,7 @@ defaultproperties
      MaxSpeed=2700.000000
      Damage=13.000000
      MomentumTransfer=10000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHFlakChunk'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHFlakChunk'
      LightType=LT_Steady
      LightEffect=LE_QuadraticNonIncidence
      LightHue=28

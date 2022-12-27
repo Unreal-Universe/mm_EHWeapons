@@ -38,7 +38,7 @@ function DoTrace(Vector Start, Rotator Dir)
 			Weapon.EffectOffset.X * X +
 			Weapon.Hand * Weapon.EffectOffset.Y * Y +
 			Weapon.EffectOffset.Z * Z);
-            Weapon.Spawn(class'EHWeaponsE.EHSniperTracerEffect',,,Start,Dir);
+            Weapon.Spawn(class'tk_EHWeapons.EHSniperTracerEffect',,,Start,Dir);
     X = Vector(Dir);
     End = Start + TraceRange * X;
     Other = Weapon.Trace(HitLocation, HitNormal, End, Start, true);
@@ -86,19 +86,19 @@ function PlayFiring()
 defaultproperties
 {
      HeadShotDamageMult=2.000000
-     DamageTypeHeadShot=Class'EHWeaponsE.DamTypeEHSniperHeadshot'
+     DamageTypeHeadShot=Class'tk_EHWeapons.DamTypeEHSniperHeadshot'
      FireAnims(0)="Fire1"
      FireAnims(1)="Fire2"
      FireAnims(2)="fire3"
-     DamageType=Class'EHWeaponsE.DamTypeEHSniper'
+     DamageType=Class'tk_EHWeapons.DamTypeEHSniper'
      DamageMin=60
      DamageMax=60
      TraceRange=17000.000000
      FireAnimRate=1.500000
-     FireSound=Sound'EHSounds.EHSniperShot'
+     FireSound=Sound'tk_EHWeapons.EHSounds.EHSniperShot'
      FireForce="NewSniperShot"
      FireRate=1.330000
-     AmmoClass=Class'EHWeaponsE.EHSniperAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHSniperAmmo'
      AmmoPerFire=1
      ShakeRotTime=2.000000
      ShakeOffsetMag=(X=-15.000000,Z=10.000000)

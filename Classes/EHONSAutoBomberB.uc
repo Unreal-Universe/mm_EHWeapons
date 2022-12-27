@@ -1,7 +1,5 @@
 class EHONSAutoBomberB extends EHONSAutoBomber;
 
-
-
 simulated function PostBeginPlay()
 {
 	Super.PostBeginPlay();
@@ -57,5 +55,5 @@ simulated function GetViewAxes( out vector xaxis, out vector yaxis, out vector z
 defaultproperties
 {
      sirensound=Sound'WeaponSounds.Translocator.TranslocatorReturn'
-     Mesh=SkeletalMesh'EnhancedAnimB.PhantomMesh'
+     Mesh=SkeletalMesh'tk_EHWeapons.PhantomMesh'
 }

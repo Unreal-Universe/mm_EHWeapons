@@ -214,8 +214,8 @@ state Paint
 
 defaultproperties
 {
-     BomberClass=Class'EHWeaponsE.EHONSAutoBomberB'
-     MainBomberClass=Class'EHWeaponsE.EHONSAutoBomber'
+     BomberClass=Class'tk_EHWeapons.EHONSAutoBomberB'
+     MainBomberClass=Class'tk_EHWeapons.EHONSAutoBomber'
      MinZDist=5000.000000
      MaxZDist=10000.000000
      TraceRange=15000.000000

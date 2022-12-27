@@ -1,12 +1,12 @@
 class EHSniperRifle extends Weapon
-    config(user);
+    config(tk_EHWeaponsClient);
 
 var transient float LastFOV;
 var() bool zoomed;
 var color ChargeColor;
 
 #exec OBJ LOAD FILE=NewSniperRifle.utx
-#EXEC OBJ LOAD FILE=EHWeaponSkinsB.utx
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
 #exec OBJ LOAD FILE=..\Sounds\NewWeaponSounds.uax
 
 simulated function PostBeginPlay()
@@ -270,7 +270,7 @@ simulated function bool WantsZoomFade()
 defaultproperties
 {
      ChargeColor=(B=255,G=255,R=255,A=255)
-     FireModeClass(0)=Class'EHWeaponsE.EHSniperFire'
+     FireModeClass(0)=Class'tk_EHWeapons.EHSniperFire'
      FireModeClass(1)=Class'XWeapons.SniperZoom'
      SelectAnim="Pickup"
      PutDownAnim="PutDown"
@@ -296,11 +296,11 @@ defaultproperties
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Cross1"
      InventoryGroup=9
      GroupOffset=1
-     PickupClass=Class'EHWeaponsE.EHSniperRiflePickup'
+     PickupClass=Class'tk_EHWeapons.EHSniperRiflePickup'
      PlayerViewOffset=(X=27.700001,Y=5.300000,Z=-10.600000)
      PlayerViewPivot=(Yaw=16384)
      BobDamping=2.300000
-     AttachmentClass=Class'EHWeaponsE.EHSniperAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHSniperAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=420,Y1=180,X2=512,Y2=210)
      ItemName="Enhanced Sniper Rifle"
@@ -315,7 +315,7 @@ defaultproperties
      bUseDynamicLights=True
      Mesh=SkeletalMesh'SniperAnims.SniperRifle_1st'
      DrawScale=0.480000
-     Skins(0)=Texture'EHWeaponSkinsB.Sniper12'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.Sniper12'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

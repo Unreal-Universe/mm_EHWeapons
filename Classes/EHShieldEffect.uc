@@ -31,8 +31,8 @@ defaultproperties
      bOnlyOwnerSee=True
      RemoteRole=ROLE_None
      DrawScale=1.800000
-     Skins(0)=Shader'EHWeaponSkinsB.ShieldShader'
-     Skins(1)=Shader'EHWeaponSkinsB.ShieldShader'
+     Skins(0)=Shader'tk_EHWeapons.EHWeaponSkinsB.ShieldShader'
+     Skins(1)=Shader'tk_EHWeapons.EHWeaponSkinsB.ShieldShader'
      AmbientGlow=250
      bUnlit=True
 }

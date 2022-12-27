@@ -1,6 +1,3 @@
-//=============================================================================
-// EHGrenade.
-//=============================================================================
 class EHGrenade extends Projectile;
 
 var float ExplodeTimer;
@@ -171,7 +168,7 @@ simulated function Explode(vector HitLocation, vector HitNormal)
 		}
 	}
     BlowUp(HitLocation);
-	PlaySound(Sound'EHSounds.GrenadeExplosion',,3.5*TransientSoundVolume);
+	PlaySound(Sound'tk_EHWeapons.EHSounds.GrenadeExplosion',,3.5*TransientSoundVolume);
     if ( EffectIsRelevant(Location,false) )
     {
         Spawn(class'EHGrenadeExplosion',,, HitLocation, rotator(vect(0,0,1)));
@@ -221,7 +218,7 @@ defaultproperties
      TossZ=0.000000
      Damage=50.000000
      MomentumTransfer=10000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHAssaultGrenade'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHAssaultGrenade'
      ImpactSound=ProceduralSound'WeaponSounds.PGrenFloor1.P1GrenFloor1'
      ExplosionDecal=Class'XEffects.RocketMark'
      DrawType=DT_StaticMesh

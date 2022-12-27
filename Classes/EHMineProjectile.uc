@@ -435,7 +435,7 @@ defaultproperties
      Damage=95.000000
      DamageRadius=250.000000
      MomentumTransfer=50000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHMine'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHMine'
      ImpactSound=Sound'WeaponSounds.BaseGunTech.BGrenfloor1'
      CullDistance=6000.000000
      bUseDynamicLights=True
@@ -446,7 +446,7 @@ defaultproperties
      Mesh=SkeletalMesh'ONSWeapons-A.ParasiteMine'
      DrawScale=0.200000
      PrePivot=(Z=-2.900000)
-     Skins(0)=Texture'EHWeaponSkinsB.SpiderRed'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.SpiderRed'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

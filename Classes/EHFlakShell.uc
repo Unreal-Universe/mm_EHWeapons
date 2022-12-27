@@ -1,9 +1,4 @@
-//=============================================================================
-// EHflakshell
-//=============================================================================
 class EHflakshell extends Projectile;
-
-
 
 var	xemitter trail;
 var	xemitter trailB;
@@ -148,7 +143,7 @@ defaultproperties
      TossZ=225.000000
      Damage=90.000000
      MomentumTransfer=75000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHFlakShell'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHFlakShell'
      ExplosionDecal=Class'XEffects.ShockAltDecal'
      LightType=LT_Steady
      LightEffect=LE_QuadraticNonIncidence

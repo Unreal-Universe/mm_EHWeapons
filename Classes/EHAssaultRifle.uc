@@ -1,8 +1,5 @@
-//=============================================================================
-// EHAssault Rifle
-//=============================================================================
 class EHAssaultRifle extends Weapon
-    config(user);
+    config(tk_EHWeaponsClient);
 
 var float DualPickupTime;
 var EHAssaultAttachment OffhandActor;
@@ -310,8 +307,8 @@ function float GetAIRating()
 
 defaultproperties
 {
-     FireModeClass(0)=Class'EHWeaponsE.EHAssaultFire'
-     FireModeClass(1)=Class'EHWeaponsE.EHAssaultGrenade'
+     FireModeClass(0)=Class'tk_EHWeapons.EHAssaultFire'
+     FireModeClass(1)=Class'tk_EHWeapons.EHAssaultGrenade'
      PutDownAnim="PutDown"
      SelectSound=Sound'WeaponSounds.AssaultRifle.SwitchToAssaultRifle'
      SelectForce="SwitchToAssaultRifle"
@@ -338,11 +335,11 @@ defaultproperties
      CustomCrossHairScale=0.666700
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Cross5"
      InventoryGroup=2
-     PickupClass=Class'EHWeaponsE.EHAssaultRiflePickup'
+     PickupClass=Class'tk_EHWeapons.EHAssaultRiflePickup'
      PlayerViewOffset=(X=4.000000,Y=5.500000,Z=-6.000000)
      PlayerViewPivot=(Pitch=400)
      BobDamping=1.700000
-     AttachmentClass=Class'EHWeaponsE.EHAssaultAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHAssaultAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=245,Y1=39,X2=329,Y2=79)
      ItemName="Enhanced Assault Rifle"
@@ -356,7 +353,7 @@ defaultproperties
      bUseDynamicLights=True
      Mesh=SkeletalMesh'NewWeapons2004.AssaultRifle'
      DrawScale=0.800000
-     Skins(0)=Texture'EHWeaponSkinsB.AssaultRifleTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.AssaultRifleTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

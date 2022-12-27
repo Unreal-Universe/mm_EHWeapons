@@ -1,17 +1,14 @@
-//=============================================================================
-// EHShockRiflePickup
-//=============================================================================
 class EHShockRiflePickup extends UTWeaponPickup;
 
 static function StaticPrecache(LevelInfo L)
 {
 	if ( class'EHShockRifle'.Default.bUseOldWeaponMesh )
 	{
-		L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.ShockRifleTex02');
+		L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.ShockRifleTex02');
 		L.AddPrecacheMaterial(Texture'WeaponSkins.ShockLaser.lasermist');
 	}
-    L.AddPrecacheMaterial(Material'EHWeaponSkinsB.pannelLightning');
-    L.AddPrecacheMaterial(Material'EHWeaponSkinsB.ShockBeamPanner');
+    L.AddPrecacheMaterial(Material'tk_EHWeapons.EHWeaponSkinsB.pannelLightning');
+    L.AddPrecacheMaterial(Material'tk_EHWeapons.EHWeaponSkinsB.ShockBeamPanner');
     L.AddPrecacheMaterial(Material'XEffects.ShockHeatDecal');
     L.AddPrecacheMaterial(Material'XEffectMat.shock_flash');
     L.AddPrecacheMaterial(Material'XEffectMat.shock_flare_a');
@@ -39,11 +36,11 @@ simulated function UpdatePrecacheMaterials()
 {
 	if ( class'ShockRifle'.Default.bUseOldWeaponMesh )
 	{
-		Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.ShockRifleTex02');
+		Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.ShockRifleTex02');
 		Level.AddPrecacheMaterial(Texture'WeaponSkins.ShockLaser.lasermist');
 	}
-    Level.AddPrecacheMaterial(Material'EHWeaponSkinsB.pannelLightning');
-    Level.AddPrecacheMaterial(Material'EHWeaponSkinsB.ShockBeamPanner');
+    Level.AddPrecacheMaterial(Material'tk_EHWeapons.EHWeaponSkinsB.pannelLightning');
+    Level.AddPrecacheMaterial(Material'tk_EHWeapons.EHWeaponSkinsB.ShockBeamPanner');
     Level.AddPrecacheMaterial(Material'XEffects.ShockHeatDecal');
     Level.AddPrecacheMaterial(Material'XEffectMat.shock_flash');
     Level.AddPrecacheMaterial(Material'XEffectMat.shock_flare_a');
@@ -76,7 +73,7 @@ defaultproperties
 {
      StandUp=(Y=0.250000,Z=0.000000)
      MaxDesireability=0.630000
-     InventoryType=Class'EHWeaponsE.EHShockRifle'
+     InventoryType=Class'tk_EHWeapons.EHShockRifle'
      PickupMessage="You got the Enhanced Shock Rifle."
      PickupSound=Sound'PickupSounds.ShockRiflePickup'
      PickupForce="EHShockRiflePickup"
@@ -84,7 +81,7 @@ defaultproperties
      StaticMesh=StaticMesh'NewWeaponPickups.ShockPickupSM'
      bUseDynamicLights=True
      DrawScale=0.550000
-     Skins(0)=Texture'EHWeaponSkinsB.ShockRifleTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.ShockRifleTex02'
      Skins(1)=Shader'Plutonic_BP2_textures.Shaders.MikeDemo_crystal_FX'
      AmbientGlow=12
      bShadowCast=True

@@ -3,7 +3,7 @@ class DamTypeEHSniper extends WeaponDamageType
 
 defaultproperties
 {
-     WeaponClass=Class'EHWeaponsE.EHSniperRifle'
+     WeaponClass=Class'tk_EHWeapons.EHSniperRifle'
      DeathString="%k put a hole in %o"
      FemaleSuicide="%o shot herself in the foot."
      MaleSuicide="%o shot himself in the foot."

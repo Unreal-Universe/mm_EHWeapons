@@ -1,9 +1,7 @@
-// EHAVRiL - Player held anti-aircraft weapon
-
 class EHAVRiL extends Weapon
-	config(User);
+	config(tk_EHWeaponsClient);
 
-#EXEC OBJ LOAD FILE=EHWeaponSkinsB.utx
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
 #exec OBJ LOAD FILE="..\Textures\VMWeaponsTX"
 
 var Material BaseMaterial;
@@ -245,7 +243,7 @@ function bool RecommendRangedAttack()
 
 defaultproperties
 {
-     BaseMaterial=Texture'EHWeaponSkinsB.EHAVRiLtex'
+     BaseMaterial=Texture'tk_EHWeapons.EHWeaponSkinsB.EHAVRiLtex'
      ReticleOFFMaterial=Shader'VMWeaponsTX.PlayerWeaponsGroup.AVRiLreticleTEX'
      ReticleONMaterial=Shader'VMWeaponsTX.PlayerWeaponsGroup.AVRiLreticleTEXRed'
      LockCheckFreq=0.200000
@@ -255,8 +253,8 @@ defaultproperties
      CrosshairX=32.000000
      CrosshairY=32.000000
      CrosshairTexture=Texture'ONSInterface-TX.avrilRETICLE'
-     FireModeClass(0)=Class'EHWeaponsE.EHAVRiLFire'
-     FireModeClass(1)=Class'EHWeaponsE.EHAVRiLAltFire'
+     FireModeClass(0)=Class'tk_EHWeapons.EHAVRiLFire'
+     FireModeClass(1)=Class'tk_EHWeapons.EHAVRiLAltFire'
      PutDownAnim="PutDown"
      SelectAnimRate=2.000000
      PutDownAnimRate=1.750000
@@ -278,17 +276,17 @@ defaultproperties
      MinReloadPct=0.000000
      InventoryGroup=8
      GroupOffset=1
-     PickupClass=Class'EHWeaponsE.EHAVRiLPickup'
+     PickupClass=Class'tk_EHWeapons.EHAVRiLPickup'
      PlayerViewOffset=(X=100.000000,Y=35.500000,Z=-32.500000)
      BobDamping=2.200000
-     AttachmentClass=Class'EHWeaponsE.EHAVRiLAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHAVRiLAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=429,Y1=212,X2=508,Y2=251)
      ItemName="Enhanced AVRiL"
      bUseDynamicLights=True
      Mesh=SkeletalMesh'ONSWeapons-A.AVRiL_1st'
      Skins(0)=Shader'VMWeaponsTX.PlayerWeaponsGroup.AVRiLreticleTEX'
-     Skins(1)=Texture'EHWeaponSkinsB.EHAVRiLtex'
+     Skins(1)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHAVRiLtex'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

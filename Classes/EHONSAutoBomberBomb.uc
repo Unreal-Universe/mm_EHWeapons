@@ -114,7 +114,7 @@ defaultproperties
      Damage=200.000000
      DamageRadius=1400.000000
      MomentumTransfer=150000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHONSAutoBomberBomb'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHONSAutoBomberBomb'
      ImpactSound=ProceduralSound'WeaponSounds.PGrenFloor1.P1GrenFloor1'
      ExplosionDecal=Class'XEffects.ComboDecal'
      DrawType=DT_StaticMesh

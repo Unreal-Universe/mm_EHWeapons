@@ -4,7 +4,7 @@ defaultproperties
 {
      AmmoAmount=10
      MaxDesireability=0.320000
-     InventoryType=Class'EHWeaponsE.EHFlakAmmo'
+     InventoryType=Class'tk_EHWeapons.EHFlakAmmo'
      PickupMessage="You picked up 10 Enhanced Flak Shells."
      PickupSound=Sound'PickupSounds.FlakAmmoPickup'
      PickupForce="EHFlakAmmoPickup"
@@ -13,7 +13,7 @@ defaultproperties
      bUseDynamicLights=True
      DrawScale=0.800000
      PrePivot=(Z=6.500000)
-     Skins(0)=Texture'EHWeaponSkinsB.FlakAmmoTex2'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.FlakAmmoTex2'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

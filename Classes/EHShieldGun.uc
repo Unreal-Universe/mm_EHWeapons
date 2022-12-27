@@ -1,8 +1,5 @@
-//=============================================================================
-// EHShield Gun
-//=============================================================================
 class EHShieldGun extends Weapon
-    config(user)
+    config(tk_EHWeaponsClient)
     HideDropDown;
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
@@ -292,8 +289,8 @@ defaultproperties
 {
      ShieldHitSound=ProceduralSound'WeaponSounds.ShieldGun.ShieldReflection'
      ShieldHitForce="ShieldReflection"
-     FireModeClass(0)=Class'EHWeaponsE.EHShieldFire'
-     FireModeClass(1)=Class'EHWeaponsE.EHShieldAltFire'
+     FireModeClass(0)=Class'tk_EHWeapons.EHShieldFire'
+     FireModeClass(1)=Class'tk_EHWeapons.EHShieldAltFire'
      PutDownAnim="PutDown"
      SelectSound=Sound'WeaponSounds.Misc.shieldgun_change'
      SelectForce="ShieldGun_change"
@@ -313,18 +310,18 @@ defaultproperties
      CustomCrosshair=13
      CustomCrossHairColor=(B=121,G=188)
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Pointer"
-     PickupClass=Class'EHWeaponsE.EHShieldGunPickup'
+     PickupClass=Class'tk_EHWeapons.EHShieldGunPickup'
      PlayerViewOffset=(X=2.000000,Y=-0.700000,Z=-2.700000)
      PlayerViewPivot=(Pitch=500,Yaw=500)
      BobDamping=2.200000
-     AttachmentClass=Class'EHWeaponsE.EHShieldAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHShieldAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=169,Y1=39,X2=241,Y2=77)
      ItemName="Enhanced Shield Gun"
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.ShieldGun_1st'
      DrawScale=0.400000
-     Skins(0)=Texture'EHWeaponSkinsB.ShieldTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.ShieldTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

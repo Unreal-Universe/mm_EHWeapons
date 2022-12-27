@@ -1,6 +1,3 @@
-//-----------------------------------------------------------
-//
-//-----------------------------------------------------------
 class EHONSGrenadeAttachment extends xWeaponAttachment;
 
 var xEmitter MuzFlash3rd;
@@ -41,7 +38,7 @@ defaultproperties
      bUseDynamicLights=True
      Mesh=SkeletalMesh'ONSWeapons-A.GrenadeLauncher_3rd'
      DrawScale=0.180000
-     Skins(0)=Texture'EHWeaponSkinsB.EHGrenadeLauncherTEX'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHGrenadeLauncherTEX'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

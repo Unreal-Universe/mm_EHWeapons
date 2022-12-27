@@ -1,6 +1,5 @@
 class EHBulletImpact extends BloodSpurt;
 
-
 simulated function PostNetBeginPlay()
 {
 	if ( Level.NetMode == NM_DedicatedServer )

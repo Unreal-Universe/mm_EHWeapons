@@ -70,7 +70,7 @@ simulated function Destroyed()
 {
     if ( !bNoFX && EffectIsRelevant(Location,false) )
     {
-        Spawn(class'EHWeaponsE.EHGoopSmoke');
+        Spawn(class'tk_EHWeapons.EHGoopSmoke');
         Spawn(class'xEffects.GoopSparks');
     }
 	if ( Fear != None )
@@ -121,7 +121,7 @@ auto state Flying
 		if ( (Level.Game != None) && (Level.Game.NumBots > 0) )
 			Fear = Spawn(class'AvoidMarker');
         GotoState('OnGround');
-        Spawn(class'EHWeaponsE.EHBioGoopSmoke');
+        Spawn(class'tk_EHWeapons.EHBioGoopSmoke');
 
     }
 
@@ -345,7 +345,7 @@ defaultproperties
      Damage=19.000000
      DamageRadius=120.000000
      MomentumTransfer=40000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHBioGlob'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHBioGlob'
      ImpactSound=SoundGroup'WeaponSounds.BioRifle.BioRifleGoo2'
      MaxEffectDistance=7000.000000
      LightType=LT_Pulse

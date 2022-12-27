@@ -19,10 +19,10 @@ defaultproperties
      bRecommendSplashDamage=True
      bTossed=True
      FireEndAnim=
-     FireSound=Sound'EHSounds.EHBioRifleFire'
+     FireSound=Sound'tk_EHWeapons.EHSounds.EHBioRifleFire'
      FireForce="EHBioRifleFire"
      FireRate=0.330000
-     AmmoClass=Class'EHWeaponsE.EHBioAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHBioAmmo'
      AmmoPerFire=1
      ShakeRotMag=(X=70.000000)
      ShakeRotRate=(X=1000.000000)
@@ -30,7 +30,7 @@ defaultproperties
      ShakeOffsetMag=(Z=-2.000000)
      ShakeOffsetRate=(Z=1000.000000)
      ShakeOffsetTime=1.800000
-     ProjectileClass=Class'EHWeaponsE.EHBioGlob'
+     ProjectileClass=Class'tk_EHWeapons.EHBioGlob'
      BotRefireRate=0.800000
      FlashEmitterClass=Class'XEffects.BioMuzFlash1st'
 }

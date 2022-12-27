@@ -1,6 +1,3 @@
-//-----------------------------------------------------------
-//
-//-----------------------------------------------------------
 class EHONSGrenadeExplosionEffect extends Emitter;
 
 #exec OBJ LOAD FILE="..\Textures\VMParticleTextures.utx"
@@ -47,7 +44,7 @@ defaultproperties
          LifetimeRange=(Max=6.000000)
          StartVelocityRange=(X=(Min=-1000.000000,Max=1000.000000),Y=(Min=-1000.000000,Max=1000.000000),Z=(Min=200.000000,Max=1800.000000))
      End Object
-     Emitters(0)=SpriteEmitter'EHWeaponsE.EHONSGrenadeExplosionEffect.SpriteEmitter1'
+     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHONSGrenadeExplosionEffect.SpriteEmitter1'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter2
          UseDirectionAs=PTDU_Up
@@ -80,7 +77,7 @@ defaultproperties
          AddVelocityFromOtherEmitter=0
          AddVelocityMultiplierRange=(X=(Min=0.100000,Max=0.100000),Y=(Min=0.100000,Max=0.100000),Z=(Min=0.100000,Max=0.100000))
      End Object
-     Emitters(1)=SpriteEmitter'EHWeaponsE.EHONSGrenadeExplosionEffect.SpriteEmitter2'
+     Emitters(1)=SpriteEmitter'tk_EHWeapons.EHONSGrenadeExplosionEffect.SpriteEmitter2'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter0
          FadeOut=True
@@ -106,7 +103,7 @@ defaultproperties
          TextureVSubdivisions=4
          StartVelocityRange=(X=(Min=-400.000000,Max=400.000000),Y=(Min=-400.000000,Max=400.000000),Z=(Min=100.000000,Max=1600.000000))
      End Object
-     Emitters(2)=SpriteEmitter'EHWeaponsE.EHONSGrenadeExplosionEffect.SpriteEmitter0'
+     Emitters(2)=SpriteEmitter'tk_EHWeapons.EHONSGrenadeExplosionEffect.SpriteEmitter0'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter3
          UseCollision=True
@@ -141,7 +138,7 @@ defaultproperties
          VelocityLossRange=(X=(Min=1.000000,Max=2.000000),Y=(Min=1.000000,Max=2.000000),Z=(Min=1.000000,Max=2.000000))
          RotateVelocityLossRange=True
      End Object
-     Emitters(3)=SpriteEmitter'EHWeaponsE.EHONSGrenadeExplosionEffect.SpriteEmitter3'
+     Emitters(3)=SpriteEmitter'tk_EHWeapons.EHONSGrenadeExplosionEffect.SpriteEmitter3'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter5
          UseCollision=True
@@ -176,7 +173,7 @@ defaultproperties
          VelocityLossRange=(X=(Min=1.000000,Max=2.000000),Y=(Min=1.000000,Max=2.000000),Z=(Min=1.000000,Max=2.000000))
          RotateVelocityLossRange=True
      End Object
-     Emitters(4)=SpriteEmitter'EHWeaponsE.EHONSGrenadeExplosionEffect.SpriteEmitter5'
+     Emitters(4)=SpriteEmitter'tk_EHWeapons.EHONSGrenadeExplosionEffect.SpriteEmitter5'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter10
          UseColorScale=True
@@ -204,7 +201,7 @@ defaultproperties
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.250000,Max=0.500000)
      End Object
-     Emitters(5)=SpriteEmitter'EHWeaponsE.EHONSGrenadeExplosionEffect.SpriteEmitter10'
+     Emitters(5)=SpriteEmitter'tk_EHWeapons.EHONSGrenadeExplosionEffect.SpriteEmitter10'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter265
          UseDirectionAs=PTDU_Right
@@ -231,7 +228,7 @@ defaultproperties
          LifetimeRange=(Min=0.750000,Max=1.250000)
          StartVelocityRange=(X=(Min=400.000000,Max=1400.000000),Y=(Min=-1200.000000,Max=1200.000000),Z=(Min=-1200.000000,Max=1200.000000))
      End Object
-     Emitters(6)=SpriteEmitter'EHWeaponsE.EHONSGrenadeExplosionEffect.SpriteEmitter265'
+     Emitters(6)=SpriteEmitter'tk_EHWeapons.EHONSGrenadeExplosionEffect.SpriteEmitter265'
 
      AutoDestroy=True
      bNoDelete=False

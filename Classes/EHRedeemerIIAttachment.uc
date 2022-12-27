@@ -43,8 +43,8 @@ defaultproperties
      RelativeLocation=(X=-35.000000)
      RelativeRotation=(Yaw=49152,Roll=32768)
      DrawScale=0.600000
-     Skins(0)=Texture'EHWeaponSkinsB.Rmissle2'
-     Skins(1)=Texture'EHWeaponSkinsB.RedeemerTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.Rmissle2'
+     Skins(1)=Texture'tk_EHWeapons.EHWeaponSkinsB.RedeemerTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

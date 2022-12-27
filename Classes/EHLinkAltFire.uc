@@ -22,7 +22,7 @@ function Projectile SpawnProjectile(Vector Start, Rotator Dir)
     local EHLinkProjectile Proj;
 
     Start += Vector(Dir) * 10.0 * EHLinkGun(Weapon).Links;
-    Proj = Weapon.Spawn(class'EHWeaponsE.EHLinkProjectile',,, Start, Dir);
+    Proj = Weapon.Spawn(class'tk_EHWeapons.EHLinkProjectile',,, Start, Dir);
     if ( Proj != None )
     {
 		Proj.Links = EHLinkGun(Weapon).Links;
@@ -72,7 +72,7 @@ defaultproperties
      FireSound=Sound'WeaponSounds.BaseFiringSounds.BPulseRifleAltFire'
      FireForce="TranslocatorFire"
      FireRate=0.200000
-     AmmoClass=Class'EHWeaponsE.EHLinkAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHLinkAmmo'
      AmmoPerFire=2
      ShakeRotMag=(X=40.000000)
      ShakeRotRate=(X=2000.000000)
@@ -80,7 +80,7 @@ defaultproperties
      ShakeOffsetMag=(Y=1.000000)
      ShakeOffsetRate=(Y=-2000.000000)
      ShakeOffsetTime=4.000000
-     ProjectileClass=Class'EHWeaponsE.EHLinkProjectile'
+     ProjectileClass=Class'tk_EHWeapons.EHLinkProjectile'
      BotRefireRate=0.990000
      WarnTargetPct=0.100000
      FlashEmitterClass=Class'XEffects.LinkMuzFlashProj1st'

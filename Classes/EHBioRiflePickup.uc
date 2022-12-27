@@ -1,13 +1,13 @@
 class EHBioRiflePickup extends UTWeaponPickup;
 
-#exec OBJ LOAD FILE=EHWeaponSkinsB.utx
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
 
 static function StaticPrecache(LevelInfo L)
 {
     L.AddPrecacheMaterial(Texture'XEffects.xbiosplat2');
     L.AddPrecacheMaterial(Texture'XEffects.xbiosplat');
     L.AddPrecacheMaterial(Texture'XGameShaders.bio_flash');
-    L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.BioRifleTex02');
+    L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.BioRifleTex02');
     L.AddPrecacheMaterial(Texture'WeaponSkins.BioGoo.BRInnerGoo');
     L.AddPrecacheMaterial(Texture'WeaponSkins.BioGoo.BRInnerBubbles');
 	L.AddPrecacheStaticMesh(StaticMesh'WeaponStaticMesh.BioRiflePickup');
@@ -18,7 +18,7 @@ simulated function UpdatePrecacheMaterials()
     Level.AddPrecacheMaterial(Texture'XEffects.xbiosplat2');
     Level.AddPrecacheMaterial(Texture'XEffects.xbiosplat');
     Level.AddPrecacheMaterial(Texture'XGameShaders.bio_flash');
-    Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.BioRifleTex02');
+    Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.BioRifleTex02');
     Level.AddPrecacheMaterial(Texture'WeaponSkins.BioGoo.BRInnerGoo');
     Level.AddPrecacheMaterial(Texture'WeaponSkins.BioGoo.BRInnerBubbles');
 
@@ -28,7 +28,7 @@ simulated function UpdatePrecacheMaterials()
 defaultproperties
 {
      MaxDesireability=0.750000
-     InventoryType=Class'EHWeaponsE.EHBioRifle'
+     InventoryType=Class'tk_EHWeapons.EHBioRifle'
      PickupMessage="You got the Enhanced Bio-Rifle"
      PickupSound=Sound'PickupSounds.FlakCannonPickup'
      PickupForce="FlakCannonPickup"
@@ -43,7 +43,7 @@ defaultproperties
      bUseDynamicLights=True
      bDynamicLight=True
      DrawScale=0.600000
-     Skins(0)=Texture'EHWeaponSkinsB.BioRifleTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.BioRifleTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

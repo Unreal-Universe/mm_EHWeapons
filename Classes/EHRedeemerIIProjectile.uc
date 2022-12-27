@@ -1,6 +1,3 @@
-//=============================================================================
-//
-//=============================================================================
 class EHRedeemerIIProjectile extends Projectile;
 
 
@@ -181,7 +178,7 @@ state Dying
     }
 
 Begin:
-    PlaySound(Sound'EHSounds.RIIExplode',SLOT_None,5*TransientSoundVolume);
+    PlaySound(Sound'tk_EHWeapons.EHSounds.RIIExplode',SLOT_None,5*TransientSoundVolume);
     spawn(class'EHExplosionEffects',,, Location, rotator(vect(0,0,1)));
     HurtRadius(Damage, DamageRadius*0.125, MyDamageType, MomentumTransfer, Location);
     Sleep(0.5);
@@ -211,7 +208,7 @@ defaultproperties
      Damage=1450.000000
      DamageRadius=4000.000000
      MomentumTransfer=400000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHRedeemerII'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHRedeemerII'
      LightType=LT_Steady
      LightEffect=LE_QuadraticNonIncidence
      LightHue=28
@@ -221,7 +218,7 @@ defaultproperties
      StaticMesh=StaticMesh'WeaponStaticMesh.RedeemerMissile'
      bDynamicLight=True
      bNetTemporary=False
-     AmbientSound=Sound'EHSounds.EHDeemerFlight'
+     AmbientSound=Sound'tk_EHWeapons.EHSounds.EHDeemerFlight'
      LifeSpan=20.000000
      DrawScale=0.500000
      AmbientGlow=96

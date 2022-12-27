@@ -5,12 +5,12 @@ class EHPlasmaRiflePickup extends UTWeaponPickup;
 
 static function StaticPrecache(LevelInfo L)
 {
-    L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.LinkTex02');
+    L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.LinkTex02');
     L.AddPrecacheMaterial(Texture'AW-2004Particles.Energy.SmoothRing');
-    L.AddPrecacheMaterial(Texture'EHWeaponSkinsB.pannelLightning');
+    L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.pannelLightning');
     L.AddPrecacheMaterial(Texture'AW-2004Particles.Energy.ElecPanels');
     L.AddPrecacheMaterial(Texture'XEffects.Skins.pcl_BlueSpark');
-    L.AddPrecacheMaterial(FinalBlend'EHWeaponSkinsB.PlasmaFlashFB');
+    L.AddPrecacheMaterial(FinalBlend'tk_EHWeapons.EHWeaponSkinsB.PlasmaFlashFB');
     L.AddPrecacheStaticMesh(StaticMesh'WeaponStaticMesh.LinkGunPickup');
     L.AddPrecacheStaticMesh(StaticMesh'WeaponStaticMesh.ShockMuzFlash');
 }
@@ -18,12 +18,12 @@ static function StaticPrecache(LevelInfo L)
 simulated function UpdatePrecacheMaterials()
 {
 
-    Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.LinkTex02');
+    Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.LinkTex02');
     Level.AddPrecacheMaterial(Texture'AW-2004Particles.Energy.SmoothRing');
-    Level.AddPrecacheMaterial(Texture'EHWeaponSkinsB.pannelLightning');
+    Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.pannelLightning');
     Level.AddPrecacheMaterial(Texture'AW-2004Particles.Energy.ElecPanels');
     Level.AddPrecacheMaterial(Texture'XEffects.Skins.pcl_BlueSpark');
-    Level.AddPrecacheMaterial(FinalBlend'EHWeaponSkinsB.PlasmaFlashFB');
+    Level.AddPrecacheMaterial(FinalBlend'tk_EHWeapons.EHWeaponSkinsB.PlasmaFlashFB');
     Level.AddPrecacheStaticMesh(StaticMesh'WeaponStaticMesh.LinkGunPickup');
     Level.AddPrecacheStaticMesh(StaticMesh'WeaponStaticMesh.ShockMuzFlash');
 
@@ -41,7 +41,7 @@ defaultproperties
 {
      StandUp=(Y=0.250000,Z=0.000000)
      MaxDesireability=0.630000
-     InventoryType=Class'EHWeaponsE.EHPlasmaRifle'
+     InventoryType=Class'tk_EHWeapons.EHPlasmaRifle'
      PickupMessage="You got the Enhanced Plasma Rifle."
      PickupSound=Sound'PickupSounds.LinkGunPickup'
      PickupForce="EHPlasmaRiflePickup"
@@ -49,7 +49,7 @@ defaultproperties
      StaticMesh=StaticMesh'WeaponStaticMesh.LinkGunPickup'
      bUseDynamicLights=True
      DrawScale=0.550000
-     Skins(0)=Texture'EHWeaponSkinsB.LinkTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LinkTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

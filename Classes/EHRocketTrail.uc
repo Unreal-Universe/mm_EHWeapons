@@ -1,6 +1,3 @@
-//=============================================================================
-// EHRocketTrail
-//=============================================================================
 class EHRocketTrail extends Emitter;
 
 #exec OBJ LOAD FILE="..\Textures\AW-2004Particles.utx"
@@ -32,7 +29,7 @@ defaultproperties
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.100000,Max=0.130000)
      End Object
-     Emitters(0)=SpriteEmitter'EHWeaponsE.EHRocketTrail.SpriteEmitter8'
+     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHRocketTrail.SpriteEmitter8'
 
      AutoDestroy=True
      bNoDelete=False

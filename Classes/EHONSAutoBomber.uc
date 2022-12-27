@@ -116,7 +116,7 @@ function Timer()
 defaultproperties
 {
      BombOffset=(Y=500.000000)
-     BomberClass=Class'EHWeaponsE.EHONSAutoBomberB'
+     BomberClass=Class'tk_EHWeapons.EHONSAutoBomberB'
      BombersOffsets(0)=(X=5000.000000)
      BombersOffsets(1)=(X=1000.000000,Y=-1500.000000)
      BombersOffsets(2)=(X=1000.000000,Y=1500.000000)
@@ -124,6 +124,6 @@ defaultproperties
      BombersOffsets(4)=(X=200.000000,Y=3000.000000)
      bomberwingsize=5
      BombRange=8000.000000
-     BombClass=Class'EHWeaponsE.EHONSAutoBomberBomb'
-     Mesh=SkeletalMesh'EnhancedAnimB.B2Bomber'
+     BombClass=Class'tk_EHWeapons.EHONSAutoBomberBomb'
+     Mesh=SkeletalMesh'tk_EHWeapons.B2Bomber'
 }

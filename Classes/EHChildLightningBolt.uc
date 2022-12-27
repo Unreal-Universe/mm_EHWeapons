@@ -1,8 +1,4 @@
-//=============================================================================
-// EHChildLightningBolt.
-//=============================================================================
 class EHChildLightningBolt extends xEmitter;
-
 
 simulated function bool CheckMaxEffectDistance(PlayerController P, vector SpawnLocation)
 {
@@ -36,6 +32,6 @@ defaultproperties
      bSkipActorPropertyReplication=True
      RemoteRole=ROLE_DumbProxy
      LifeSpan=0.500000
-     Skins(0)=Texture'EHWeaponSkinsB.NewLightningBoltChild'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.NewLightningBoltChild'
      Style=STY_Additive
 }

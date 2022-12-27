@@ -1,6 +1,3 @@
-//=============================================================================
-// enhanced rocket.
-//=============================================================================
 class EHRocketProj extends Projectile;
 
 var bool bRing,bHitWater,bWaterStart;
@@ -215,7 +212,7 @@ defaultproperties
      MaxSpeed=1350.000000
      Damage=90.000000
      MomentumTransfer=50000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHRocket'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHRocket'
      ExplosionDecal=Class'XEffects.RocketMark'
      LightType=LT_Steady
      LightEffect=LE_QuadraticNonIncidence
@@ -223,7 +220,7 @@ defaultproperties
      LightBrightness=255.000000
      LightRadius=5.000000
      DrawType=DT_StaticMesh
-     StaticMesh=StaticMesh'EHWeaponsStaticB.Package3.Rocket'
+     StaticMesh=StaticMesh'tk_EHWeapons.Package3.Rocket'
      CullDistance=7500.000000
      bDynamicLight=True
      AmbientSound=Sound'ONSVehicleSounds-S.AVRiL.AvrilProjectileLoop01'

@@ -27,7 +27,7 @@ simulated function PostNetBeginPlay()
     {
         if ( !PhysicsVolume.bWaterVolume )
         {
-            Trail = Spawn(class'EHWeaponsE.EHTracerTrail',self);
+            Trail = Spawn(class'tk_EHWeapons.EHTracerTrail',self);
             Trail.Lifespan = Lifespan;
 
         }

@@ -1,8 +1,5 @@
-//=============================================================================
-// EHMinigun
-//=============================================================================
 class EHMinigun extends Weapon
-    config(user);
+    config(tk_EHWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
 
@@ -242,8 +239,8 @@ defaultproperties
      AttachRot=(Pitch=22000,Yaw=-16384)
      GearRatio=-2.370000
      Blend=1.000000
-     FireModeClass(0)=Class'EHWeaponsE.EHMinigunFire'
-     FireModeClass(1)=Class'EHWeaponsE.EHMinigunAltFire'
+     FireModeClass(0)=Class'tk_EHWeapons.EHMinigunFire'
+     FireModeClass(1)=Class'tk_EHWeapons.EHMinigunAltFire'
      PutDownAnim="PutDown"
      SelectSound=Sound'WeaponSounds.Minigun.SwitchToMiniGun'
      SelectForce="SwitchToEHMiniGun"
@@ -261,11 +258,11 @@ defaultproperties
      CustomCrosshair=2
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Circle1"
      InventoryGroup=6
-     PickupClass=Class'EHWeaponsE.EHMinigunPickup'
+     PickupClass=Class'tk_EHWeapons.EHMinigunPickup'
      PlayerViewOffset=(X=2.000000,Y=-1.000000)
      PlayerViewPivot=(Yaw=500)
      BobDamping=2.250000
-     AttachmentClass=Class'EHWeaponsE.EHMinigunAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHMinigunAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=246,Y1=80,X2=332,Y2=106)
      ItemName="Enhanced Minigun"
@@ -279,7 +276,7 @@ defaultproperties
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.Minigun_1st'
      DrawScale=0.400000
-     Skins(0)=Texture'EHWeaponSkinsB.MinigunTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.MinigunTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

@@ -1,12 +1,12 @@
 class EHAssaultAttachment extends xWeaponAttachment;
 
-var byte OldSpawnHitCount;
+var byte                OldSpawnHitCount;
 var class<xEmitter>     mMuzFlashClass;
 var xEmitter            mMuzFlash3rd;
 var xEmitter            mMuzFlash3rdAlt;
-var bool bDualGun;
+var bool                bDualGun;
 var EHAssaultAttachment TwinGun;
-var float AimAlpha;
+var float               AimAlpha;
 //=============Tracers===========================
 var class<Emitter>      mTracerClass;
 var() editinline Emitter mTracer;
@@ -19,7 +19,7 @@ var float               mLastTracerTime;
 var float               mCurrentRoll;
 var float               mRollInc;
 var float               mRollUpdateTime;
-var vector	mOldHitLocation;
+var vector	            mOldHitLocation;
 //===============================================
 replication
 {
@@ -274,7 +274,7 @@ state TickTracer
 defaultproperties
 {
      mMuzFlashClass=Class'XEffects.AssaultMuzFlash3rd'
-     mTracerClass=Class'EHWeaponsE.EHNewTracer'
+     mTracerClass=Class'tk_EHWeapons.EHNewTracer'
      mTracerIntervalPrimary=0.120000
      mTracerPullback=50.000000
      mTracerSpeed=10000.000000
@@ -292,7 +292,7 @@ defaultproperties
      RelativeLocation=(X=-20.000000,Y=-5.000000)
      RelativeRotation=(Pitch=32768)
      DrawScale=0.300000
-     Skins(0)=Texture'EHWeaponSkinsB.AssaultRifleTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.AssaultRifleTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

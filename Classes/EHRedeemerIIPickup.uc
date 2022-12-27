@@ -76,7 +76,7 @@ defaultproperties
      PrecacheHUDTextures(3)=Texture'2K4Hud.ZoomFX.RDM_Altitude'
      bWeaponStay=False
      MaxDesireability=1.000000
-     InventoryType=Class'EHWeaponsE.EHRedeemerII'
+     InventoryType=Class'tk_EHWeapons.EHRedeemerII'
      RespawnTime=120.000000
      PickupMessage="You got the Enhanced Redeemer."
      PickupSound=Sound'PickupSounds.FlakCannonPickup'
@@ -85,8 +85,8 @@ defaultproperties
      StaticMesh=StaticMesh'WeaponStaticMesh.RedeemerPickup'
      bUseDynamicLights=True
      DrawScale=0.900000
-     Skins(0)=Texture'EHWeaponSkinsB.RedeemerTex02'
-     Skins(1)=Texture'EHWeaponSkinsB.Rmissle2'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.RedeemerTex02'
+     Skins(1)=Texture'tk_EHWeapons.EHWeaponSkinsB.Rmissle2'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

@@ -121,7 +121,7 @@ simulated function Explode(vector HitLocation,vector HitNormal)
         HurtRadius(Damage, DamageRadius, MyDamageType, MomentumTransfer, HitLocation );
     }
 
-   	PlaySound(SoundGroup'EHSounds.PlasmaHits',,2.5*TransientSoundVolume);
+   	PlaySound(SoundGroup'tk_EHWeapons.EHSounds.PlasmaHits',,2.5*TransientSoundVolume);
 	if ( EffectIsRelevant(Location,false) )
 	{
 	    Spawn(class'PlasmaFlashExplosion',,, Location);
@@ -201,14 +201,14 @@ defaultproperties
      ComboRadius=175.000000
      ComboMomentumTransfer=70000.000000
      ComboAmmoCost=1
-     ComboDamageType=Class'EHWeaponsE.DamTypeEHPlasmaBall'
+     ComboDamageType=Class'tk_EHWeapons.DamTypeEHPlasmaBall'
      Speed=4150.000000
      MaxSpeed=4150.000000
      bSwitchToZeroCollision=True
      Damage=20.000000
      DamageRadius=60.000000
      MomentumTransfer=7000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHPlasmaBall'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHPlasmaBall'
      ImpactSound=Sound'WeaponSounds.ShockRifle.ShockRifleExplosion'
      ExplosionDecal=Class'XEffects.LinkScorch'
      MaxEffectDistance=7000.000000

@@ -12,14 +12,14 @@ defaultproperties
 {
      AmmoAmount=70
      MaxDesireability=0.240000
-     InventoryType=Class'EHWeaponsE.EHLinkAmmo'
+     InventoryType=Class'tk_EHWeapons.EHLinkAmmo'
      PickupMessage="You picked up enhanced link charges."
      PickupSound=Sound'PickupSounds.LinkAmmoPickup'
      PickupForce="EHLinkAmmoPickup"
      DrawType=DT_StaticMesh
      StaticMesh=StaticMesh'WeaponStaticMesh.LinkAmmoPickup'
      bUseDynamicLights=True
-     Skins(0)=Texture'EHWeaponSkinsB.LinkAmmoTex2'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LinkAmmoTex2'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

@@ -25,13 +25,13 @@ simulated function UpdatePrecacheMaterials()
 defaultproperties
 {
      MaxDesireability=0.750000
-     InventoryType=Class'EHWeaponsE.EHSniperRifle'
+     InventoryType=Class'tk_EHWeapons.EHSniperRifle'
      PickupMessage="You got the Enhanced Sniper Rifle."
      PickupSound=Sound'NewWeaponSounds.NewSniper_load'
      PickupForce="Enhanced Sniper Rifle"
      DrawType=DT_StaticMesh
      StaticMesh=StaticMesh'NewWeaponStatic.newsniperpickup'
      DrawScale=0.210000
-     Skins(0)=Texture'EHWeaponSkinsB.Sniper12'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.Sniper12'
      AmbientGlow=12
 }

@@ -1,6 +1,3 @@
-//=============================================================================
-// EHTranslocator Beacon
-//=============================================================================
 class EHTransBeacon extends TranslocatorBeacon;
 
 var bool bCanHitOwner, bHitWater;
@@ -370,12 +367,12 @@ State MonitoringThrow
 defaultproperties
 {
      DisruptionThreshold=65
-     EHTransTrailClass=Class'EHWeaponsE.EHTransTrail'
-     EHTransFlareClass=Class'EHWeaponsE.EHTransFlareRed'
+     EHTransTrailClass=Class'tk_EHWeapons.EHTransTrail'
+     EHTransFlareClass=Class'tk_EHWeapons.EHTransFlareRed'
      Speed=1200.000000
      DamageRadius=100.000000
      MomentumTransfer=50000.000000
-     MyDamageType=Class'EHWeaponsE.DamTypeEHTeleFrag'
+     MyDamageType=Class'tk_EHWeapons.DamTypeEHTeleFrag'
      ImpactSound=ProceduralSound'WeaponSounds.PGrenFloor1.P1GrenFloor1'
      ExplosionDecal=Class'XEffects.RocketMark'
      DrawType=DT_StaticMesh
@@ -389,7 +386,7 @@ defaultproperties
      AmbientSound=Sound'WeaponSounds.Misc.redeemer_flight'
      DrawScale=0.350000
      PrePivot=(Z=25.000000)
-     Skins(0)=Texture'EHWeaponSkinsB.EHNEWTranslocatorPUCK'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHNEWTranslocatorPUCK'
      AmbientGlow=12
      bUnlit=False
      bShadowCast=True

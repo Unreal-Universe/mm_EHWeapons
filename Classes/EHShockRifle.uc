@@ -1,14 +1,11 @@
-//=============================================================================
-// EHShock Rifle
-//=============================================================================
 class EHShockRifle extends Weapon
-    config(user);
+    config(tk_EHWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
 
 #exec OBJ LOAD FILE=..\Sounds\WeaponSounds.uax
 #exec OBJ LOAD FILE=XEffectMat.utx
-#EXEC OBJ LOAD FILE=EHWeaponSkinsB.utx
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
 #exec OBJ LOAD FILE=UT2004Weapons.utx
 
 var EHShockProjectile ComboTarget;	// used by AI
@@ -207,8 +204,8 @@ function byte BestMode()
 defaultproperties
 {
      EffectColor=(B=255,R=192,A=128)
-     FireModeClass(0)=Class'EHWeaponsE.EHShockBeamFire'
-     FireModeClass(1)=Class'EHWeaponsE.EHShockProjFire'
+     FireModeClass(0)=Class'tk_EHWeapons.EHShockBeamFire'
+     FireModeClass(1)=Class'tk_EHWeapons.EHShockProjFire'
      SelectAnim="Pickup"
      PutDownAnim="PutDown"
      SelectSound=Sound'WeaponSounds.ShockRifle.SwitchToShockRifle'
@@ -236,11 +233,11 @@ defaultproperties
      CustomCrossHairScale=1.333000
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Cross2"
      InventoryGroup=4
-     PickupClass=Class'EHWeaponsE.EHShockRiflePickup'
+     PickupClass=Class'tk_EHWeapons.EHShockRiflePickup'
      PlayerViewOffset=(X=4.000000,Y=8.000000,Z=-2.000000)
      PlayerViewPivot=(Pitch=-1000)
      BobDamping=1.800000
-     AttachmentClass=Class'EHWeaponsE.EHShockAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHShockAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=250,Y1=110,X2=330,Y2=145)
      ItemName="Enhanced Shock Rifle"
@@ -254,7 +251,7 @@ defaultproperties
      bUseDynamicLights=True
      Mesh=SkeletalMesh'NewWeapons2004.ShockRifle'
      DrawScale=0.700000
-     Skins(0)=Texture'EHWeaponSkinsB.ShockRifleTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.ShockRifleTex02'
      Skins(1)=Shader'Plutonic_BP2_textures.Shaders.MikeDemo_crystal_FX'
      AmbientGlow=12
      bShadowCast=True

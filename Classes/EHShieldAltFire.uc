@@ -147,7 +147,7 @@ defaultproperties
      FireSound=SoundGroup'WeaponSounds.Translocator.TranslocatorModuleRegeneration'
      FireForce="TranslocatorModuleRegeneration"
      FireRate=1.000000
-     AmmoClass=Class'EHWeaponsE.EHShieldAmmo'
+     AmmoClass=Class'tk_EHWeapons.EHShieldAmmo'
      AmmoPerFire=15
      BotRefireRate=1.000000
 }

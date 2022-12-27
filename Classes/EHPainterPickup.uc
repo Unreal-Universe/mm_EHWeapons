@@ -19,7 +19,7 @@ function float GetRespawnTime()
 
 static function StaticPrecache(LevelInfo L)
 {
-	L.AddPrecacheMaterial(Material'EHWeaponSkinsB.IonBeamPanner');
+	L.AddPrecacheMaterial(Material'tk_EHWeapons.EHWeaponSkinsB.IonBeamPanner');
 	L.AddPrecacheMaterial(Material'XEffectMat.ion_grey');
 	L.AddPrecacheMaterial(Material'XEffectMat.Ion_beam');
 	L.AddPrecacheMaterial(Material'EpicParticles.Smokepuff2');
@@ -33,7 +33,7 @@ static function StaticPrecache(LevelInfo L)
 
 simulated function UpdatePrecacheMaterials()
 {
-	Level.AddPrecacheMaterial(Material'EHWeaponSkinsB.IonBeamPanner');
+	Level.AddPrecacheMaterial(Material'tk_EHWeapons.EHWeaponSkinsB.IonBeamPanner');
 	Level.AddPrecacheMaterial(Material'XEffectMat.ion_grey');
 	Level.AddPrecacheMaterial(Material'XEffectMat.Ion_beam');
 	Level.AddPrecacheMaterial(Material'EpicParticles.Smokepuff2');
@@ -50,7 +50,7 @@ defaultproperties
 {
      bWeaponStay=False
      MaxDesireability=1.500000
-     InventoryType=Class'EHWeaponsE.EHPainter'
+     InventoryType=Class'tk_EHWeapons.EHPainter'
      RespawnTime=120.000000
      PickupMessage="You got the Enhanced Ion Painter."
      PickupSound=Sound'PickupSounds.LinkGunPickup'
@@ -59,7 +59,7 @@ defaultproperties
      StaticMesh=StaticMesh'WeaponStaticMesh.PainterPickup'
      bUseDynamicLights=True
      DrawScale=0.600000
-     Skins(0)=Texture'EHWeaponSkinsB.PainterTex02'
+     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.PainterTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

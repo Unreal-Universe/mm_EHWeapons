@@ -1,8 +1,5 @@
-//=============================================================================
-// EHGrappleGun
-//=============================================================================
 class EHGrappleGun extends Weapon
-    config(user);
+    config(tk_EHWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
 
@@ -384,8 +381,8 @@ simulated event WeaponTick(float dt)
 
 defaultproperties
 {
-     FireModeClass(0)=Class'EHWeaponsE.EHGrappleFire'
-     FireModeClass(1)=Class'EHWeaponsE.EHGrappleFire'
+     FireModeClass(0)=Class'tk_EHWeapons.EHGrappleFire'
+     FireModeClass(1)=Class'tk_EHWeapons.EHGrappleFire'
      SelectAnim="Pickup"
      PutDownAnim="PutDown"
      IdleAnimRate=0.030000
@@ -407,11 +404,11 @@ defaultproperties
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Bracket1"
      InventoryGroup=10
      GroupOffset=1
-     PickupClass=Class'EHWeaponsE.EHGrappleGunPickup'
+     PickupClass=Class'tk_EHWeapons.EHGrappleGunPickup'
      PlayerViewOffset=(X=-5.000000,Y=-3.000000)
      PlayerViewPivot=(Yaw=500)
      BobDamping=1.575000
-     AttachmentClass=Class'EHWeaponsE.EHGrappleAttachment'
+     AttachmentClass=Class'tk_EHWeapons.EHGrappleAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=169,Y1=78,X2=244,Y2=124)
      ItemName="Enhanced Grapple Gun"
