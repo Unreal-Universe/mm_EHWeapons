@@ -1,5 +1,5 @@
 class EHSniperRifle extends Weapon
-    config(tk_EHWeaponsClient);
+    config(TKWeaponsClient);
 
 var transient float LastFOV;
 var() bool zoomed;

@@ -1,5 +1,5 @@
 class EHAssaultRifle extends Weapon
-    config(tk_EHWeaponsClient);
+    config(TKWeaponsClient);
 
 var float DualPickupTime;
 var EHAssaultAttachment OffhandActor;

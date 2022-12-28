@@ -1,5 +1,5 @@
 class EHAVRiL extends Weapon
-	config(tk_EHWeaponsClient);
+	config(TKWeaponsClient);
 
 #exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
 #exec OBJ LOAD FILE="..\Textures\VMWeaponsTX"

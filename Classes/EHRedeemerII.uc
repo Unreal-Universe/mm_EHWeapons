@@ -1,5 +1,5 @@
 class EHRedeemerII extends Weapon
-    config(tk_EHWeaponsClient);
+    config(TKWeaponsClient);
 
 function PrebeginPlay()
 {

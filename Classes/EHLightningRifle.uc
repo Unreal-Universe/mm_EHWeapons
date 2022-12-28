@@ -1,5 +1,5 @@
 class EHLightningRifle extends Weapon
-    config(tk_EHWeaponsClient);
+    config(TKWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
 #EXEC OBJ LOAD FILE=HudContent.utx

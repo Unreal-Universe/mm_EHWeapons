@@ -1,5 +1,5 @@
 class EHRocketLauncher extends Weapon
-    config(tk_EHWeaponsClient);
+    config(TKWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
 #exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"

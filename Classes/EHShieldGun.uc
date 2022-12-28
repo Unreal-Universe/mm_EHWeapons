@@ -1,5 +1,5 @@
 class EHShieldGun extends Weapon
-    config(tk_EHWeaponsClient)
+    config(TKWeaponsClient)
     HideDropDown;
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
