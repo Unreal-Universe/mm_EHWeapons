@@ -1,4 +1,4 @@
-class EHMinigunFire extends InstantFire;
+class EHMinigunFire extends tK_InstantFire;
 
 // For controlling the roll of the barrel
 var() float MaxRollSpeed;

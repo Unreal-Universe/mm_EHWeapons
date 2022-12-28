@@ -1,4 +1,4 @@
-class EHShieldFire extends WeaponFire;
+class EHShieldFire extends tK_WeaponFire;
 
 var class<DamageType> DamageType;       // weapon fire damage type (no projectile, so we put this here)
 var float ShieldRange;                  // from pawn centre

@@ -1,4 +1,4 @@
-class EHLightningFire extends InstantFire;
+class EHLightningFire extends tK_InstantFire;
 
 var() class<xEmitter> HitEmitterClass;
 var() class<xEmitter> SecHitEmitterClass;

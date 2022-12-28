@@ -1,4 +1,4 @@
-class EHSniperZoom extends WeaponFire;
+class EHSniperZoom extends tK_WeaponFire;
 
 defaultproperties
 {

@@ -1,4 +1,4 @@
-class EHBioChargedFire extends ProjectileFire;
+class EHBioChargedFire extends tK_ProjectileFire;
 
 var() float GoopUpRate;
 var() int MaxGoopLoad;

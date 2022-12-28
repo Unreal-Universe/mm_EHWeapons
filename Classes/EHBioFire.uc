@@ -1,4 +1,4 @@
-class EHBioFire extends ProjectileFire;
+class EHBioFire extends tK_ProjectileFire;
 
 function DrawMuzzleFlash(Canvas Canvas)
 {

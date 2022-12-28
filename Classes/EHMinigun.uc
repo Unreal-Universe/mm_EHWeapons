@@ -1,4 +1,4 @@
-class EHMinigun extends Weapon
+class EHMinigun extends tK_Weapon
     config(TKWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx

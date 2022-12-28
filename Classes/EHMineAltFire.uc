@@ -1,4 +1,4 @@
-class EHMineAltFire extends WeaponFire;
+class EHMineAltFire extends tK_WeaponFire;
 
 var ONSMineLayerTargetBeamEffect Beam;
 var vector EffectOffset;

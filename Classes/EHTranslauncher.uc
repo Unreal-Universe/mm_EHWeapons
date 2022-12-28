@@ -1,4 +1,4 @@
-class EHTransLauncher extends Weapon
+class EHTransLauncher extends tK_Weapon
     config(TKWeaponsClient)
     HideDropDown;
 

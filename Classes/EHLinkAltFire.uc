@@ -1,4 +1,4 @@
-class EHLinkAltFire extends ProjectileFire;
+class EHLinkAltFire extends tK_ProjectileFire;
 
 var sound EHLinkedFireSound;
 var string EHLinkedFireForce;  // jdf

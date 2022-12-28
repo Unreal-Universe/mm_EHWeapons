@@ -1,4 +1,4 @@
-class EHONSPainterFire extends PainterFire;
+class EHONSPainterFire extends tK_PainterFire;
 
 var class<EHONSAutoBomber> BomberClass, MainBomberClass;
 var float MinZDist, MaxZDist;

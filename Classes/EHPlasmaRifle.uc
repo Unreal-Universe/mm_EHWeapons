@@ -1,4 +1,4 @@
-class EHPlasmaRifle extends Weapon
+class EHPlasmaRifle extends tK_Weapon
     config(TKWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx

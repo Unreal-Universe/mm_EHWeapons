@@ -1,4 +1,4 @@
-class EHMineFire extends BioFire;
+class EHMineFire extends tK_BioFire;
 
 var class<Projectile> RedMineClass;
 var class<Projectile> BlueMineClass;

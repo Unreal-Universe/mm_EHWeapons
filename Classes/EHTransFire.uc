@@ -1,4 +1,4 @@
-class EHTransFire extends ProjectileFire;
+class EHTransFire extends tK_ProjectileFire;
 
 var() Sound TransFireSound;
 var() Sound RecallFireSound;

@@ -1,4 +1,4 @@
-class EHTransRecall extends WeaponFire;
+class EHTransRecall extends tK_WeaponFire;
 
 var() Sound TransFailedSound;
 var bool bGibMe;

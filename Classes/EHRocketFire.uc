@@ -1,4 +1,4 @@
-class EHRocketFire extends ProjectileFire;
+class EHRocketFire extends tK_ProjectileFire;
 
 function PlayFireEnd()
 {

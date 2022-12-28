@@ -1,4 +1,4 @@
-class EHLightningRifle extends Weapon
+class EHLightningRifle extends tK_Weapon
     config(TKWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
@@ -352,7 +352,7 @@ defaultproperties
      RechargeOrigin=(X=600.000000,Y=330.000000)
      RechargeSize=(X=10.000000,Y=-180.000000)
      FireModeClass(0)=Class'tk_EHWeapons.EHLightningFire'
-     FireModeClass(1)=Class'XWeapons.SniperZoom'
+     FireModeClass(1)=Class'tk_BaseW.tK_SniperZoom'
      SelectAnim="Pickup"
      PutDownAnim="PutDown"
      SelectAnimRate=1.250000

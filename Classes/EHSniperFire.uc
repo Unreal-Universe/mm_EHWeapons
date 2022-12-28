@@ -1,4 +1,4 @@
-class EHSniperFire extends InstantFire;
+class EHSniperFire extends tK_InstantFire;
 
 var() float HeadShotDamageMult;
 var() class<DamageType> DamageTypeHeadShot;

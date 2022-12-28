@@ -1,4 +1,4 @@
-class EHAssaultGrenade extends ProjectileFire;
+class EHAssaultGrenade extends tK_ProjectileFire;
 
 #exec OBJ LOAD FILE=..\Sounds\NewWeaponSounds.uax
 

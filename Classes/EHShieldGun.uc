@@ -1,4 +1,4 @@
-class EHShieldGun extends Weapon
+class EHShieldGun extends tK_Weapon
     config(TKWeaponsClient)
     HideDropDown;
 

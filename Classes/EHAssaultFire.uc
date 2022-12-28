@@ -1,4 +1,4 @@
-class EHAssaultFire extends InstantFire;
+class EHAssaultFire extends tK_InstantFire;
 
 var float LastFireTime;
 var float ClickTime;

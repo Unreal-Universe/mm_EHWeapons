@@ -1,4 +1,4 @@
-class EHONSPainter extends Painter;
+class EHONSPainter extends tK_Painter;
 
 var float MinZDist;
 

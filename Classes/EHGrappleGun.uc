@@ -1,4 +1,4 @@
-class EHGrappleGun extends Weapon
+class EHGrappleGun extends tK_Weapon
     config(TKWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx

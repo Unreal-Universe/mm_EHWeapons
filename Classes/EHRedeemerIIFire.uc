@@ -1,4 +1,4 @@
-class EHRedeemerIIFire extends ProjectileFire;
+class EHRedeemerIIFire extends tK_ProjectileFire;
 
 function Projectile SpawnProjectile(Vector Start, Rotator Dir)
 {

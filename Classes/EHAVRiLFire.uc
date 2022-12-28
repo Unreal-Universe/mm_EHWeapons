@@ -1,4 +1,4 @@
-class EHAVRiLFire extends ProjectileFire;
+class EHAVRiLFire extends tK_ProjectileFire;
 
 var vector  KickMomentum;
 var float ReloadAnimDelay;

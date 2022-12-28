@@ -1,4 +1,4 @@
-class EHAssaultRifle extends Weapon
+class EHAssaultRifle extends tK_Weapon
     config(TKWeaponsClient);
 
 var float DualPickupTime;

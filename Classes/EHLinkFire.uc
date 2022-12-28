@@ -1,4 +1,4 @@
-class EHLinkFire extends WeaponFire;
+class EHLinkFire extends tK_WeaponFire;
 
 var EHLinkBeamEffect			Beam;
 var class<EHLinkBeamEffect>	BeamEffectClass;

@@ -1,4 +1,4 @@
-class EHAVRiL extends Weapon
+class EHAVRiL extends tK_Weapon
 	config(TKWeaponsClient);
 
 #exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"

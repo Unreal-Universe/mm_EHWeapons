@@ -1,4 +1,4 @@
-class EHPainterZoom extends WeaponFire;
+class EHPainterZoom extends tK_WeaponFire;
 
 defaultproperties
 {

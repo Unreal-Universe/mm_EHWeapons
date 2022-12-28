@@ -1,4 +1,4 @@
-class EHShieldAltFire extends WeaponFire;
+class EHShieldAltFire extends tK_WeaponFire;
 
 var EHShieldEffect EHShieldEffect;
 var() float AmmoRegenTime;

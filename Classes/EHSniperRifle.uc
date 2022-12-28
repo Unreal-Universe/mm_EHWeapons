@@ -1,4 +1,4 @@
-class EHSniperRifle extends Weapon
+class EHSniperRifle extends tK_Weapon
     config(TKWeaponsClient);
 
 var transient float LastFOV;
@@ -271,7 +271,7 @@ defaultproperties
 {
      ChargeColor=(B=255,G=255,R=255,A=255)
      FireModeClass(0)=Class'tk_EHWeapons.EHSniperFire'
-     FireModeClass(1)=Class'XWeapons.SniperZoom'
+     FireModeClass(1)=Class'tk_BaseW.tK_SniperZoom'
      SelectAnim="Pickup"
      PutDownAnim="PutDown"
      SelectAnimRate=0.750000

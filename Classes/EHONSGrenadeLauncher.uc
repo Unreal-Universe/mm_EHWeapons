@@ -1,4 +1,4 @@
-class EHONSGrenadeLauncher extends Weapon
+class EHONSGrenadeLauncher extends tK_Weapon
 	config(TKWeaponsClient);
 
 #exec OBJ LOAD FILE=HudContent.utx

@@ -1,4 +1,4 @@
-class EHRocketMultiFire extends ProjectileFire;
+class EHRocketMultiFire extends tK_ProjectileFire;
 
 var() float TightSpread, LooseSpread;
 var byte FlockIndex;

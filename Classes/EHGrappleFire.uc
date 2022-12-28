@@ -1,4 +1,4 @@
-class EHGrappleFire extends WeaponFire;
+class EHGrappleFire extends tK_WeaponFire;
 
 var EHGrappleBeamEffect			Beam;
 var class<EHGrappleBeamEffect>	BeamEffectClass;

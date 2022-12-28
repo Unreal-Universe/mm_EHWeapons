@@ -1,4 +1,4 @@
-class EHRedeemerII extends Weapon
+class EHRedeemerII extends tK_Weapon
     config(TKWeaponsClient);
 
 function PrebeginPlay()
@@ -79,7 +79,7 @@ defaultproperties
      CurrentRating=1.500000
      bNotInDemo=True
      Description="The first time you witness this miniature nuclear device in action, you'll agree it is the most powerful weapon in the Tournament.|Launch a FAST-moving and utterly devastating missile with the primary fire; but make sure you're out of the RedeemerII's massive blast radius before it impacts. The secondary fire allows you to guide the nuke yourself with a rocket's-eye view.||Keep in mind, however, that you are vulnerable to attack when steering the RedeemerII's projectile. Due to the extreme bulkiness of its ammo, the Redeemer is exhausted after a single shot."
-     DemoReplacement=Class'XWeapons.RocketLauncher'
+     DemoReplacement=Class'tk_BaseW.tK_RocketLauncher'
      DisplayFOV=60.000000
      Priority=27
      SmallViewOffset=(X=26.000000,Y=6.000000,Z=-34.000000)

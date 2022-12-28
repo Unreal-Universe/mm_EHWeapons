@@ -1,4 +1,4 @@
-class EHPainter extends Weapon
+class EHPainter extends tK_Weapon
     config(TKWeaponsClient);
 
 #exec OBJ LOAD FILE=XGameShaders.utx
@@ -324,7 +324,7 @@ defaultproperties
      RechargeOrigin=(X=600.000000,Y=330.000000)
      RechargeSize=(X=10.000000,Y=-180.000000)
      FireModeClass(0)=Class'tk_EHWeapons.EHPainterFire'
-     FireModeClass(1)=Class'XWeapons.PainterZoom'
+     FireModeClass(1)=Class'tk_BaseW.tK_PainterZoom'
      PutDownAnim="PutDown"
      SelectSound=Sound'WeaponSounds.LinkGun.SwitchToLinkGun'
      SelectForce="SwitchToLinkGun"
@@ -332,7 +332,7 @@ defaultproperties
      CurrentRating=1.000000
      bNotInDemo=True
      Description="The Enhanced Ion Painter seems innocuous enough at first glance, emitting a harmless low-power laser beam when the primary firing mode is engaged. Several seconds later a multi-gigawatt orbital ion cannon fires on the target, neutralizing any combatants in the vicinity.||The Ion Painter is a remote targeting device used to orient and fire the VAPOR Ion Cannon. The Ion Painter offers increased targeting accuracy via its telescopic sight, easily activated by the secondary fire mode of the weapon.|Once the Ion Painter has been used to designate a target it is highly recommended that the user put considerable distance between themselves and the weapon's area of effect."
-     DemoReplacement=Class'XWeapons.SniperRifle'
+     DemoReplacement=Class'tk_BaseW.tK_SniperRifle'
      EffectOffset=(X=100.000000,Y=25.000000,Z=-3.000000)
      DisplayFOV=60.000000
      Priority=105

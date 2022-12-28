@@ -1,4 +1,4 @@
-class EHONSGrenadeFire extends BioFire;
+class EHONSGrenadeFire extends tK_BioFire;
 
 simulated function bool AllowFire()
 {

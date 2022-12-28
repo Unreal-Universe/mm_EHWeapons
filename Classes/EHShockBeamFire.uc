@@ -1,4 +1,4 @@
-class EHShockBeamFire extends InstantFire;
+class EHShockBeamFire extends tK_InstantFire;
 
 var() class<EHShockBeamEffect> BeamEffectClass;
 

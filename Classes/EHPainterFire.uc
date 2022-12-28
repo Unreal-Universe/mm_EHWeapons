@@ -1,4 +1,4 @@
-class EHPainterFire extends WeaponFire;
+class EHPainterFire extends tK_WeaponFire;
 
 var EHPainterBeamEffect EHBeam;
 var float UpTime;

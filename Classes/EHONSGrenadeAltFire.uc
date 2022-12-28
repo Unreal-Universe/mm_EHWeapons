@@ -1,4 +1,4 @@
-class EHONSGrenadeAltFire extends WeaponFire;
+class EHONSGrenadeAltFire extends tK_WeaponFire;
 
 var EHONSGrenadeLauncher Gun;
 

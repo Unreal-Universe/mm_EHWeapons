@@ -1,4 +1,4 @@
-class EHAVRiLAltFire extends WeaponFire;
+class EHAVRiLAltFire extends tK_WeaponFire;
 
 var EHAVRiL Gun;
 var float ZoomLevel;

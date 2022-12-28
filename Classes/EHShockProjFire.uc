@@ -1,4 +1,4 @@
-class EHShockProjFire extends ProjectileFire;
+class EHShockProjFire extends tK_ProjectileFire;
 
 function InitEffects()
 {

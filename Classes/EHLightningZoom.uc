@@ -1,4 +1,4 @@
-class EHLightningZoom extends WeaponFire;
+class EHLightningZoom extends tK_WeaponFire;
 
 defaultproperties
 {

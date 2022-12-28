@@ -1,4 +1,4 @@
-class EHFlakFire extends ProjectileFire;
+class EHFlakFire extends tK_ProjectileFire;
 
 function InitEffects()
 {

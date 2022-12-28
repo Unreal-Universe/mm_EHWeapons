@@ -1,4 +1,4 @@
-class EHShockRifle extends Weapon
+class EHShockRifle extends tK_Weapon
     config(TKWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx

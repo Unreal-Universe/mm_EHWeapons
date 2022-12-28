@@ -1,4 +1,4 @@
-class EHFlakCannon extends Weapon
+class EHFlakCannon extends tK_Weapon
     config(TKWeaponsClient);
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx

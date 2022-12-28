@@ -1,4 +1,4 @@
-class EHMineLauncher extends Weapon
+class EHMineLauncher extends tK_Weapon
 	config(TKWeaponsClient);
 
 #exec OBJ LOAD FILE=HudContent.utx
