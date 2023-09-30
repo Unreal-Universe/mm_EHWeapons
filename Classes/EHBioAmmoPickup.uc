@@ -19,7 +19,7 @@ defaultproperties
 {
      AmmoAmount=20
      MaxDesireability=0.320000
-     InventoryType=Class'tk_EHWeapons.EHBioAmmo'
+     InventoryType=Class'mm_EHWeapons.EHBioAmmo'
      PickupMessage="You picked up some Enhanced Bio-Rifle ammo"
      PickupSound=Sound'PickupSounds.FlakAmmoPickup'
      PickupForce="FlakAmmoPickup"
@@ -34,7 +34,7 @@ defaultproperties
      bUseDynamicLights=True
      bDynamicLight=True
      PrePivot=(Z=10.500000)
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.BioRiflePickup2'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.BioRiflePickup2'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

@@ -207,7 +207,7 @@ defaultproperties
      bReplicateInstigator=True
      RemoteRole=ROLE_SimulatedProxy
      AmbientSound=Sound'WeaponSounds.TAGRifle.TAGFireA'
-     Skins(0)=FinalBlend'tk_EHWeapons.EHWeaponSkinsB.PainterFinalBeam'
+     Skins(0)=FinalBlend'mm_EHWeapons.EHWeaponSkinsB.PainterFinalBeam'
      Style=STY_Additive
      SoundVolume=45
      SoundRadius=120.000000

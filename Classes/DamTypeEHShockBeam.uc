@@ -8,7 +8,7 @@ static function GetHitEffects(out class<xEmitter> HitEffects[4], int VictemHealt
 
 defaultproperties
 {
-     WeaponClass=Class'tk_EHWeapons.EHShockRifle'
+     WeaponClass=Class'mm_EHWeapons.EHShockRifle'
      DeathString="%o was fatally enlightened by %k's shock beam."
      FemaleSuicide="%o somehow managed to shoot herself with the shock rifle."
      MaleSuicide="%o somehow managed to shoot himself with the shock rifle."

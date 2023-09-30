@@ -186,8 +186,8 @@ function byte BestMode()
 
 defaultproperties
 {
-     FireModeClass(0)=Class'tk_EHWeapons.EHPlasmaFire'
-     FireModeClass(1)=Class'tk_EHWeapons.EHPlasmaAltFire'
+     FireModeClass(0)=Class'mm_EHWeapons.EHPlasmaFire'
+     FireModeClass(1)=Class'mm_EHWeapons.EHPlasmaAltFire'
      PutDownAnim="PutDown"
      SelectSound=Sound'PickupSounds.ShockRiflePickup'
      SelectForce="SwitchToShockRifle"
@@ -206,11 +206,11 @@ defaultproperties
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Bracket1"
      InventoryGroup=5
      GroupOffset=1
-     PickupClass=Class'tk_EHWeapons.EHPlasmaRiflePickup'
+     PickupClass=Class'mm_EHWeapons.EHPlasmaRiflePickup'
      PlayerViewOffset=(X=-2.000000,Y=-2.000000,Z=-3.000000)
      PlayerViewPivot=(Yaw=500)
      BobDamping=1.700000
-     AttachmentClass=Class'tk_EHWeapons.EHPlasmaRifleAttachment'
+     AttachmentClass=Class'mm_EHWeapons.EHPlasmaRifleAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=169,Y1=78,X2=244,Y2=124)
      ItemName="Enhanced Plasma Rifle"
@@ -223,7 +223,7 @@ defaultproperties
      LightPeriod=3
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.LinkGun_1st'
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LinkTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.LinkTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

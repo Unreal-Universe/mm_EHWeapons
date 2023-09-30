@@ -185,8 +185,8 @@ defaultproperties
 {
      MaxGrenades=8
      FadedColor=(B=128,G=128,R=128,A=128)
-     FireModeClass(0)=Class'tk_EHWeapons.EHONSGrenadeFire'
-     FireModeClass(1)=Class'tk_EHWeapons.EHONSGrenadeAltFire'
+     FireModeClass(0)=Class'mm_EHWeapons.EHONSGrenadeFire'
+     FireModeClass(1)=Class'mm_EHWeapons.EHONSGrenadeAltFire'
      PutDownAnim="PutDown"
      SelectAnimRate=3.100000
      PutDownAnimRate=2.800000
@@ -204,16 +204,16 @@ defaultproperties
      CustomCrossHairTextureName="ONSInterface-TX.grenadeLauncherReticle"
      InventoryGroup=7
      GroupOffset=1
-     PickupClass=Class'tk_EHWeapons.EHONSGrenadePickup'
+     PickupClass=Class'mm_EHWeapons.EHONSGrenadePickup'
      PlayerViewOffset=(X=150.000000,Y=40.000000,Z=-46.000000)
      BobDamping=2.200000
-     AttachmentClass=Class'tk_EHWeapons.EHONSGrenadeAttachment'
+     AttachmentClass=Class'mm_EHWeapons.EHONSGrenadeAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=434,Y1=253,X2=506,Y2=292)
      ItemName="Enhanced Grenade Launcher"
      bUseDynamicLights=True
      Mesh=SkeletalMesh'ONSWeapons-A.GrenadeLauncher_1st'
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHGrenadeLauncherTEX'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.EHGrenadeLauncherTEX'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

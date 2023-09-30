@@ -31,11 +31,11 @@ function projectile SpawnProjectile(Vector Start, Rotator Dir)
     if (EHTransLauncher(Weapon).EHTransBeacon == None)
     {
 		if ( (Instigator == None) || (Instigator.PlayerReplicationInfo == None) || (Instigator.PlayerReplicationInfo.Team == None) )
-			EHTransBeacon = Weapon.Spawn(class'tk_EHWeapons.EHTransBeacon',,, Start, Dir);
+			EHTransBeacon = Weapon.Spawn(class'mm_EHWeapons.EHTransBeacon',,, Start, Dir);
 		else if ( Instigator.PlayerReplicationInfo.Team.TeamIndex == 0 )
-			EHTransBeacon = Weapon.Spawn(class'tk_EHWeapons.EHRedBeacon',,, Start, Dir);
+			EHTransBeacon = Weapon.Spawn(class'mm_EHWeapons.EHRedBeacon',,, Start, Dir);
 		else
-			EHTransBeacon = Weapon.Spawn(class'tk_EHWeapons.EHBlueBeacon',,, Start, Dir);
+			EHTransBeacon = Weapon.Spawn(class'mm_EHWeapons.EHBlueBeacon',,, Start, Dir);
         EHTransLauncher(Weapon).EHTransBeacon = EHTransBeacon;
         Weapon.PlaySound(TransFireSound,SLOT_Interact,,,,,false);
     }
@@ -70,6 +70,6 @@ defaultproperties
      FireAnimRate=1.500000
      FireRate=0.250000
      AmmoPerFire=1
-     ProjectileClass=Class'tk_EHWeapons.EHTransBeacon'
+     ProjectileClass=Class'mm_EHWeapons.EHTransBeacon'
      BotRefireRate=0.300000
 }

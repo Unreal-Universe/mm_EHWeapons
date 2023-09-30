@@ -38,7 +38,7 @@ defaultproperties
      bUseDynamicLights=True
      Mesh=SkeletalMesh'ONSWeapons-A.GrenadeLauncher_3rd'
      DrawScale=0.180000
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHGrenadeLauncherTEX'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.EHGrenadeLauncherTEX'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

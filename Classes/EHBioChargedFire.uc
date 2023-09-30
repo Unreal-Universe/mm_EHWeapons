@@ -55,7 +55,7 @@ state Hold
     {
         GoopLoad = 0;
         SetTimer(GoopUpRate, true);
-        Weapon.PlayOwnedSound(Sound'tk_EHWeapons.EHSounds.EHbiorifle_charge',SLOT_Interact,TransientSoundVolume);
+        Weapon.PlayOwnedSound(Sound'mm_EHWeapons.EHSounds.EHbiorifle_charge',SLOT_Interact,TransientSoundVolume);
         Weapon.ClientPlayForceFeedback( "EHBioRiflePowerUp" );  // jdf
         Timer();
     }
@@ -139,14 +139,14 @@ defaultproperties
      FireSound=SoundGroup'WeaponSounds.BioRifle.BioRifleFire'
      FireForce="EHBioRifleFire"
      FireRate=0.330000
-     AmmoClass=Class'tk_EHWeapons.EHBioAmmo'
+     AmmoClass=Class'mm_EHWeapons.EHBioAmmo'
      ShakeRotMag=(X=100.000000)
      ShakeRotRate=(X=1000.000000)
      ShakeRotTime=2.000000
      ShakeOffsetMag=(X=-4.000000,Z=-4.000000)
      ShakeOffsetRate=(X=1000.000000,Z=1000.000000)
      ShakeOffsetTime=2.000000
-     ProjectileClass=Class'tk_EHWeapons.EHBioGlob'
+     ProjectileClass=Class'mm_EHWeapons.EHBioGlob'
      BotRefireRate=0.500000
      WarnTargetPct=0.800000
 }

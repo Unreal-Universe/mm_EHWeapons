@@ -20,7 +20,7 @@ simulated function UpdatePrecacheMaterials()
 defaultproperties
 {
      MaxDesireability=0.730000
-     InventoryType=Class'tk_EHWeapons.EHMinigun'
+     InventoryType=Class'mm_EHWeapons.EHMinigun'
      PickupMessage="You got the Enhanced Minigun."
      PickupSound=Sound'PickupSounds.MinigunPickup'
      PickupForce="EHMinigunPickup"
@@ -28,7 +28,7 @@ defaultproperties
      StaticMesh=StaticMesh'WeaponStaticMesh.MinigunPickup'
      bUseDynamicLights=True
      DrawScale=0.500000
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.MinigunTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.MinigunTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

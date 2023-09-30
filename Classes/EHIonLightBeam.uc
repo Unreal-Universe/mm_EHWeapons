@@ -11,6 +11,6 @@ defaultproperties
      mAttenuate=False
      mAttenKa=0.000000
      LifeSpan=4.000000
-     Skins(0)=TexPanner'tk_EHWeapons.EHWeaponSkinsB.IonBeamPanner'
+     Skins(0)=TexPanner'mm_EHWeapons.EHWeaponSkinsB.IonBeamPanner'
      Style=STY_Additive
 }

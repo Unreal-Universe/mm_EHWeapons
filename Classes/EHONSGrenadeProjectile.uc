@@ -37,7 +37,7 @@ simulated function Destroyed()
 			Spawn(ExplosionDecal,self,, Location, rotator(vect(0,0,-1)));
 			ShakeView();    //ShakeViewcode//
 		}
-		PlaySound(Sound'tk_EHWeapons.EHSounds.GrenadeExplosion',,2.5*TransientSoundVolume);
+		PlaySound(Sound'mm_EHWeapons.EHSounds.GrenadeExplosion',,2.5*TransientSoundVolume);
 	}
     if ( EHONSGrenadeLauncher(Owner) != None)
     	EHONSGrenadeLauncher(Owner).CurrentGrenades--;
@@ -275,7 +275,7 @@ defaultproperties
      Damage=25.000000
      DamageRadius=175.000000
      MomentumTransfer=20000.000000
-     MyDamageType=Class'tk_EHWeapons.DamTypeEHONSGrenade'
+     MyDamageType=Class'mm_EHWeapons.DamTypeEHONSGrenade'
      ImpactSound=ProceduralSound'WeaponSounds.PGrenFloor1.P1GrenFloor1'
      ExplosionDecal=Class'Onslaught.ONSRocketScorch'
      DrawType=DT_StaticMesh
@@ -287,7 +287,7 @@ defaultproperties
      Physics=PHYS_Falling
      LifeSpan=0.000000
      DrawScale=0.075000
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHGrenadeTex'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.EHGrenadeTex'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

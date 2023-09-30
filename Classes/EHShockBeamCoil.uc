@@ -19,5 +19,5 @@ defaultproperties
      bHighDetail=True
      LifeSpan=0.750000
      DrawScale3D=(X=3.000000,Y=15.000000,Z=15.000000)
-     Skins(0)=Shader'tk_EHWeapons.EHWeaponSkinsB.CoilShad'
+     Skins(0)=Shader'mm_EHWeapons.EHWeaponSkinsB.CoilShad'
 }

@@ -55,10 +55,10 @@ function PlayFiring()
 
 defaultproperties
 {
-     RedMineClass=Class'tk_EHWeapons.EHMineProjectileRED'
-     BlueMineClass=Class'tk_EHWeapons.EHMineProjectileBLUE'
+     RedMineClass=Class'mm_EHWeapons.EHMineProjectileRED'
+     BlueMineClass=Class'mm_EHWeapons.EHMineProjectileBLUE'
      FireSound=Sound'ONSVehicleSounds-S.SpiderMines.SpiderMineFire01'
      FireRate=1.100000
-     AmmoClass=Class'tk_EHWeapons.EHMineAmmo'
-     ProjectileClass=Class'tk_EHWeapons.EHMineProjectile'
+     AmmoClass=Class'mm_EHWeapons.EHMineAmmo'
+     ProjectileClass=Class'mm_EHWeapons.EHMineProjectile'
 }

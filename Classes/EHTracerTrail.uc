@@ -23,6 +23,6 @@ defaultproperties
      Physics=PHYS_Trailer
      RemoteRole=ROLE_SimulatedProxy
      LifeSpan=4.900000
-     Skins(0)=TexPanner'tk_EHWeapons.EHWeaponSkinsB.TrailP'
+     Skins(0)=TexPanner'mm_EHWeapons.EHWeaponSkinsB.TrailP'
      Style=STY_Translucent
 }

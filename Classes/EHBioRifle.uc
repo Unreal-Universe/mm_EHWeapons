@@ -105,8 +105,8 @@ simulated function bool HasAmmo()
 
 defaultproperties
 {
-     FireModeClass(0)=Class'tk_EHWeapons.EHBioFire'
-     FireModeClass(1)=Class'tk_EHWeapons.EHBioChargedFire'
+     FireModeClass(0)=Class'mm_EHWeapons.EHBioFire'
+     FireModeClass(1)=Class'mm_EHWeapons.EHBioChargedFire'
      PutDownAnim="PutDown"
      SelectSound=Sound'WeaponSounds.FlakCannon.SwitchToFlakCannon'
      SelectForce="SwitchToFlakCannon"
@@ -124,10 +124,10 @@ defaultproperties
      CustomCrossHairScale=1.333000
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Triad1"
      InventoryGroup=3
-     PickupClass=Class'tk_EHWeapons.EHBioRiflePickup'
+     PickupClass=Class'mm_EHWeapons.EHBioRiflePickup'
      PlayerViewOffset=(X=7.000000,Y=3.000000)
      BobDamping=2.200000
-     AttachmentClass=Class'tk_EHWeapons.EHBioAttachment'
+     AttachmentClass=Class'mm_EHWeapons.EHBioAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=179,Y1=127,X2=241,Y2=175)
      ItemName="Enhanced Bio-Rifle"
@@ -140,7 +140,7 @@ defaultproperties
      bUseDynamicLights=True
      bDynamicLight=True
      Mesh=SkeletalMesh'Weapons.BioRifle_1st'
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.BioRifleTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.BioRifleTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

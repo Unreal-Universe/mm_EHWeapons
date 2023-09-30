@@ -13,7 +13,7 @@ static function GetHitEffects(out class<xEmitter> HitEffects[4], int VictimHealt
 
 defaultproperties
 {
-     WeaponClass=Class'tk_EHWeapons.EHONSPainter'
+     WeaponClass=Class'mm_EHWeapons.EHONSPainter'
      DeathString="%k blew %o away with an enhanced air strike."
      FemaleSuicide="%o blew herself away with an enhanced air strike."
      MaleSuicide="%o blew himself away with an enhanced air strike."

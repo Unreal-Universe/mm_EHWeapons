@@ -133,7 +133,7 @@ defaultproperties
      MaxSpeed=2700.000000
      Damage=5.000000
      MomentumTransfer=1000.000000
-     MyDamageType=Class'tk_EHWeapons.DamTypeEHGrenadeChunk'
+     MyDamageType=Class'mm_EHWeapons.DamTypeEHGrenadeChunk'
      LightType=LT_SubtlePulse
      LightEffect=LE_QuadraticNonIncidence
      LightHue=255

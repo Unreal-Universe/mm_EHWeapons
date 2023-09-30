@@ -2,5 +2,5 @@ class EHRedBeacon extends EHTransBeacon;
 
 defaultproperties
 {
-     EHTransTrailClass=Class'tk_EHWeapons.EHTransTrailRed'
+     EHTransTrailClass=Class'mm_EHWeapons.EHTransTrailRed'
 }

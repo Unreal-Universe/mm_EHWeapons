@@ -381,8 +381,8 @@ simulated event WeaponTick(float dt)
 
 defaultproperties
 {
-     FireModeClass(0)=Class'tk_EHWeapons.EHLinkAltFire'
-     FireModeClass(1)=Class'tk_EHWeapons.EHLinkFire'
+     FireModeClass(0)=Class'mm_EHWeapons.EHLinkAltFire'
+     FireModeClass(1)=Class'mm_EHWeapons.EHLinkFire'
      PutDownAnim="PutDown"
      IdleAnimRate=0.030000
      SelectSound=Sound'NewWeaponSounds.NewLinkSelect'
@@ -410,17 +410,17 @@ defaultproperties
      CustomCrossHairColor=(B=128,R=128)
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Bracket1"
      InventoryGroup=5
-     PickupClass=Class'tk_EHWeapons.EHLinkGunPickup'
+     PickupClass=Class'mm_EHWeapons.EHLinkGunPickup'
      PlayerViewOffset=(X=-5.000000,Y=-3.000000)
      PlayerViewPivot=(Yaw=500)
      BobDamping=1.575000
-     AttachmentClass=Class'tk_EHWeapons.EHLinkAttachment'
+     AttachmentClass=Class'mm_EHWeapons.EHLinkAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=169,Y1=78,X2=244,Y2=124)
      ItemName="Enhanced Link Gun"
      bUseDynamicLights=True
      Mesh=SkeletalMesh'NewWeapons2004.FatLinkGun'
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LinkGunTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.LinkGunTex02'
      Skins(1)=Shader'UT2004Weapons.Shaders.PowerPulseShader'
      Skins(2)=Shader'AWGlobal.Shaders.OceanGlass'
      AmbientGlow=12

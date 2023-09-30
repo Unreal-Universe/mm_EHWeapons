@@ -5,9 +5,9 @@ function Projectile SpawnProjectile(Vector Start, Rotator Dir)
     local EHRedeemerIIWarhead Warhead;
 	local PlayerController Possessor;
 
-    Warhead = Weapon.Spawn(class'tk_EHWeapons.EHRedeemerIIWarhead', Instigator,, Start, Dir);
+    Warhead = Weapon.Spawn(class'mm_EHWeapons.EHRedeemerIIWarhead', Instigator,, Start, Dir);
     if (Warhead == None)
-		Warhead = Weapon.Spawn(class'tk_EHWeapons.EHRedeemerIIWarhead', Instigator,, Instigator.Location, Dir);
+		Warhead = Weapon.Spawn(class'mm_EHWeapons.EHRedeemerIIWarhead', Instigator,, Instigator.Location, Dir);
     if (Warhead != None)
     {
 		Warhead.OldPawn = Instigator;

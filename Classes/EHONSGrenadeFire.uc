@@ -29,6 +29,6 @@ defaultproperties
      bRecommendSplashDamage=False
      FireSound=Sound'NewWeaponSounds.NewGrenadeShoot'
      FireRate=0.650000
-     AmmoClass=Class'tk_EHWeapons.EHONSGrenadeAmmo'
-     ProjectileClass=Class'tk_EHWeapons.EHONSGrenadeProjectile'
+     AmmoClass=Class'mm_EHWeapons.EHONSGrenadeAmmo'
+     ProjectileClass=Class'mm_EHWeapons.EHONSGrenadeProjectile'
 }

@@ -1,6 +1,6 @@
 class EHLinkMuzFlashBeam1st extends xEmitter;
 
-#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="mm_EHWeapons"
 
 event Trigger( Actor Other, Pawn EventInstigator )
 {
@@ -28,6 +28,6 @@ defaultproperties
      mNumTileRows=2
      bHidden=True
      bOnlyOwnerSee=True
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzGreen'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzGreen'
      Style=STY_Additive
 }

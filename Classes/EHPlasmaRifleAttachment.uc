@@ -40,7 +40,7 @@ simulated event ThirdPersonEffects()
 
 defaultproperties
 {
-     MuzFlashClass=Class'tk_EHWeapons.PlasmaMuzFlash3rd'
+     MuzFlashClass=Class'mm_EHWeapons.PlasmaMuzFlash3rd'
      LightType=LT_Steady
      LightEffect=LE_NonIncidence
      LightHue=200
@@ -52,7 +52,7 @@ defaultproperties
      Mesh=SkeletalMesh'Weapons.LinkGun_3rd'
      RelativeLocation=(X=6.000000,Y=-5.000000)
      RelativeRotation=(Pitch=1024)
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LinkTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.LinkTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

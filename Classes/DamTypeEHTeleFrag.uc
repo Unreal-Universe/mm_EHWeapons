@@ -3,7 +3,7 @@ class DamTypeEHTeleFrag extends WeaponDamageType
 
 defaultproperties
 {
-     WeaponClass=Class'tk_EHWeapons.EHTranslauncher'
+     WeaponClass=Class'mm_EHWeapons.EHTranslauncher'
      DeathString="%o had their atoms scattered by %k."
      FemaleSuicide="%o tried to go where no woman has gone before."
      MaleSuicide="%o tried to go where no man has gone before."

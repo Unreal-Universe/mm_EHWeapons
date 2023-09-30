@@ -351,7 +351,7 @@ defaultproperties
      ChargeColor=(B=255,G=255,R=255,A=255)
      RechargeOrigin=(X=600.000000,Y=330.000000)
      RechargeSize=(X=10.000000,Y=-180.000000)
-     FireModeClass(0)=Class'tk_EHWeapons.EHLightningFire'
+     FireModeClass(0)=Class'mm_EHWeapons.EHLightningFire'
      FireModeClass(1)=Class'tk_BaseW.tK_SniperZoom'
      SelectAnim="Pickup"
      PutDownAnim="PutDown"
@@ -376,10 +376,10 @@ defaultproperties
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Cross1"
      MinReloadPct=0.250000
      InventoryGroup=9
-     PickupClass=Class'tk_EHWeapons.EHLightningRiflePickup'
+     PickupClass=Class'mm_EHWeapons.EHLightningRiflePickup'
      PlayerViewOffset=(Y=2.300000)
      BobDamping=2.300000
-     AttachmentClass=Class'tk_EHWeapons.EHLightningAttachment'
+     AttachmentClass=Class'mm_EHWeapons.EHLightningAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=246,Y1=182,X2=331,Y2=210)
      ItemName="Enhanced Lightning Gun"
@@ -393,7 +393,7 @@ defaultproperties
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.Sniper_1st'
      DrawScale=0.400000
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LightningRifleTex'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.LightningRifleTex'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

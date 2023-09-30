@@ -2,7 +2,7 @@ class EHBlueBeacon extends EHTransBeacon;
 
 defaultproperties
 {
-     EHTransTrailClass=Class'tk_EHWeapons.EHTransTrailBlue'
-     EHTransFlareClass=Class'tk_EHWeapons.EHTransFlareBlue'
+     EHTransTrailClass=Class'mm_EHWeapons.EHTransTrailBlue'
+     EHTransFlareClass=Class'mm_EHWeapons.EHTransFlareBlue'
      LightHue=160
 }

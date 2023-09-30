@@ -53,7 +53,7 @@ defaultproperties
          InitialDelayRange=(Max=0.064000)
          StartVelocityRange=(X=(Min=-300.000000,Max=300.000000),Y=(Min=-300.000000,Max=300.000000),Z=(Min=300.000000,Max=500.000000))
      End Object
-     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter1'
+     Emitters(0)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter1'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter55
          UseColorScale=True
@@ -87,7 +87,7 @@ defaultproperties
          VelocityLossRange=(X=(Min=1.000000,Max=2.000000),Y=(Min=1.000000,Max=2.000000),Z=(Min=1.000000,Max=2.000000))
          RotateVelocityLossRange=True
      End Object
-     Emitters(1)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter55'
+     Emitters(1)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter55'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter5
          UseColorScale=True
@@ -122,7 +122,7 @@ defaultproperties
          LifetimeRange=(Min=2.000000,Max=2.200000)
          StartVelocityRange=(X=(Min=-300.000000,Max=300.000000),Y=(Min=-300.000000,Max=300.000000),Z=(Min=4.000000,Max=600.000000))
      End Object
-     Emitters(2)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter5'
+     Emitters(2)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter5'
 
      Begin Object Class=MeshEmitter Name=MeshEmitter0
          StaticMesh=StaticMesh'SC_MeshParticles.Wood.wood2'
@@ -146,7 +146,7 @@ defaultproperties
          LifetimeRange=(Min=6.000000,Max=6.000000)
          StartVelocityRange=(X=(Min=-600.000000,Max=600.000000),Y=(Min=-600.000000,Max=600.000000),Z=(Min=1030.000000,Max=2900.000000))
      End Object
-     Emitters(3)=MeshEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.MeshEmitter0'
+     Emitters(3)=MeshEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.MeshEmitter0'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter7
          FadeOut=True
@@ -175,7 +175,7 @@ defaultproperties
          TextureVSubdivisions=2
          LifetimeRange=(Min=2.000000,Max=2.500000)
      End Object
-     Emitters(4)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter7'
+     Emitters(4)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter7'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter3
          UseColorScale=True
@@ -212,7 +212,7 @@ defaultproperties
          VelocityLossRange=(X=(Min=1.000000,Max=2.000000),Y=(Min=1.000000,Max=2.000000),Z=(Min=1.000000,Max=2.000000))
          RotateVelocityLossRange=True
      End Object
-     Emitters(5)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter3'
+     Emitters(5)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter3'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter12
          UseCollision=True
@@ -242,7 +242,7 @@ defaultproperties
          LifetimeRange=(Max=6.000000)
          StartVelocityRange=(X=(Min=-1000.000000,Max=1000.000000),Y=(Min=-1000.000000,Max=1000.000000),Z=(Min=200.000000,Max=1800.000000))
      End Object
-     Emitters(6)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter12'
+     Emitters(6)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter12'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter21
          UseDirectionAs=PTDU_Up
@@ -275,7 +275,7 @@ defaultproperties
          AddVelocityFromOtherEmitter=0
          AddVelocityMultiplierRange=(X=(Min=0.100000,Max=0.100000),Y=(Min=0.100000,Max=0.100000),Z=(Min=0.100000,Max=0.100000))
      End Object
-     Emitters(7)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter21'
+     Emitters(7)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter21'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter30
          FadeOut=True
@@ -301,7 +301,7 @@ defaultproperties
          TextureVSubdivisions=4
          StartVelocityRange=(X=(Min=-400.000000,Max=400.000000),Y=(Min=-400.000000,Max=400.000000),Z=(Min=100.000000,Max=1600.000000))
      End Object
-     Emitters(8)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter30'
+     Emitters(8)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter30'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter43
          UseColorScale=True
@@ -339,7 +339,7 @@ defaultproperties
          RotateVelocityLossRange=True
          GetVelocityDirectionFrom=PTVD_AddRadial
      End Object
-     Emitters(9)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter43'
+     Emitters(9)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter43'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter15
          UseColorScale=True
@@ -373,7 +373,7 @@ defaultproperties
          VelocityLossRange=(X=(Min=1.000000,Max=2.000000),Y=(Min=1.000000,Max=2.000000),Z=(Min=1.000000,Max=2.000000))
          RotateVelocityLossRange=True
      End Object
-     Emitters(10)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter15'
+     Emitters(10)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter15'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter17
          UseColorScale=True
@@ -401,7 +401,7 @@ defaultproperties
          TextureVSubdivisions=4
          LifetimeRange=(Min=2.250000,Max=2.500000)
      End Object
-     Emitters(11)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter17'
+     Emitters(11)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter17'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter265
          UseDirectionAs=PTDU_Right
@@ -427,7 +427,7 @@ defaultproperties
          LifetimeRange=(Min=0.750000,Max=1.250000)
          StartVelocityRange=(X=(Min=400.000000,Max=1400.000000),Y=(Min=-1200.000000,Max=1200.000000),Z=(Min=-1200.000000,Max=1200.000000))
      End Object
-     Emitters(12)=SpriteEmitter'tk_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter265'
+     Emitters(12)=SpriteEmitter'mm_EHWeapons.EHAVRiLRocketExplosion.SpriteEmitter265'
 
      AutoDestroy=True
      bNoDelete=False

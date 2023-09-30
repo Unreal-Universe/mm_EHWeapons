@@ -1,10 +1,10 @@
 class EHAssaultRiflePickup extends UTWeaponPickup;
 
-#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="mm_EHWeapons"
 
 static function StaticPrecache(LevelInfo L)
 {
-    L.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.AssaultRifleTex02');
+    L.AddPrecacheMaterial(Texture'mm_EHWeapons.EHWeaponSkinsB.AssaultRifleTex02');
     L.AddPrecacheMaterial(Texture'AW-2004Particles.Weapons.DustSmoke');
     L.AddPrecacheMaterial(Texture'EmitterTextures.MultiFrame.rockchunks02');
     L.AddPrecacheMaterial(Texture'EpicParticles.Smoke.SparkCloud_01aw');
@@ -18,7 +18,7 @@ static function StaticPrecache(LevelInfo L)
 simulated function UpdatePrecacheMaterials()
 {
 
-    Level.AddPrecacheMaterial(Texture'tk_EHWeapons.EHWeaponSkinsB.AssaultRifleTex02');
+    Level.AddPrecacheMaterial(Texture'mm_EHWeapons.EHWeaponSkinsB.AssaultRifleTex02');
     Level.AddPrecacheMaterial(Texture'AW-2004Particles.Weapons.DustSmoke');
     Level.AddPrecacheMaterial(Texture'EmitterTextures.MultiFrame.rockchunks02');
     Level.AddPrecacheMaterial(Texture'EpicParticles.Smoke.SparkCloud_01aw');
@@ -42,7 +42,7 @@ defaultproperties
 {
      StandUp=(Y=0.250000,Z=0.000000)
      MaxDesireability=0.400000
-     InventoryType=Class'tk_EHWeapons.EHAssaultRifle'
+     InventoryType=Class'mm_EHWeapons.EHAssaultRifle'
      PickupMessage="You got the Enhanced Assault Rifle."
      PickupSound=Sound'PickupSounds.AssaultRiflePickup'
      PickupForce="EHAssaultRiflePickup"
@@ -50,7 +50,7 @@ defaultproperties
      StaticMesh=StaticMesh'NewWeaponPickups.AssaultPickupSM'
      bUseDynamicLights=True
      DrawScale=0.500000
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.AssaultRifleTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.AssaultRifleTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

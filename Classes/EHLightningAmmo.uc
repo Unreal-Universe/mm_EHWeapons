@@ -7,7 +7,7 @@ defaultproperties
      MaxAmmo=40
      InitialAmount=15
      bTryHeadShot=True
-     PickupClass=Class'tk_EHWeapons.EHLightningAmmoPickup'
+     PickupClass=Class'mm_EHWeapons.EHLightningAmmoPickup'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=458,Y1=82,X2=491,Y2=133)
      ItemName="Enhanced Lightning Charges"

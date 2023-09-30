@@ -26,11 +26,11 @@ function string GetInventoryClassOverride(string InventoryClassName) {
        		return Super.GetInventoryClassOverride(InventoryClassName);
 
 		if (InventoryClassName ~= "XWeapons.Shieldgun")
-        		return "tk_EHWeapons.EHShieldgun";
+        		return "mm_EHWeapons.EHShieldgun";
        	if (InventoryClassName ~= "XWeapons.AssaultRifle")
-        		return "tk_EHWeapons.EHAssaultRifle";
+        		return "mm_EHWeapons.EHAssaultRifle";
         if (InventoryClassName ~= "XWeapons.Translauncher")
-        		return "tk_EHWeapons.EHTranslauncher";
+        		return "mm_EHWeapons.EHTranslauncher";
        	return Super.GetInventoryClassOverride(InventoryClassName);
        	}
 }
@@ -42,9 +42,9 @@ function ModifyPlayer(Pawn Other)
      if(bAllowOverride) {
 	P = xPawn(Other);
 
-	Other.GiveWeapon("tk_EHWeapons.EHGrappleGun");
+	Other.GiveWeapon("mm_EHWeapons.EHGrappleGun");
     if (P != None)
-    Other.GiveWeapon("tk_EHWeapons.EHPlasmaRifle");
+    Other.GiveWeapon("mm_EHWeapons.EHPlasmaRifle");
     }
 
 
@@ -162,7 +162,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "OnslaughtFull.ONSPainter" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHONSPainter';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHONSPainter';
             return false;
         }
     }
@@ -170,7 +170,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "OnslaughtFull.ONSPainterPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHONSPainterPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHONSPainterPickup" );
             return false;
         }
          }
@@ -182,7 +182,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "OnslaughtFull.ONSPainter" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHONSPainter';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHONSPainter';
         }
     }
 
@@ -192,7 +192,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "XWeapons.Painter" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHPainter';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHPainter';
             return false;
         }
     }
@@ -200,7 +200,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.PainterPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHPainterPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHPainterPickup" );
             return false;
         }
          }
@@ -212,7 +212,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "XWeapons.Painter" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHPainter';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHPainter';
         }
     }
 
@@ -221,7 +221,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "xWeapons.Redeemer" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHRedeemerII';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHRedeemerII';
             return false;
         }
     }
@@ -229,7 +229,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "xWeapons.RedeemerPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHRedeemerIIPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHRedeemerIIPickup" );
             return false;
         }
          }
@@ -241,7 +241,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "xWeapons.Redeemer" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHRedeemerII';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHRedeemerII';
         }
     }
 
@@ -266,7 +266,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "Onslaught.ONSMineAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHMineAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHMineAmmoPickup" );
             return false;
         }
 
@@ -302,7 +302,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "Onslaught.ONSGrenadeAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHONSGrenadeAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHONSGrenadeAmmoPickup" );
             return false;
         }
 
@@ -337,7 +337,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.SniperAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHLightningAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHLightningAmmoPickup" );
             return false;
         }
 
@@ -357,7 +357,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "XWeapons.LinkGun" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHLinkGun';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHLinkGun';
             return false;
         }
     }
@@ -365,7 +365,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.LinkGunPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHLinkGunPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHLinkGunPickup" );
             return false;
         }
          }
@@ -373,7 +373,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.LinkAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHLinkAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHLinkAmmoPickup" );
             return false;
         }
 
@@ -385,14 +385,14 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "XWeapons.LinkGun" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHLinkGun';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHLinkGun';
         }
      }
                 if ( xWeaponBase(Other) != None )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "XWeapons.Minigun" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHMinigun';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHMinigun';
             return false;
         }
     }
@@ -400,7 +400,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.MinigunPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHMinigunPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHMinigunPickup" );
             return false;
         }
          }
@@ -408,7 +408,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.MinigunAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHMinigunAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHMinigunAmmoPickup" );
             return false;
         }
 
@@ -420,7 +420,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "XWeapons.Minigun" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHMinigun';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHMinigun';
         }
     }
 
@@ -428,7 +428,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "XWeapons.Painter" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHPainter';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHPainter';
             return false;
         }
     }
@@ -436,7 +436,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.PainterPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHPainterPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHPainterPickup" );
             return false;
         }
          }
@@ -444,7 +444,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.PainterAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHPainterAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHPainterAmmoPickup" );
             return false;
         }
 
@@ -456,14 +456,14 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "XWeapons.Painter" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHPainter';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHPainter';
         }
     }
                 if ( xWeaponBase(Other) != None )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "XWeapons.BioRifle" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHBioRifle';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHBioRifle';
             return false;
         }
     }
@@ -471,7 +471,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.BioRiflePickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHBioRiflePickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHBioRiflePickup" );
             return false;
         }
          }
@@ -479,7 +479,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.BioAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHBioAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHBioAmmoPickup" );
             return false;
         }
 
@@ -491,7 +491,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "XWeapons.BioRifle" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHBioRifle';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHBioRifle';
         }
     }
 
@@ -499,7 +499,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "XWeapons.AssaultRifle" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHAssaultRifle';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHAssaultRifle';
             return false;
         }
     }
@@ -507,7 +507,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.AssaultRiflePickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHAssaultRiflePickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHAssaultRiflePickup" );
             return false;
         }
          }
@@ -515,7 +515,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.AssaultAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHAssaultAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHAssaultAmmoPickup" );
             return false;
         }
 
@@ -527,7 +527,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "XWeapons.AssaultRifle" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHAssaultRifle';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHAssaultRifle';
         }
     }
 
@@ -535,7 +535,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "XWeapons.ShockRifle" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHShockRifle';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHShockRifle';
             return false;
         }
     }
@@ -543,7 +543,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.ShockRiflePickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHShockRiflePickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHShockRiflePickup" );
             return false;
         }
          }
@@ -551,7 +551,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.ShockAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHShockAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHShockAmmoPickup" );
             return false;
         }
 
@@ -563,7 +563,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "XWeapons.ShockRifle" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHShockRifle';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHShockRifle';
         }
     }
 
@@ -571,7 +571,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "XWeapons.Shieldgun" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHShieldgun';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHShieldgun';
             return false;
         }
     }
@@ -579,7 +579,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.ShieldgunPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHShieldgunPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHShieldgunPickup" );
             return false;
         }
          }
@@ -587,7 +587,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.ShieldAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHShieldAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHShieldAmmoPickup" );
             return false;
         }
 
@@ -599,7 +599,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "XWeapons.Shieldgun" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHShieldgun';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHShieldgun';
         }
     }
 
@@ -608,7 +608,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "XWeapons.FlakCannon" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHFlakCannon';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHFlakCannon';
             return false;
         }
     }
@@ -616,7 +616,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.FlakCannonPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHFlakCannonPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHFlakCannonPickup" );
             return false;
         }
          }
@@ -624,7 +624,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "XWeapons.FlakAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHFlakAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHFlakAmmoPickup" );
             return false;
         }
 
@@ -636,7 +636,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "XWeapons.FlakCannon" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHFlakCannon';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHFlakCannon';
         }
     }
 
@@ -645,7 +645,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "Onslaught.ONSAVRiL" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHAVRiL';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHAVRiL';
             return false;
         }
     }
@@ -653,7 +653,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "Onslaught.ONSAVRiLPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHAVRiLPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHAVRiLPickup" );
             return false;
         }
          }
@@ -661,7 +661,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "Onslaught.ONSAVRiLAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHAVRiLAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHAVRiLAmmoPickup" );
             return false;
         }
 
@@ -673,7 +673,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "Onslaught.ONSAVRiL" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHAVRiL';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHAVRiL';
         }
     }
 
@@ -681,7 +681,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "xWeapons.RocketLauncher" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHRocketLauncher';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHRocketLauncher';
             return false;
         }
     }
@@ -689,7 +689,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "xWeapons.RocketLauncherPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHRocketLauncherPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHRocketLauncherPickup" );
             return false;
         }
          }
@@ -697,7 +697,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "xWeapons.RocketAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHRocketAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHRocketAmmoPickup" );
             return false;
         }
 
@@ -709,7 +709,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "xWeapons.RocketLauncher" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHRocketLauncher';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHRocketLauncher';
         }
     }
 
@@ -718,7 +718,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string( xWeaponBase(Other).WeaponType ) ~= "UTClassic.ClassicSniperRifle" )
         {
-            xWeaponBase(Other).WeaponType = class'tk_EHWeapons.EHSniperRifle';
+            xWeaponBase(Other).WeaponType = class'mm_EHWeapons.EHSniperRifle';
             return false;
         }
     }
@@ -726,7 +726,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "UTClassic.ClassicSniperRiflePickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHSniperRiflePickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHSniperRiflePickup" );
             return false;
         }
          }
@@ -734,7 +734,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
     {
         if ( string(Other.Class) ~= "UTClassic.ClassicSniperAmmoPickup" )
         {
-            ReplaceWith( Other, "tk_EHWeapons.EHSniperAmmoPickup" );
+            ReplaceWith( Other, "mm_EHWeapons.EHSniperAmmoPickup" );
             return false;
         }
 
@@ -746,7 +746,7 @@ function bool CheckReplacement( Actor Other, out byte bSuperRelevant )
         for (i = 0; i < L.Weapons.Length; i++)
         {
             if ( string( L.Weapons[i].WeaponClass ) ~= "UTClassic.ClassicSniperRifle" )
-                L.Weapons[i].WeaponClass = class'tk_EHWeapons.EHSniperRifle';
+                L.Weapons[i].WeaponClass = class'mm_EHWeapons.EHSniperRifle';
         }
     }
     }

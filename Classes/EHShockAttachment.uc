@@ -63,7 +63,7 @@ defaultproperties
      Mesh=SkeletalMesh'NewWeapons2004.NewShockRifle_3rd'
      RelativeLocation=(X=-3.000000,Y=-5.000000,Z=-10.000000)
      RelativeRotation=(Pitch=32768)
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.ShockRifleTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.ShockRifleTex02'
      Skins(1)=Shader'Plutonic_BP2_textures.Shaders.MikeDemo_crystal_FX'
      AmbientGlow=12
      bShadowCast=True

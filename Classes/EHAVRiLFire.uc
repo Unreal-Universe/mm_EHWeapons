@@ -81,18 +81,18 @@ defaultproperties
      FireAnimRate=1.100000
      ReloadAnimRate=1.350000
      TweenTime=0.000000
-     FireSound=Sound'tk_EHWeapons.EHSounds.EHAvrilFire01'
-     ReloadSound=Sound'tk_EHWeapons.EHSounds.EHAvrilReload01'
+     FireSound=Sound'mm_EHWeapons.EHSounds.EHAvrilFire01'
+     ReloadSound=Sound'mm_EHWeapons.EHSounds.EHAvrilReload01'
      FireForce="EHAVRiLFire"
      ReloadForce="AVRiLReload"
      FireRate=4.000000
-     AmmoClass=Class'tk_EHWeapons.EHAVRiLAmmo'
+     AmmoClass=Class'mm_EHWeapons.EHAVRiLAmmo'
      AmmoPerFire=1
      ShakeRotTime=2.000000
      ShakeOffsetMag=(X=-20.000000)
      ShakeOffsetRate=(X=-1000.000000)
      ShakeOffsetTime=2.000000
-     ProjectileClass=Class'tk_EHWeapons.EHAVRiLRocket'
+     ProjectileClass=Class'mm_EHWeapons.EHAVRiLRocket'
      BotRefireRate=0.500000
      WarnTargetPct=1.000000
 }

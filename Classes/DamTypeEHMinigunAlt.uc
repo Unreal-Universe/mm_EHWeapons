@@ -12,7 +12,7 @@ static function GetHitEffects(out class<xEmitter> HitEffects[4], int VictimHealt
 
 defaultproperties
 {
-     WeaponClass=Class'tk_EHWeapons.EHMinigun'
+     WeaponClass=Class'mm_EHWeapons.EHMinigun'
      DeathString="%o was mowed down by %k's enhanced minigun."
      FemaleSuicide="%o turned the enhanced minigun on herself."
      MaleSuicide="%o turned the enhanced minigun on himself."

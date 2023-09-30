@@ -149,7 +149,7 @@ defaultproperties
      MaxSpeed=4000.000000
      Damage=30.000000
      DamageRadius=0.000000
-     MyDamageType=Class'tk_EHWeapons.DamTypeEHLinkPlasma'
+     MyDamageType=Class'mm_EHWeapons.DamTypeEHLinkPlasma'
      ExplosionDecal=Class'XEffects.LinkBoltScorch'
      MaxEffectDistance=7000.000000
      LightType=LT_Steady

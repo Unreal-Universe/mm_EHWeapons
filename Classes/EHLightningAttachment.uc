@@ -36,7 +36,7 @@ defaultproperties
      LightPeriod=3
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.Sniper_3rd'
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LightningRifleTex'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.LightningRifleTex'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

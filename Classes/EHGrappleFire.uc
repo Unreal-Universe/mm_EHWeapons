@@ -378,10 +378,10 @@ simulated function UpdateLinkColor( EHGrappleAttachment.ELinkColor color )
 
 	switch ( Color )
 	{
-		case LC_Green	: FlashEmitter.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzGreen'; break;
-		case LC_Gold	: FlashEmitter.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzYellow';	break;
-		case LC_Red		: FlashEmitter.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzRed'; break;
-		case LC_Blue	: FlashEmitter.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzBlue'; break;
+		case LC_Green	: FlashEmitter.Skins[0] = Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzGreen'; break;
+		case LC_Gold	: FlashEmitter.Skins[0] = Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzYellow';	break;
+		case LC_Red		: FlashEmitter.Skins[0] = Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzRed'; break;
+		case LC_Blue	: FlashEmitter.Skins[0] = Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzBlue'; break;
 	}
 }
 
@@ -632,7 +632,7 @@ simulated function SetPlayerPhysics()
 
 defaultproperties
 {
-     BeamEffectClass=Class'tk_EHWeapons.EHGrappleBeamEffect'
+     BeamEffectClass=Class'mm_EHWeapons.EHGrappleBeamEffect'
      MakeLinkSound=Sound'WeaponSounds.LinkGun.LinkActivated'
      LinkBreakDelay=0.500000
      LinkScale(1)=0.700000
@@ -641,7 +641,7 @@ defaultproperties
      LinkScale(4)=1.600000
      LinkScale(5)=1.900000
      MakeLinkForce="LinkActivated"
-     DamageType=Class'tk_EHWeapons.DamTypeEHGrappleShaft'
+     DamageType=Class'mm_EHWeapons.DamTypeEHGrappleShaft'
      TraceRange=1100.000000
      LinkFlexibility=0.640000
      distToStop=425.000000
@@ -656,7 +656,7 @@ defaultproperties
      FireEndAnim=
      NoAmmoSound=ProceduralSound'WeaponSounds.PReload5.P1Reload5'
      FireRate=0.120000
-     AmmoClass=Class'tk_EHWeapons.EHGrappleAmmo'
+     AmmoClass=Class'mm_EHWeapons.EHGrappleAmmo'
      ShakeRotMag=(Z=60.000000)
      ShakeRotRate=(Z=4000.000000)
      ShakeRotTime=6.000000

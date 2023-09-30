@@ -274,7 +274,7 @@ state TickTracer
 defaultproperties
 {
      mMuzFlashClass=Class'XEffects.AssaultMuzFlash3rd'
-     mTracerClass=Class'tk_EHWeapons.EHNewTracer'
+     mTracerClass=Class'mm_EHWeapons.EHNewTracer'
      mTracerIntervalPrimary=0.120000
      mTracerPullback=50.000000
      mTracerSpeed=10000.000000
@@ -292,7 +292,7 @@ defaultproperties
      RelativeLocation=(X=-20.000000,Y=-5.000000)
      RelativeRotation=(Pitch=32768)
      DrawScale=0.300000
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.AssaultRifleTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.AssaultRifleTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

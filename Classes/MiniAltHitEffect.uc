@@ -45,7 +45,7 @@ defaultproperties
          LifetimeRange=(Max=4.500000)
          StartVelocityRange=(X=(Min=-100.000000,Max=100.000000),Y=(Min=-100.000000,Max=100.000000),Z=(Min=100.000000,Max=200.000000))
      End Object
-     Emitters(0)=SpriteEmitter'tk_EHWeapons.MiniAltHitEffect.SpriteEmitter0'
+     Emitters(0)=SpriteEmitter'mm_EHWeapons.MiniAltHitEffect.SpriteEmitter0'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter1
          UseDirectionAs=PTDU_Up
@@ -77,7 +77,7 @@ defaultproperties
          AddVelocityFromOtherEmitter=0
          AddVelocityMultiplierRange=(X=(Min=0.100000,Max=0.100000),Y=(Min=0.100000,Max=0.100000),Z=(Min=0.100000,Max=0.100000))
      End Object
-     Emitters(1)=SpriteEmitter'tk_EHWeapons.MiniAltHitEffect.SpriteEmitter1'
+     Emitters(1)=SpriteEmitter'mm_EHWeapons.MiniAltHitEffect.SpriteEmitter1'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter2
          FadeOut=True
@@ -103,7 +103,7 @@ defaultproperties
          TextureVSubdivisions=4
          StartVelocityRange=(X=(Min=-600.000000,Max=600.000000),Y=(Min=-600.000000,Max=600.000000),Z=(Min=300.000000,Max=1600.000000))
      End Object
-     Emitters(2)=SpriteEmitter'tk_EHWeapons.MiniAltHitEffect.SpriteEmitter2'
+     Emitters(2)=SpriteEmitter'mm_EHWeapons.MiniAltHitEffect.SpriteEmitter2'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter3
          UseColorScale=True
@@ -131,7 +131,7 @@ defaultproperties
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.250000,Max=0.500000)
      End Object
-     Emitters(3)=SpriteEmitter'tk_EHWeapons.MiniAltHitEffect.SpriteEmitter3'
+     Emitters(3)=SpriteEmitter'mm_EHWeapons.MiniAltHitEffect.SpriteEmitter3'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter4
          UseDirectionAs=PTDU_Right
@@ -157,7 +157,7 @@ defaultproperties
          LifetimeRange=(Min=0.750000,Max=1.250000)
          StartVelocityRange=(X=(Min=-120.000000,Max=120.000000),Y=(Min=-120.000000,Max=120.000000),Z=(Min=120.000000,Max=140.000000))
      End Object
-     Emitters(4)=SpriteEmitter'tk_EHWeapons.MiniAltHitEffect.SpriteEmitter4'
+     Emitters(4)=SpriteEmitter'mm_EHWeapons.MiniAltHitEffect.SpriteEmitter4'
 
      AutoDestroy=True
      bNoDelete=False

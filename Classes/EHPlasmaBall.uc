@@ -31,7 +31,7 @@ defaultproperties
          WarmupTicksPerSecond=2.000000
          RelativeWarmupTime=2.000000
      End Object
-     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHPlasmaBall.SpriteEmitter14'
+     Emitters(0)=SpriteEmitter'mm_EHWeapons.EHPlasmaBall.SpriteEmitter14'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter15
          FadeOut=True
@@ -49,7 +49,7 @@ defaultproperties
          DetailMode=DM_High
          StartSpinRange=(X=(Min=-1.000000,Max=1.000000))
          StartSizeRange=(X=(Min=10.500000,Max=10.500000))
-         Texture=Texture'tk_EHWeapons.EHWeaponSkinsB.pannelLightning'
+         Texture=Texture'mm_EHWeapons.EHWeaponSkinsB.pannelLightning'
          TextureUSubdivisions=4
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.350000,Max=0.350000)
@@ -58,7 +58,7 @@ defaultproperties
          WarmupTicksPerSecond=50.000000
          RelativeWarmupTime=1.000000
      End Object
-     Emitters(1)=SpriteEmitter'tk_EHWeapons.EHPlasmaBall.SpriteEmitter15'
+     Emitters(1)=SpriteEmitter'mm_EHWeapons.EHPlasmaBall.SpriteEmitter15'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter16
          UseColorScale=True
@@ -86,7 +86,7 @@ defaultproperties
          WarmupTicksPerSecond=1.000000
          RelativeWarmupTime=3.000000
      End Object
-     Emitters(2)=SpriteEmitter'tk_EHWeapons.EHPlasmaBall.SpriteEmitter16'
+     Emitters(2)=SpriteEmitter'mm_EHWeapons.EHPlasmaBall.SpriteEmitter16'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter3
          FadeOut=True
@@ -104,7 +104,7 @@ defaultproperties
          DetailMode=DM_High
          StartSpinRange=(X=(Min=-1.000000,Max=1.000000))
          StartSizeRange=(X=(Min=10.500000,Max=10.500000))
-         Texture=Texture'tk_EHWeapons.EHWeaponSkinsB.pannelLightning'
+         Texture=Texture'mm_EHWeapons.EHWeaponSkinsB.pannelLightning'
          TextureUSubdivisions=4
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.350000,Max=0.350000)
@@ -113,7 +113,7 @@ defaultproperties
          WarmupTicksPerSecond=50.000000
          RelativeWarmupTime=1.000000
      End Object
-     Emitters(3)=SpriteEmitter'tk_EHWeapons.EHPlasmaBall.SpriteEmitter3'
+     Emitters(3)=SpriteEmitter'mm_EHWeapons.EHPlasmaBall.SpriteEmitter3'
 
      bNoDelete=False
 }

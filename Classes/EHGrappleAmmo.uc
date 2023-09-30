@@ -6,7 +6,7 @@ defaultproperties
 {
      MaxAmmo=100
      InitialAmount=100
-     PickupClass=Class'tk_EHWeapons.EHGrappleAmmoPickup'
+     PickupClass=Class'mm_EHWeapons.EHGrappleAmmoPickup'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=413,Y1=82,X2=457,Y2=125)
      ItemName="Enhanced Grapple Ammo"

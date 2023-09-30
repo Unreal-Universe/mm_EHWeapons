@@ -3,7 +3,7 @@ class EHTransLauncher extends tK_Weapon
     HideDropDown;
 
 #EXEC OBJ LOAD FILE=InterfaceContent.utx
-#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="mm_EHWeapons"
 
 var EHTransBeacon EHTransBeacon;
 var() float     MaxCamDist;
@@ -388,7 +388,7 @@ simulated event RenderOverlays( Canvas Canvas )
 		{
 			bTeamSet = true;
 			if ( Instigator.PlayerReplicationInfo.Team.TeamIndex == 1 )
-				Skins[1] = Material'tk_EHWeapons.EHWeaponSkinsB.EHNEWTranslocatorBlue';
+				Skins[1] = Material'mm_EHWeapons.EHWeaponSkinsB.EHNEWTranslocatorBlue';
 		}
         Super.RenderOverlays(Canvas);
     }
@@ -422,8 +422,8 @@ defaultproperties
      bPrevWeaponSwitch=True
      ViewBeaconVolume=40
      TranslocScale=1.000000
-     FireModeClass(0)=Class'tk_EHWeapons.EHTransFire'
-     FireModeClass(1)=Class'tk_EHWeapons.EHTransRecall'
+     FireModeClass(0)=Class'mm_EHWeapons.EHTransFire'
+     FireModeClass(1)=Class'mm_EHWeapons.EHTransRecall'
      PutDownAnim="PutDown"
      IdleAnimRate=0.250000
      SelectSound=Sound'WeaponSounds.Misc.translocator_change'
@@ -444,11 +444,11 @@ defaultproperties
      CustomCrossHairColor=(G=0,R=0)
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Cross3"
      InventoryGroup=10
-     PickupClass=Class'tk_EHWeapons.EHTranspickup'
+     PickupClass=Class'mm_EHWeapons.EHTranspickup'
      PlayerViewOffset=(X=28.500000,Y=12.000000,Z=-12.000000)
      PlayerViewPivot=(Pitch=1000,Yaw=400)
      BobDamping=1.800000
-     AttachmentClass=Class'tk_EHWeapons.EHTransAttachment'
+     AttachmentClass=Class'mm_EHWeapons.EHTransAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X2=2,Y2=2)
      ItemName="Enhanced Translocator"
@@ -456,8 +456,8 @@ defaultproperties
      Mesh=SkeletalMesh'NewWeapons2004.NewTranslauncher_1st'
      DrawScale=0.800000
      Skins(0)=FinalBlend'EpicParticles.JumpPad.NewTransLaunBoltFB'
-     Skins(1)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHNEWTranslocatorTEX'
-     Skins(2)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHNEWTranslocatorPUCK'
+     Skins(1)=Texture'mm_EHWeapons.EHWeaponSkinsB.EHNEWTranslocatorTEX'
+     Skins(2)=Texture'mm_EHWeapons.EHWeaponSkinsB.EHNEWTranslocatorPUCK'
      Skins(3)=FinalBlend'WeaponSkins.AmmoPickups.NewTransGlassFB'
      AmbientGlow=12
      bShadowCast=True

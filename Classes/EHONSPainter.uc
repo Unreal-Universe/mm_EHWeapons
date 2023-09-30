@@ -42,7 +42,7 @@ function float GetAIRating()
 defaultproperties
 {
      MinZDist=5000.000000
-     FireModeClass(0)=Class'tk_EHWeapons.EHONSPainterFire'
+     FireModeClass(0)=Class'mm_EHWeapons.EHONSPainterFire'
      PutDownAnim="Deselect"
      SelectAnimRate=3.100000
      PutDownAnimRate=2.800000
@@ -54,15 +54,15 @@ defaultproperties
      CenteredRoll=0
      CenteredYaw=-500
      GroupOffset=2
-     PickupClass=Class'tk_EHWeapons.EHONSPainterPickup'
+     PickupClass=Class'mm_EHWeapons.EHONSPainterPickup'
      PlayerViewOffset=(X=100.000000,Y=22.000000,Z=-32.500000)
      PlayerViewPivot=(Yaw=350)
-     AttachmentClass=Class'tk_EHWeapons.EHONSPainterAttachment'
+     AttachmentClass=Class'mm_EHWeapons.EHONSPainterAttachment'
      ItemName="Enhanced Target Painter"
      bUseDynamicLights=True
      Mesh=SkeletalMesh'ONSFullAnimations.TargetPainter'
      DrawScale=0.600000
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHTargetPainterTEX'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.EHTargetPainterTEX'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

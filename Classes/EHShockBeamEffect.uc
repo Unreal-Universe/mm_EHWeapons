@@ -78,9 +78,9 @@ simulated function SpawnEffects()
 
 defaultproperties
 {
-     CoilClass=Class'tk_EHWeapons.EHShockBeamCoil'
-     MuzFlashClass=Class'tk_EHWeapons.EHShockMuzFlash'
-     MuzFlash3Class=Class'tk_EHWeapons.EHShockMuzFlash3rd'
+     CoilClass=Class'mm_EHWeapons.EHShockBeamCoil'
+     MuzFlashClass=Class'mm_EHWeapons.EHShockMuzFlash'
+     MuzFlash3Class=Class'mm_EHWeapons.EHShockMuzFlash3rd'
      mParticleType=PT_Beam
      mMaxParticles=5
      mLifeRange(0)=1.000000
@@ -93,7 +93,7 @@ defaultproperties
      RemoteRole=ROLE_SimulatedProxy
      NetPriority=3.000000
      LifeSpan=1.000000
-     Texture=TexPanner'tk_EHWeapons.EHWeaponSkinsB.ShockBeamPanner'
-     Skins(0)=TexPanner'tk_EHWeapons.EHWeaponSkinsB.ShockBeamPanner'
+     Texture=TexPanner'mm_EHWeapons.EHWeaponSkinsB.ShockBeamPanner'
+     Skins(0)=TexPanner'mm_EHWeapons.EHWeaponSkinsB.ShockBeamPanner'
      Style=STY_Additive
 }

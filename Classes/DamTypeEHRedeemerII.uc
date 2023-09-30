@@ -3,7 +3,7 @@ class DamTypeEHRedeemerII extends WeaponDamageType
 
 defaultproperties
 {
-     WeaponClass=Class'tk_EHWeapons.EHRedeemerII'
+     WeaponClass=Class'mm_EHWeapons.EHRedeemerII'
      DeathString="%o got pwned by %k's nuke........."
      FemaleSuicide="%o should learn to fire nukes from a distance"
      MaleSuicide="%o should learn to fire nukes from a distance"

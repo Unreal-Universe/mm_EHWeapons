@@ -33,7 +33,7 @@ simulated function InitEffects()
 {
 	if ( Level.NetMode != NM_DedicatedServer )
 	{
-		EHChargingEmitter = Weapon.Spawn(class'tk_EHWeapons.EHShieldCharge');
+		EHChargingEmitter = Weapon.Spawn(class'mm_EHWeapons.EHShieldCharge');
 		EHChargingEmitter.mRegenPause = true;
 	}
     bStartedChargingForce = false;  // jdf
@@ -254,7 +254,7 @@ function PlayFiring()
 
 defaultproperties
 {
-     DamageType=Class'tk_EHWeapons.DamTypeEHShieldImpact'
+     DamageType=Class'mm_EHWeapons.DamTypeEHShieldImpact'
      ShieldRange=112.000000
      MinHoldTime=0.400000
      MinForce=65000.000000
@@ -278,12 +278,12 @@ defaultproperties
      FireSound=Sound'WeaponSounds.Misc.ballgun_launch'
      FireForce="ShieldGunFire"
      FireRate=0.600000
-     AmmoClass=Class'tk_EHWeapons.EHShieldAmmo'
+     AmmoClass=Class'mm_EHWeapons.EHShieldAmmo'
      ShakeRotTime=2.000000
      ShakeOffsetMag=(X=-20.000000)
      ShakeOffsetRate=(X=-1000.000000)
      ShakeOffsetTime=2.000000
      BotRefireRate=1.000000
      WarnTargetPct=0.100000
-     FlashEmitterClass=Class'tk_EHWeapons.EHForceRingA'
+     FlashEmitterClass=Class'mm_EHWeapons.EHForceRingA'
 }

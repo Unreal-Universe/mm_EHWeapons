@@ -1,6 +1,6 @@
 class EHShockProjMuzFlash3rd extends xEmitter;
 
-#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="mm_EHWeapons"
 
 var int mNumPerFlash;
 

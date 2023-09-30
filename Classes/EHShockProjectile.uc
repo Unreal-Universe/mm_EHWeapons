@@ -223,12 +223,12 @@ State WaitForCombo
 
 defaultproperties
 {
-     ComboSound=Sound'tk_EHWeapons.EHSounds.ComboVortex'
+     ComboSound=Sound'mm_EHWeapons.EHSounds.ComboVortex'
      ComboDamage=200.000000
      ComboRadius=275.000000
      ComboMomentumTransfer=150000.000000
      ComboAmmoCost=3
-     ComboDamageType=Class'tk_EHWeapons.DamTypeEHShockBeam'
+     ComboDamageType=Class'mm_EHWeapons.DamTypeEHShockBeam'
      ShakeRotMag=(Z=250.000000)
      ShakeRotRate=(Z=2500.000000)
      ShakeRotTime=6.000000
@@ -242,7 +242,7 @@ defaultproperties
      DamageRadius=150.000000
      MomentumTransfer=70000.000000
      MyDamageType=Class'XWeapons.DamTypeShockBall'
-     ImpactSound=Sound'tk_EHWeapons.EHSounds.ShockBallExplosion'
+     ImpactSound=Sound'mm_EHWeapons.EHSounds.ShockBallExplosion'
      ExplosionDecal=Class'XEffects.ShockImpactScorch'
      MaxEffectDistance=7000.000000
      LightType=LT_Steady
@@ -256,7 +256,7 @@ defaultproperties
      bDynamicLight=True
      bNetTemporary=False
      bOnlyDirtyReplication=True
-     AmbientSound=Sound'tk_EHWeapons.EHSounds.EHShockProjectile'
+     AmbientSound=Sound'mm_EHWeapons.EHSounds.EHShockProjectile'
      LifeSpan=10.000000
      Texture=Texture'EmitterTextures.Flares.EFlareB2'
      DrawScale=1.700000

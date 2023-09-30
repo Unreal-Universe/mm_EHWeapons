@@ -3,7 +3,7 @@ class DamTypeEHShieldImpact extends WeaponDamageType
 
 defaultproperties
 {
-     WeaponClass=Class'tk_EHWeapons.EHShieldGun'
+     WeaponClass=Class'mm_EHWeapons.EHShieldGun'
      DeathString="%o was pulverized by %k's shield gun."
      FemaleSuicide="%o threw her weight around once too often."
      MaleSuicide="%o threw his weight around once too often."

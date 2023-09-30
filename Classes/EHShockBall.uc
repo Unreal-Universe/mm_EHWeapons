@@ -31,7 +31,7 @@ defaultproperties
          WarmupTicksPerSecond=20.000000
          RelativeWarmupTime=1.000000
      End Object
-     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHShockBall.SpriteEmitter0'
+     Emitters(0)=SpriteEmitter'mm_EHWeapons.EHShockBall.SpriteEmitter0'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter1
          FadeOut=True
@@ -53,7 +53,7 @@ defaultproperties
          WarmupTicksPerSecond=20.000000
          RelativeWarmupTime=1.000000
      End Object
-     Emitters(1)=SpriteEmitter'tk_EHWeapons.EHShockBall.SpriteEmitter1'
+     Emitters(1)=SpriteEmitter'mm_EHWeapons.EHShockBall.SpriteEmitter1'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter2
          FadeOut=True
@@ -74,7 +74,7 @@ defaultproperties
          WarmupTicksPerSecond=50.000000
          RelativeWarmupTime=1.000000
      End Object
-     Emitters(2)=SpriteEmitter'tk_EHWeapons.EHShockBall.SpriteEmitter2'
+     Emitters(2)=SpriteEmitter'mm_EHWeapons.EHShockBall.SpriteEmitter2'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter3
          FadeOut=True
@@ -92,7 +92,7 @@ defaultproperties
          DetailMode=DM_High
          StartSpinRange=(X=(Min=-1.000000,Max=1.000000))
          StartSizeRange=(X=(Min=10.500000,Max=10.500000))
-         Texture=Texture'tk_EHWeapons.EHWeaponSkinsB.pannelLightning'
+         Texture=Texture'mm_EHWeapons.EHWeaponSkinsB.pannelLightning'
          TextureUSubdivisions=4
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.350000,Max=0.350000)
@@ -101,7 +101,7 @@ defaultproperties
          WarmupTicksPerSecond=50.000000
          RelativeWarmupTime=1.000000
      End Object
-     Emitters(3)=SpriteEmitter'tk_EHWeapons.EHShockBall.SpriteEmitter3'
+     Emitters(3)=SpriteEmitter'mm_EHWeapons.EHShockBall.SpriteEmitter3'
 
      bNoDelete=False
 }

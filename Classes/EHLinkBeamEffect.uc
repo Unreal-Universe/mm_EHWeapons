@@ -1,6 +1,6 @@
 class EHLinkBeamEffect extends xEmitter;
 
-#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="mm_EHWeapons"
 #exec OBJ LOAD FILE=XEffectMat.utx
 
 var Vector	StartEffect, EndEffect;
@@ -175,31 +175,31 @@ simulated function Tick(float dt)
         {
             if ( Links > 0 )
             {
-                Skins[0] = FinalBlend'tk_EHWeapons.EHWeaponSkinsB.LinkBeamYellowFB';
+                Skins[0] = FinalBlend'mm_EHWeapons.EHWeaponSkinsB.LinkBeamYellowFB';
                 if ( MuzFlash != None )
-					MuzFlash.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzYellow';
+					MuzFlash.Skins[0] = Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzYellow';
                 LightHue = 40;
             }
             else
             {
-                Skins[0] = FinalBlend'tk_EHWeapons.EHWeaponSkinsB.LinkBeamGreenFB';
+                Skins[0] = FinalBlend'mm_EHWeapons.EHWeaponSkinsB.LinkBeamGreenFB';
                 if ( MuzFlash != None )
-	                MuzFlash.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzGreen';
+	                MuzFlash.Skins[0] = Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzGreen';
                 LightHue = 100;
             }
         }
         else if ( LinkColor == 1 )
         {
-            Skins[0] = FinalBlend'tk_EHWeapons.EHWeaponSkinsB.LinkBeamRedFB';
+            Skins[0] = FinalBlend'mm_EHWeapons.EHWeaponSkinsB.LinkBeamRedFB';
             if ( MuzFlash != None )
-				MuzFlash.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzRed';
+				MuzFlash.Skins[0] = Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzRed';
             LightHue = 0;
         }
         else
         {
-            Skins[0] = FinalBlend'tk_EHWeapons.EHWeaponSkinsB.LinkBeamBlueFB';
+            Skins[0] = FinalBlend'mm_EHWeapons.EHWeaponSkinsB.LinkBeamBlueFB';
             if ( MuzFlash != None )
-	            MuzFlash.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzBlue';
+	            MuzFlash.Skins[0] = Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzBlue';
             LightHue = 160;
         }
 
@@ -227,7 +227,7 @@ simulated function Tick(float dt)
             {
                 ProtSphere = Spawn(class'LinkProtSphere');
                 if (LinkColor == 2)
-                    ProtSphere.Skins[0] = Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzBlue';
+                    ProtSphere.Skins[0] = Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzBlue';
             }
         }
 
@@ -353,6 +353,6 @@ defaultproperties
      bNetTemporary=False
      bReplicateInstigator=True
      RemoteRole=ROLE_SimulatedProxy
-     Skins(0)=FinalBlend'tk_EHWeapons.EHWeaponSkinsB.LinkBeamGreenFB'
+     Skins(0)=FinalBlend'mm_EHWeapons.EHWeaponSkinsB.LinkBeamGreenFB'
      Style=STY_Additive
 }

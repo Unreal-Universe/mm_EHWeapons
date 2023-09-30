@@ -6,7 +6,7 @@ defaultproperties
 {
      MaxAmmo=300
      InitialAmount=150
-     PickupClass=Class'tk_EHWeapons.EHMinigunAmmoPickup'
+     PickupClass=Class'mm_EHWeapons.EHMinigunAmmoPickup'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(X1=338,Y1=40,X2=393,Y2=79)
      ItemName="Bullets"

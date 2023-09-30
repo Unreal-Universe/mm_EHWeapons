@@ -44,7 +44,7 @@ defaultproperties
          LifetimeRange=(Max=6.000000)
          StartVelocityRange=(X=(Min=-2000.000000,Max=2000.000000),Y=(Min=-2000.000000,Max=2000.000000),Z=(Min=600.000000,Max=2200.000000))
      End Object
-     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHRIIHitRockEffect.SpriteEmitter1'
+     Emitters(0)=SpriteEmitter'mm_EHWeapons.EHRIIHitRockEffect.SpriteEmitter1'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter2
          UseDirectionAs=PTDU_Up
@@ -78,7 +78,7 @@ defaultproperties
          AddVelocityFromOtherEmitter=0
          AddVelocityMultiplierRange=(X=(Min=0.000000,Max=0.000000),Y=(Min=0.000000,Max=0.000000),Z=(Min=0.100000,Max=0.100000))
      End Object
-     Emitters(1)=SpriteEmitter'tk_EHWeapons.EHRIIHitRockEffect.SpriteEmitter2'
+     Emitters(1)=SpriteEmitter'mm_EHWeapons.EHRIIHitRockEffect.SpriteEmitter2'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter0
          FadeOut=True
@@ -104,7 +104,7 @@ defaultproperties
          TextureVSubdivisions=4
          StartVelocityRange=(X=(Min=-800.000000,Max=800.000000),Y=(Min=-800.000000,Max=800.000000),Z=(Min=300.000000,Max=2000.000000))
      End Object
-     Emitters(2)=SpriteEmitter'tk_EHWeapons.EHRIIHitRockEffect.SpriteEmitter0'
+     Emitters(2)=SpriteEmitter'mm_EHWeapons.EHRIIHitRockEffect.SpriteEmitter0'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter3
          UseColorScale=True
@@ -142,7 +142,7 @@ defaultproperties
          RotateVelocityLossRange=True
          GetVelocityDirectionFrom=PTVD_AddRadial
      End Object
-     Emitters(3)=SpriteEmitter'tk_EHWeapons.EHRIIHitRockEffect.SpriteEmitter3'
+     Emitters(3)=SpriteEmitter'mm_EHWeapons.EHRIIHitRockEffect.SpriteEmitter3'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter5
          UseColorScale=True
@@ -176,7 +176,7 @@ defaultproperties
          VelocityLossRange=(X=(Min=1.000000,Max=2.000000),Y=(Min=1.000000,Max=2.000000),Z=(Min=1.000000,Max=2.000000))
          RotateVelocityLossRange=True
      End Object
-     Emitters(4)=SpriteEmitter'tk_EHWeapons.EHRIIHitRockEffect.SpriteEmitter5'
+     Emitters(4)=SpriteEmitter'mm_EHWeapons.EHRIIHitRockEffect.SpriteEmitter5'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter10
          UseColorScale=True
@@ -204,7 +204,7 @@ defaultproperties
          TextureVSubdivisions=4
          LifetimeRange=(Min=4.250000,Max=4.500000)
      End Object
-     Emitters(5)=SpriteEmitter'tk_EHWeapons.EHRIIHitRockEffect.SpriteEmitter10'
+     Emitters(5)=SpriteEmitter'mm_EHWeapons.EHRIIHitRockEffect.SpriteEmitter10'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter265
          UseDirectionAs=PTDU_Right
@@ -231,7 +231,7 @@ defaultproperties
          LifetimeRange=(Min=2.750000,Max=4.250000)
          StartVelocityRange=(X=(Min=-1200.000000,Max=1200.000000),Y=(Min=-1200.000000,Max=1200.000000),Z=(Min=800.000000,Max=1400.000000))
      End Object
-     Emitters(6)=SpriteEmitter'tk_EHWeapons.EHRIIHitRockEffect.SpriteEmitter265'
+     Emitters(6)=SpriteEmitter'mm_EHWeapons.EHRIIHitRockEffect.SpriteEmitter265'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter12
          UseDirectionAs=PTDU_Up
@@ -264,7 +264,7 @@ defaultproperties
          AddVelocityFromOtherEmitter=0
          AddVelocityMultiplierRange=(X=(Min=0.100000,Max=0.100000),Y=(Min=0.100000,Max=0.100000),Z=(Min=0.100000,Max=0.100000))
      End Object
-     Emitters(7)=SpriteEmitter'tk_EHWeapons.EHRIIHitRockEffect.SpriteEmitter12'
+     Emitters(7)=SpriteEmitter'mm_EHWeapons.EHRIIHitRockEffect.SpriteEmitter12'
 
      AutoDestroy=True
      bNoDelete=False

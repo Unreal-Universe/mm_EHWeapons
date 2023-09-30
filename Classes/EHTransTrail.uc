@@ -19,7 +19,7 @@ defaultproperties
      mNumTileColumns=1
      mNumTileRows=1
      Physics=PHYS_Trailer
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHTransTrailT'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.EHTransTrailT'
      Style=STY_Additive
      bOwnerNoSee=True
 }

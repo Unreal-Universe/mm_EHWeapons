@@ -1,6 +1,6 @@
 class EHLinkMuzFlashBeam3rd extends xEmitter;
 
-#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="mm_EHWeapons"
 
 defaultproperties
 {
@@ -20,6 +20,6 @@ defaultproperties
      mNumTileColumns=2
      mNumTileRows=2
      Physics=PHYS_Trailer
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.LinkMuzGreen'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.LinkMuzGreen'
      Style=STY_Additive
 }

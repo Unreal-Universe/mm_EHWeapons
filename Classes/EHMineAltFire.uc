@@ -108,7 +108,7 @@ defaultproperties
      bRecommendSplashDamage=True
      bFireOnRelease=True
      FireRate=0.600000
-     AmmoClass=Class'tk_EHWeapons.EHMineAmmo'
+     AmmoClass=Class'mm_EHWeapons.EHMineAmmo'
      BotRefireRate=1.000000
      WarnTargetPct=0.100000
 }

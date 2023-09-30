@@ -55,5 +55,5 @@ simulated function GetViewAxes( out vector xaxis, out vector yaxis, out vector z
 defaultproperties
 {
      sirensound=Sound'WeaponSounds.Translocator.TranslocatorReturn'
-     Mesh=SkeletalMesh'tk_EHWeapons.PhantomMesh'
+     Mesh=SkeletalMesh'mm_EHWeapons.PhantomMesh'
 }

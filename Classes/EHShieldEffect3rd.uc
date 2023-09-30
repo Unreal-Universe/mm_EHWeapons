@@ -88,8 +88,8 @@ defaultproperties
      Physics=PHYS_Trailer
      RemoteRole=ROLE_SimulatedProxy
      DrawScale=3.200000
-     Skins(0)=Shader'tk_EHWeapons.EHWeaponSkinsB.ShieldShader'
-     Skins(1)=Shader'tk_EHWeapons.EHWeaponSkinsB.ShieldShader'
+     Skins(0)=Shader'mm_EHWeapons.EHWeaponSkinsB.ShieldShader'
+     Skins(1)=Shader'mm_EHWeapons.EHWeaponSkinsB.ShieldShader'
      AmbientGlow=250
      bUnlit=True
      bOwnerNoSee=True

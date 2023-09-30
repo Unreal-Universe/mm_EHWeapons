@@ -22,7 +22,7 @@ defaultproperties
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.100000,Max=0.100000)
      End Object
-     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHNewMinigunMFlash.SpriteEmitter4'
+     Emitters(0)=SpriteEmitter'mm_EHWeapons.EHNewMinigunMFlash.SpriteEmitter4'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter5
          RespawnDeadParticles=False
@@ -42,7 +42,7 @@ defaultproperties
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.100000,Max=0.100000)
      End Object
-     Emitters(1)=SpriteEmitter'tk_EHWeapons.EHNewMinigunMFlash.SpriteEmitter5'
+     Emitters(1)=SpriteEmitter'mm_EHWeapons.EHNewMinigunMFlash.SpriteEmitter5'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter6
          RespawnDeadParticles=False
@@ -63,7 +63,7 @@ defaultproperties
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.100000,Max=0.100000)
      End Object
-     Emitters(2)=SpriteEmitter'tk_EHWeapons.EHNewMinigunMFlash.SpriteEmitter6'
+     Emitters(2)=SpriteEmitter'mm_EHWeapons.EHNewMinigunMFlash.SpriteEmitter6'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter7
          RespawnDeadParticles=False
@@ -84,7 +84,7 @@ defaultproperties
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.100000,Max=0.100000)
      End Object
-     Emitters(3)=SpriteEmitter'tk_EHWeapons.EHNewMinigunMFlash.SpriteEmitter7'
+     Emitters(3)=SpriteEmitter'mm_EHWeapons.EHNewMinigunMFlash.SpriteEmitter7'
 
      bNoDelete=False
      bHardAttach=True

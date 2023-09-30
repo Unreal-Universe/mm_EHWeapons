@@ -13,7 +13,7 @@ static function GetHitEffects(out class<xEmitter> HitEffects[4], int VictimHealt
 
 defaultproperties
 {
-     WeaponClass=Class'tk_EHWeapons.EHAVRiL'
+     WeaponClass=Class'mm_EHWeapons.EHAVRiL'
      DeathString="%k blew %o away with an ENHANCED AVRiL."
      FemaleSuicide="%o pointed her gun the wrong way."
      MaleSuicide="%o pointed his gun the wrong way."

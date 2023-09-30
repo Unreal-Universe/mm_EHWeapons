@@ -35,7 +35,7 @@ defaultproperties
          VelocityLossRange=(X=(Min=0.100000,Max=0.400000),Y=(Min=0.100000,Max=0.400000))
          GetVelocityDirectionFrom=PTVD_AddRadial
      End Object
-     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter1'
+     Emitters(0)=SpriteEmitter'mm_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter1'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter11
          UseColorScale=True
@@ -69,7 +69,7 @@ defaultproperties
          VelocityLossRange=(X=(Min=0.300000,Max=0.700000),Y=(Min=0.300000,Max=0.700000))
          GetVelocityDirectionFrom=PTVD_AddRadial
      End Object
-     Emitters(1)=SpriteEmitter'tk_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter11'
+     Emitters(1)=SpriteEmitter'mm_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter11'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter2
          UseDirectionAs=PTDU_RightAndNormal
@@ -102,7 +102,7 @@ defaultproperties
          VelocityLossRange=(X=(Min=0.400000,Max=0.600000),Y=(Min=0.400000,Max=0.600000))
          GetVelocityDirectionFrom=PTVD_AddRadial
      End Object
-     Emitters(2)=SpriteEmitter'tk_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter2'
+     Emitters(2)=SpriteEmitter'mm_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter2'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter3
          UseColorScale=True
@@ -136,7 +136,7 @@ defaultproperties
          VelocityLossRange=(X=(Min=0.600000,Max=0.800000),Y=(Min=0.600000,Max=0.800000))
          GetVelocityDirectionFrom=PTVD_AddRadial
      End Object
-     Emitters(4)=SpriteEmitter'tk_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter3'
+     Emitters(4)=SpriteEmitter'mm_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter3'
 
      Begin Object Class=MeshEmitter Name=MeshEmitter0
          StaticMesh=StaticMesh'AW-2k4XP.Weapons.ShockTankEffectRing'
@@ -164,7 +164,7 @@ defaultproperties
          MaxAbsVelocity=(Z=2000.000000)
          VelocityLossRange=(X=(Max=0.110000),Y=(Max=0.110000))
      End Object
-     Emitters(6)=MeshEmitter'tk_EHWeapons.EHRedeemerIIShroomcloud.MeshEmitter0'
+     Emitters(6)=MeshEmitter'mm_EHWeapons.EHRedeemerIIShroomcloud.MeshEmitter0'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter4
          UseColorScale=True
@@ -193,7 +193,7 @@ defaultproperties
          StartVelocityRadialRange=(Min=-50.000000,Max=-100.000000)
          GetVelocityDirectionFrom=PTVD_AddRadial
      End Object
-     Emitters(7)=SpriteEmitter'tk_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter4'
+     Emitters(7)=SpriteEmitter'mm_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter4'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter5
          UseColorScale=True
@@ -221,7 +221,7 @@ defaultproperties
          MaxAbsVelocity=(Z=2000.000000)
          VelocityLossRange=(X=(Max=0.100000),Y=(Max=0.100000))
      End Object
-     Emitters(8)=SpriteEmitter'tk_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter5'
+     Emitters(8)=SpriteEmitter'mm_EHWeapons.EHRedeemerIIShroomcloud.SpriteEmitter5'
 
      Begin Object Class=MeshEmitter Name=MeshEmitter1
          StaticMesh=StaticMesh'ParticleMeshes.Complex.ExplosionRing'
@@ -242,7 +242,7 @@ defaultproperties
          SecondsBeforeInactive=0.000000
          LifetimeRange=(Min=2.000000,Max=2.000000)
      End Object
-     Emitters(9)=MeshEmitter'tk_EHWeapons.EHRedeemerIIShroomcloud.MeshEmitter1'
+     Emitters(9)=MeshEmitter'mm_EHWeapons.EHRedeemerIIShroomcloud.MeshEmitter1'
 
      Begin Object Class=MeshEmitter Name=MeshEmitter2
          StaticMesh=StaticMesh'ParticleMeshes.Simple.ParticleDome'
@@ -272,7 +272,7 @@ defaultproperties
          MaxAbsVelocity=(Z=2000.000000)
          VelocityLossRange=(X=(Max=0.110000),Y=(Max=0.110000))
      End Object
-     Emitters(10)=MeshEmitter'tk_EHWeapons.EHRedeemerIIShroomcloud.MeshEmitter2'
+     Emitters(10)=MeshEmitter'mm_EHWeapons.EHRedeemerIIShroomcloud.MeshEmitter2'
 
      AutoDestroy=True
      bNoDelete=False

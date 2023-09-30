@@ -58,23 +58,23 @@ function SpawnBeamEffect(Vector Start, Rotator Dir, Vector HitLocation, Vector H
 
 defaultproperties
 {
-     BeamEffectClass=Class'tk_EHWeapons.EHShockBeamEffect'
-     DamageType=Class'tk_EHWeapons.DamTypeEHShockBeam'
+     BeamEffectClass=Class'mm_EHWeapons.EHShockBeamEffect'
+     DamageType=Class'mm_EHWeapons.DamTypeEHShockBeam'
      DamageMin=45
      DamageMax=45
      TraceRange=17000.000000
      Momentum=60000.000000
      bReflective=True
-     FireSound=Sound'tk_EHWeapons.EHSounds.EHShockFire'
+     FireSound=Sound'mm_EHWeapons.EHSounds.EHShockFire'
      FireForce="ShockRifleFire"
      FireRate=0.700000
-     AmmoClass=Class'tk_EHWeapons.EHShockAmmo'
+     AmmoClass=Class'mm_EHWeapons.EHShockAmmo'
      AmmoPerFire=1
      ShakeRotTime=2.000000
      ShakeOffsetMag=(X=-8.000000)
      ShakeOffsetRate=(X=-600.000000)
      ShakeOffsetTime=3.200000
      BotRefireRate=0.700000
-     FlashEmitterClass=Class'tk_EHWeapons.EHShockBeamMuzFlash'
+     FlashEmitterClass=Class'mm_EHWeapons.EHShockBeamMuzFlash'
      aimerror=700.000000
 }

@@ -39,7 +39,7 @@ defaultproperties
 {
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.Painter_3rd'
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.PainterTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.PainterTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

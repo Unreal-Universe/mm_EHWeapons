@@ -1,6 +1,6 @@
 class PlasmaMuzFlash3rd extends xEmitter;
 
-#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="tk_EHWeapons"
+#exec OBJ LOAD FILE="Resources\tk_EHWeapons_rc.u" PACKAGE="mm_EHWeapons"
 
 var int mNumPerFlash;
 
@@ -29,6 +29,6 @@ defaultproperties
      mGrowthRate=5.000000
      mAttenKa=0.000000
      mMeshNodes(0)=StaticMesh'WeaponStaticMesh.ShockMuzFlash'
-     Skins(0)=FinalBlend'tk_EHWeapons.EHWeaponSkinsB.PlasmaFlashFB'
+     Skins(0)=FinalBlend'mm_EHWeapons.EHWeaponSkinsB.PlasmaFlashFB'
      Style=STY_Additive
 }

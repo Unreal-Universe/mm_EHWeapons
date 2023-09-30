@@ -10,7 +10,7 @@ function PostBeginPlay()
 defaultproperties
 {
      RandomOrient=False
-     ProjTexture=Texture'tk_EHWeapons.EHWeaponSkinsB.bulletHole'
+     ProjTexture=Texture'mm_EHWeapons.EHWeaponSkinsB.bulletHole'
      bClipStaticMesh=True
      CullDistance=3000.000000
      bHighDetail=True

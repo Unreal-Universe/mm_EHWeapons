@@ -323,7 +323,7 @@ defaultproperties
      ChargeColor=(B=255,G=255,R=255,A=255)
      RechargeOrigin=(X=600.000000,Y=330.000000)
      RechargeSize=(X=10.000000,Y=-180.000000)
-     FireModeClass(0)=Class'tk_EHWeapons.EHPainterFire'
+     FireModeClass(0)=Class'mm_EHWeapons.EHPainterFire'
      FireModeClass(1)=Class'tk_BaseW.tK_PainterZoom'
      PutDownAnim="PutDown"
      SelectSound=Sound'WeaponSounds.LinkGun.SwitchToLinkGun'
@@ -344,16 +344,16 @@ defaultproperties
      CustomCrossHairScale=2.000000
      CustomCrossHairTextureName="Crosshairs.HUD.Crosshair_Circle2"
      InventoryGroup=0
-     PickupClass=Class'tk_EHWeapons.EHPainterPickup'
+     PickupClass=Class'mm_EHWeapons.EHPainterPickup'
      PlayerViewOffset=(X=25.000000,Y=2.000000,Z=-1.000000)
      BobDamping=1.575000
-     AttachmentClass=Class'tk_EHWeapons.EHPainterAttachment'
+     AttachmentClass=Class'mm_EHWeapons.EHPainterAttachment'
      IconMaterial=Texture'HUDContent.Generic.HUD'
      IconCoords=(Y1=407,X2=118,Y2=442)
      ItemName="Enhanced Ion Painter"
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.Painter_1st'
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.PainterTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.PainterTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

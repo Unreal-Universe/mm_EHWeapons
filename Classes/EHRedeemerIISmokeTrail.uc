@@ -29,7 +29,7 @@ defaultproperties
          TextureVSubdivisions=4
          LifetimeRange=(Min=0.200000,Max=0.400000)
      End Object
-     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHRedeemerIISmokeTrail.SpriteEmitter8'
+     Emitters(0)=SpriteEmitter'mm_EHWeapons.EHRedeemerIISmokeTrail.SpriteEmitter8'
 
      Begin Object Class=SpriteEmitter Name=SpriteEmitter9
          UseColorScale=True
@@ -62,7 +62,7 @@ defaultproperties
          LifetimeRange=(Min=2.000000,Max=2.500000)
          StartVelocityRange=(X=(Min=-5.000000,Max=-5.000000),Y=(Min=-5.000000,Max=-5.000000),Z=(Min=-5.000000,Max=-5.000000))
      End Object
-     Emitters(1)=SpriteEmitter'tk_EHWeapons.EHRedeemerIISmokeTrail.SpriteEmitter9'
+     Emitters(1)=SpriteEmitter'mm_EHWeapons.EHRedeemerIISmokeTrail.SpriteEmitter9'
 
      AutoDestroy=True
      bNoDelete=False

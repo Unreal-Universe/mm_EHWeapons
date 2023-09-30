@@ -3,8 +3,8 @@ class EHRocketLauncherPickup extends UTWeaponPickup;
 static function StaticPrecache(LevelInfo L)
 {
     L.AddPrecacheMaterial(Material'AW-2004Particles.Weapons.PlasmaStarRed');
-    L.AddPrecacheMaterial(Material'tk_EHWeapons.EHWeaponSkinsB.EHfire3');
-    L.AddPrecacheMaterial(Material'tk_EHWeapons.EHWeaponSkinsB.RocketTex02');
+    L.AddPrecacheMaterial(Material'mm_EHWeapons.EHWeaponSkinsB.EHfire3');
+    L.AddPrecacheMaterial(Material'mm_EHWeapons.EHWeaponSkinsB.RocketTex02');
     L.AddPrecacheMaterial(Material'WeaponSkins.RocketShellTex');
     L.AddPrecacheMaterial(Material'XEffects.RocketFlare');
     L.AddPrecacheMaterial(Material'XEffects.SmokeAlphab_t');
@@ -18,8 +18,8 @@ static function StaticPrecache(LevelInfo L)
 simulated function UpdatePrecacheMaterials()
 {
     Level.AddPrecacheMaterial(Material'AW-2004Particles.Weapons.PlasmaStarRed');
-    Level.AddPrecacheMaterial(Material'tk_EHWeapons.EHWeaponSkinsB.EHfire3');
-    Level.AddPrecacheMaterial(Material'tk_EHWeapons.EHWeaponSkinsB.RocketTex02');
+    Level.AddPrecacheMaterial(Material'mm_EHWeapons.EHWeaponSkinsB.EHfire3');
+    Level.AddPrecacheMaterial(Material'mm_EHWeapons.EHWeaponSkinsB.RocketTex02');
     Level.AddPrecacheMaterial(Material'EmitterTextures.fire3');
     Level.AddPrecacheMaterial(Material'EmitterTextures.LargeFlames');
     Level.AddPrecacheMaterial(Material'WeaponSkins.RocketShellTex');
@@ -39,13 +39,13 @@ simulated function UpdatePrecacheStaticMeshes()
 defaultproperties
 {
      MaxDesireability=0.780000
-     InventoryType=Class'tk_EHWeapons.EHRocketLauncher'
+     InventoryType=Class'mm_EHWeapons.EHRocketLauncher'
      PickupMessage="You got the Enhanced Rocket Launcher."
      PickupSound=Sound'PickupSounds.RocketLauncherPickup'
      PickupForce="EHRocketLauncherPickup"
      DrawType=DT_StaticMesh
      StaticMesh=StaticMesh'WeaponStaticMesh.RocketLauncherPickup'
      DrawScale=0.450000
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.RocketTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.RocketTex02'
      AmbientGlow=12
 }

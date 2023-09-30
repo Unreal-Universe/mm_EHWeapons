@@ -52,11 +52,11 @@ defaultproperties
          SizeScale(1)=(RelativeTime=0.030000,RelativeSize=1.000000)
          StartSizeRange=(X=(Min=20.000000,Max=20.000000),Y=(Min=10.000000,Max=10.000000))
          ScaleSizeByVelocityMultiplier=(X=0.002000)
-         Texture=Texture'tk_EHWeapons.EHWeaponSkinsB.EHTracerShot'
+         Texture=Texture'mm_EHWeapons.EHWeaponSkinsB.EHTracerShot'
          LifetimeRange=(Min=0.100000,Max=0.100000)
          StartVelocityRange=(X=(Min=10000.000000,Max=10000.000000))
      End Object
-     Emitters(0)=SpriteEmitter'tk_EHWeapons.EHNewTracer.SpriteEmitter13'
+     Emitters(0)=SpriteEmitter'mm_EHWeapons.EHNewTracer.SpriteEmitter13'
 
      bNoDelete=False
      bHardAttach=True

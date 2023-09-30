@@ -3,7 +3,7 @@ class DamTypeEHAssaultBullet extends WeaponDamageType
 
 defaultproperties
 {
-     WeaponClass=Class'tk_EHWeapons.EHAssaultRifle'
+     WeaponClass=Class'mm_EHWeapons.EHAssaultRifle'
      DeathString="%o was ventilated by %k's enhanced assault rifle."
      FemaleSuicide="%o assaulted herself."
      MaleSuicide="%o assaulted himself."

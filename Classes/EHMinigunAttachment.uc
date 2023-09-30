@@ -174,7 +174,7 @@ simulated event ThirdPersonEffects()
 					Spawn(class'EHHitEffect'.static.GetHitEffect(mHitActor, mHitLocation, mHitNormal),,, mHitLocation, Rotator(mHitNormal));
 
 				else
-					Spawn(class'tk_EHWeapons.EHExploWallHit',,, mHitLocation, Rotator(mHitNormal));
+					Spawn(class'mm_EHWeapons.EHExploWallHit',,, mHitLocation, Rotator(mHitNormal));
 				if ( FiringMode == 1 )
                     Spawn(class'MiniFlashExplosion',,, mHitLocation, Rotator(mHitNormal));
                 if ( FiringMode == 1 )
@@ -243,7 +243,7 @@ state TickTracer
 defaultproperties
 {
      mMuzFlashClass=Class'XEffects.NewMinigunMFlash'
-     mTracerClass=Class'tk_EHWeapons.EHMinigunTracer'
+     mTracerClass=Class'mm_EHWeapons.EHMinigunTracer'
      mTracerIntervalPrimary=0.120000
      mTracerIntervalSecondary=0.180000
      mTracerPullback=50.000000
@@ -263,7 +263,7 @@ defaultproperties
      CullDistance=5000.000000
      bUseDynamicLights=True
      Mesh=SkeletalMesh'Weapons.Minigun_3rd'
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.MinigunTex02'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.MinigunTex02'
      AmbientGlow=12
      bShadowCast=True
      bStaticLighting=True

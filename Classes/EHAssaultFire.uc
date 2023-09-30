@@ -68,17 +68,17 @@ function StartSuperBerserk()
 
 defaultproperties
 {
-     DamageType=Class'tk_EHWeapons.DamTypeEHAssaultBullet'
+     DamageType=Class'mm_EHWeapons.DamTypeEHAssaultBullet'
      DamageMin=7
      DamageMax=7
      Momentum=0.000000
      bPawnRapidFireAnim=True
      FireLoopAnim=
      FireEndAnim=
-     FireSound=Sound'tk_EHWeapons.EHSounds.EHASFire'
+     FireSound=Sound'mm_EHWeapons.EHSounds.EHASFire'
      FireForce="EHAssaultRifleFire"
      FireRate=0.160000
-     AmmoClass=Class'tk_EHWeapons.EHAssaultAmmo'
+     AmmoClass=Class'mm_EHWeapons.EHAssaultAmmo'
      AmmoPerFire=1
      ShakeRotMag=(X=50.000000,Y=50.000000,Z=50.000000)
      ShakeRotRate=(X=10000.000000,Y=10000.000000,Z=10000.000000)
@@ -87,7 +87,7 @@ defaultproperties
      ShakeOffsetRate=(X=1000.000000,Y=1000.000000,Z=1000.000000)
      ShakeOffsetTime=2.000000
      BotRefireRate=0.990000
-     FlashEmitterClass=Class'tk_EHWeapons.EHAssaultMuzFlash1st'
+     FlashEmitterClass=Class'mm_EHWeapons.EHAssaultMuzFlash1st'
      aimerror=800.000000
      Spread=0.020000
      SpreadStyle=SS_Random

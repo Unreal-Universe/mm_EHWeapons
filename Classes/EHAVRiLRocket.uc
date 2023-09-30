@@ -31,7 +31,7 @@ simulated function Destroyed()
 	if ( Corona != None )
 		Corona.Destroy();
 
-	PlaySound(Sound'tk_EHWeapons.EHSounds.AvrilExplosion',,3.5*TransientSoundVolume);
+	PlaySound(Sound'mm_EHWeapons.EHSounds.AvrilExplosion',,3.5*TransientSoundVolume);
 	if (!bNoFX && EffectIsRelevant(Location, false))
 		spawn(class'EHAVRiLRocketExplosion',,, Location, rotator(vect(0,0,1)));
 		Spawn(class'NewExpRing',,, Location, rotator(vect(0,0,1)));
@@ -40,7 +40,7 @@ simulated function Destroyed()
        	ShakeView();    //ShakeViewcode//
 	//hack for crappy weapon firing sound
 	if (ONSAVRiL(Owner) != None)
-		ONSAVRiL(Owner).PlaySound(Sound'tk_EHWeapons.EHSounds.AvrilExplosion', SLOT_Interact, 0.01,, TransientSoundRadius);
+		ONSAVRiL(Owner).PlaySound(Sound'mm_EHWeapons.EHSounds.AvrilExplosion', SLOT_Interact, 0.01,, TransientSoundRadius);
 
 	Super.Destroyed();
 }
@@ -251,7 +251,7 @@ defaultproperties
      Damage=125.000000
      DamageRadius=256.000000
      MomentumTransfer=50000.000000
-     MyDamageType=Class'tk_EHWeapons.DamTypeEHAVRiLRocket'
+     MyDamageType=Class'mm_EHWeapons.DamTypeEHAVRiLRocket'
      ExplosionDecal=Class'XEffects.ComboDecal'
      bScriptPostRender=True
      LightType=LT_Steady
@@ -265,10 +265,10 @@ defaultproperties
      bNetTemporary=False
      bUpdateSimulatedPosition=True
      bIgnoreVehicles=True
-     AmbientSound=Sound'tk_EHWeapons.EHSounds.EHAvrilProjectileLoop01'
+     AmbientSound=Sound'mm_EHWeapons.EHSounds.EHAvrilProjectileLoop01'
      LifeSpan=7.000000
      DrawScale=0.200000
-     Skins(0)=Texture'tk_EHWeapons.EHWeaponSkinsB.EHAVRiLtex'
+     Skins(0)=Texture'mm_EHWeapons.EHWeaponSkinsB.EHAVRiLtex'
      AmbientGlow=96
      bProjTarget=True
      bUseCylinderCollision=False
