@@ -1,4 +1,4 @@
-class EHONSPainter extends tK_Painter;
+class EHONSPainter extends EHPainter;
 
 var float MinZDist;
 
@@ -38,6 +38,8 @@ function float GetAIRating()
 		return 0;
 	return 0.1;
 }
+
+
 
 defaultproperties
 {

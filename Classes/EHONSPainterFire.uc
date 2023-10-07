@@ -6,6 +6,14 @@ var float MinZDist, MaxZDist;
 var Array<vector> BombersOffsets;
 var() int bomberwingsize;
 
+function DestroyEffects()
+{
+    if (EHBeam != None)
+        EHBeam.Destroy();
+
+    Super.DestroyEffects();
+}
+
 function bool SpawnBomber(rotator BombDirection)
 {
 	local vector BomberStart, BomberStart2, BombTargetCenter, HitNormal, Extent, Temp;
@@ -200,16 +208,26 @@ state Paint
             EndEffect = EndTrace;
         }
 
-            EHONSPainter(Weapon).EndEffect = EndEffect;
+        EHONSPainter(Weapon).EndEffect = EndEffect;
 
-        if (Beam != None)
+        if (EHBeam != None)
         {
-            Beam.EndEffect = EndEffect;
+            EHBeam.EndEffect = EndEffect;
             if (bValidMark)
-                Beam.SetTargetState(PTS_Marked);
+                EHBeam.SetTargetState(PTS_Marked);
             else
-                Beam.SetTargetState(PTS_Aiming);
+                EHBeam.SetTargetState(PTS_Aiming);
         }
+    }
+
+    function StopFiring()
+    {
+        bMarkStarted = false;
+        if (EHBeam != None)
+        {
+            EHBeam.SetTargetState(PTS_Cancelled);
+        }
+        GotoState('');
     }
 }
 
