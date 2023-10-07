@@ -1,5 +1,6 @@
 class EHONSPainterFire extends tK_PainterFire;
 
+var EHONSPainterBeamEffect EHBeam;
 var class<EHONSAutoBomber> BomberClass, MainBomberClass;
 var float MinZDist, MaxZDist;
 var Array<vector> BombersOffsets;
@@ -84,11 +85,11 @@ state Paint
 
         if (Weapon.Role == ROLE_Authority)
         {
-            if (Beam == None)
+            if (EHBeam == None)
             {
-                Beam = Weapon.Spawn(class'PainterBeamEffect', Instigator);
-                Beam.bOnlyRelevantToOwner = true;
-                Beam.EffectOffset = vect(125, 65, 14);
+                EHBeam = Weapon.Spawn(class'EHONSPainterBeamEffect', Instigator);
+                EHBeam.bOnlyRelevantToOwner = true;
+                EHBeam.EffectOffset = vect(-25, 35, 14);
             }
             bInitialMark = true;
             bValidMark = false;
@@ -116,7 +117,7 @@ state Paint
         // the to-hit trace always starts right in front of the eye
         StartTrace = Instigator.Location + Instigator.EyePosition() + X*Instigator.CollisionRadius;
 
-	Aim = AdjustAim(StartTrace, AimError);
+	    Aim = AdjustAim(StartTrace, AimError);
         X = Vector(Aim);
         EndTrace = StartTrace + TraceRange * X;
 
@@ -132,62 +133,62 @@ state Paint
                 {
                     if (VSize(HitLocation - MarkLocation) < 50.0)
                     {
-			Instigator.MakeNoise(3.0);
+			            Instigator.MakeNoise(3.0);
                         if (Level.TimeSeconds - MarkTime > 0.3)
                         {
-			    bValidMark = EHONSPainter(Weapon).CanBomb(HitLocation, BomberClass.default.CollisionRadius);
+			                bValidMark = EHONSPainter(Weapon).CanBomb(HitLocation, BomberClass.default.CollisionRadius);
 
-			    if (bValidMark)
-			    {
-                                if (Level.TimeSeconds - MarkTime > PaintDuration && SpawnBomber(Instigator.Rotation))
-                                {
-				    Instigator.PendingWeapon = None;
-                                    Painter(Weapon).ReallyConsumeAmmo(ThisModeNum, 1);
-                                    Instigator.Controller.ClientSwitchToBestWeapon();
+			                if (bValidMark)
+			                    {
+                                    if (Level.TimeSeconds - MarkTime > PaintDuration && SpawnBomber(Instigator.Rotation))
+                                        {
+				                            Instigator.PendingWeapon = None;
+                                            EHONSPainter(Weapon).ReallyConsumeAmmo(ThisModeNum, 1);
+                                            Instigator.Controller.ClientSwitchToBestWeapon();
 
-                                    if (Beam != None)
-                                        Beam.SetTargetState(PTS_Aquired);
+                                            if (EHBeam != None)
+                                                EHBeam.SetTargetState(PTS_Aquired);
 
-                                    StopForceFeedback(TAGMarkForce);
-                                    ClientPlayForceFeedback(TAGAquiredForce);
+                                            StopForceFeedback(TAGMarkForce);
+                                            ClientPlayForceFeedback(TAGAquiredForce);
 
-                                    StopFiring();
+                                            StopFiring();
+                                        }
+                                    else
+                                    {
+                                        if (!bMarkStarted)
+                                        {
+					                        bMarkStarted = true;
+					                        ClientPlayForceFeedback(TAGMarkForce);
+				                        }
+                                    }
                                 }
                                 else
                                 {
-                                    if (!bMarkStarted)
+                                    MarkTime = Level.TimeSeconds;
+                                    bMarkStarted = false;
+                                    if ( Bot(Instigator.Controller) != None )
                                     {
-					bMarkStarted = true;
-					ClientPlayForceFeedback(TAGMarkForce);
-				    }
+					                    Instigator.Controller.Focus = Instigator.Controller.Enemy;
+	                    				MarkLocation = Bot(Instigator.Controller).Enemy.Location - Bot(Instigator.Controller).Enemy.CollisionHeight * vect(0,0,2);
+	                    			}
                                 }
                             }
-                            else
-                            {
-                                MarkTime = Level.TimeSeconds;
-                                bMarkStarted = false;
-                                if ( Bot(Instigator.Controller) != None )
-                                {
-					Instigator.Controller.Focus = Instigator.Controller.Enemy;
-					MarkLocation = Bot(Instigator.Controller).Enemy.Location - Bot(Instigator.Controller).Enemy.CollisionHeight * vect(0,0,2);
-				}
-                            }
+                        }
+                        else
+                        {
+			                bAlreadyMarked = true;
+                            MarkTime = Level.TimeSeconds;
+                            MarkLocation = HitLocation;
+                            bValidMark = false;
+                            bMarkStarted = false;
                         }
                     }
                     else
                     {
-			bAlreadyMarked = true;
                         MarkTime = Level.TimeSeconds;
-                        MarkLocation = HitLocation;
                         bValidMark = false;
                         bMarkStarted = false;
-                    }
-                }
-                else
-                {
-                    MarkTime = Level.TimeSeconds;
-                    bValidMark = false;
-                    bMarkStarted = false;
                 }
                 bDoHit = false;
             }
@@ -199,7 +200,7 @@ state Paint
             EndEffect = EndTrace;
         }
 
-        Painter(Weapon).EndEffect = EndEffect;
+            EHONSPainter(Weapon).EndEffect = EndEffect;
 
         if (Beam != None)
         {
