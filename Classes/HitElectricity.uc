@@ -44,7 +44,7 @@ defaultproperties
      mNumTileRows=4
      Physics=PHYS_Trailer
      AmbientSound=Sound'GeneralAmbience.electricalfx13'
-     LifeSpan=10.000000
+     LifeSpan=4.000000
      Skins(0)=Texture'EmitterTextures.MultiFrame.smokelight_a'
      Style=STY_Translucent
      SoundVolume=190
