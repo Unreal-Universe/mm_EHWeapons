@@ -239,7 +239,7 @@ Begin:
 defaultproperties
 {
      ReloadDelay=0.400000
-     MaxMines=8
+     MaxMines=12
      FadedColor=(B=128,G=128,R=128,A=160)
      FireModeClass(0)=Class'mm_EHWeapons.EHMineFire'
      FireModeClass(1)=Class'mm_EHWeapons.EHMineAltFire'
