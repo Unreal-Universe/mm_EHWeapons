@@ -93,7 +93,7 @@ simulated function vector GetTracerStart()
     if ( (p != None) && p.IsFirstPerson() && p.Weapon != None )
     {
         // 1st person
-        return p.Weapon.GetEffectStart();
+        return p.Weapon.GetEffectStart(); 
     }
 
 

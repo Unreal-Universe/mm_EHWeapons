@@ -21,6 +21,20 @@ simulated function Loaded()
 	bDualMode = true;
 }
 
+simulated function vector GetEffectStart()
+{
+	local Coords C;
+
+    if ( Instigator.IsFirstPerson() )
+    {
+		if ( WeaponCentered() )
+			return CenteredEffectStart();
+	    C = GetBoneCoords('tip');
+		return C.Origin - 15 * C.XAxis;
+	}
+	return Super.GetEffectStart();
+}
+
 simulated function PostNetBeginPlay()
 {
 	Super.PostNetBeginPlay();
