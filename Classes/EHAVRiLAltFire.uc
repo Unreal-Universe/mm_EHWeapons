@@ -40,8 +40,6 @@ function PlayFiring() {}
 
 function ModeTick(float deltaTime)
 {
-    local vector LockTrace;
-    local Actor AlternateTarget;
 
 	//Hack - force player to actually press button to start fire (so can't hold down button and sweep crosshair in the vicinity of targets)
 	if (bWaitingForRelease && PlayerController(Instigator.Controller).bAltFire == 0)
@@ -75,21 +73,7 @@ function ModeTick(float deltaTime)
 	PlayerController(Instigator.Controller).DesiredFOV = FClamp(90.0 - (ZoomLevel * 88.0), 1, 170);
 
 	if (!bLosingLock && Instigator.IsLocallyControlled())
-	{
-        // Are we aimed at the HomingTarget or an AlternateTarget...
-        AlternateTarget = Gun.HomingTarget.AlternateTarget();
-        if (AlternateTarget != None)
-        {
-            LockTrace = AlternateTarget.Location - (Instigator.Location + Instigator.EyePosition());
-
-            if ((Normal(LockTrace) dot Vector(Instigator.GetViewRotation())) > Gun.LockAim && VSize(LockTrace) < Gun.MaxLockRange)
-            {
-                Instigator.Controller.SetRotation(rotator(AlternateTarget.Location - Instigator.Location));
-                return;
-            }
-        }
-        Instigator.Controller.SetRotation(rotator(Gun.HomingTarget.Location - Instigator.Location));
-    }
+		Instigator.Controller.SetRotation(rotator(Gun.HomingTarget.Location - Instigator.Location));
 }
 
 defaultproperties

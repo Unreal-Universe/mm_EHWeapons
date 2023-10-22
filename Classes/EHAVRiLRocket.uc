@@ -7,7 +7,7 @@ var bool bLockedOn;
 var float LeadTargetDelay; //don't lead target until missle has been flying for this many seconds
 var float LeadTargetStartTime;
 var actor OverrideTarget;
-var Vehicle HomingTarget;
+var Monster HomingTarget;
 //ShakeViewcode//
 var() vector ShakeRotMag;           // how far to rot view
 var() vector ShakeRotRate;          // how fast to rot view
@@ -114,87 +114,40 @@ simulated function Timer()
 {
     local vector Dir, ForceDir;
     local float VelMag, LowestDesiredZ;
-    local array<Vehicle> TargetPawns;
     local bool bLastLockedOn;
-    local int i;
-	local actor NewTarget;
 
     if (Role == ROLE_Authority)
     {
-    	if (OverrideTarget == none)
-    	{
-			if (Instigator != None && Instigator.Controller != None && EHAVRiL(Owner) != None)
+		if (Instigator != None && Instigator.Controller != None && EHAVRiL(Owner) != None)
+		{
+			bLastLockedOn = bLockedOn;
+			bLockedOn = EHAVRiL(Owner).bLockedOn;
+			HomingTarget = EHAVRiL(Owner).HomingTarget;
+			if (!bLastLockedOn && bLockedOn)
 			{
-				bLastLockedOn = bLockedOn;
-				bLockedOn = EHAVRiL(Owner).bLockedOn;
-				HomingTarget = EHAVRiL(Owner).HomingTarget;
-				if (!bLastLockedOn && bLockedOn)
-				{
-					if (HomingTarget != None && HomingTarget.Controller != None)
-						HomingTarget.Controller.ReceiveProjectileWarning(self);
-				}
+				if (HomingTarget != None && HomingTarget.Controller != None)
+					HomingTarget.Controller.ReceiveProjectileWarning(self);
 			}
-			else
-				bLockedOn = false;
 		}
 		else
-			bLockedOn = true;
-
-		if (HomingTarget != None)
-    	{
-    		// Check to see if it's lock has changed
-    		if ( !HomingTarget.VerifyLock(self,NewTarget) )
-    			OverrideTarget = NewTarget;
-			else
-			{
-                OverrideTarget = None;
-				HomingTarget.IncomingMissile(self);
-
-	    		//bots with nothing else to shoot at may attempt to shoot down incoming missles
-	    		TargetPawns = HomingTarget.GetTurrets();
-	    		TargetPawns[TargetPawns.length] = HomingTarget;
-	    		for (i = 0; i < TargetPawns.length; i++)
-					TargetPawns[i].ShouldTargetMissile(self);
-	    	}
-    	}
+			bLockedOn = false;
     }
 
-    if (bLockedOn && ( HomingTarget != none || OverrideTarget != none) )
+    if (bLockedOn && HomingTarget != None)
     {
-		if (OverrideTarget != none)
-		{
-			if ( VSize(OverrideTarget.Location - Location ) < 256 )
-			{
-				OverrideTarget.Destroy();
-				TakeDamage(20000,none, Location, Velocity, none);
-				return;
-			}
-			NewTarget = OverrideTarget;
-		}
-
-		else
-			NewTarget = HomingTarget;
-
-    	// Do normal guidance to target.
-		if ( Pawn(NewTarget) != None )
-			Dir = Pawn(NewTarget).GetTargetLocation() - Location;
-		else
-    		Dir = NewTarget.Location - Location;
+    	Dir = HomingTarget.Location - Location;
     	VelMag = VSize(Velocity);
 
 		if (Level.TimeSeconds >= LeadTargetStartTime)
 		{
-	    	ForceDir = Dir + NewTarget.Velocity * VSize(Dir) / (VelMag * 2);
-
-	    	if (Instigator != None)
-				LowestDesiredZ = FMin(Instigator.Location.Z, NewTarget.Location.Z); //missle should avoid going any lower than this
+		    ForceDir = Dir + HomingTarget.Velocity * VSize(Dir) / (VelMag * 2);
+		    if (Instigator != None)
+				LowestDesiredZ = FMin(Instigator.Location.Z, HomingTarget.Location.Z);
 			else
-				LowestDesiredZ = NewTarget.Location.Z;
-
-			if (ForceDir.Z + Location.Z < LowestDesiredZ)
-	    		ForceDir.Z += LowestDesiredZ - (ForceDir.Z + Location.Z);
-
-	    	ForceDir = Normal(ForceDir);
+				LowestDesiredZ = HomingTarget.Location.Z;
+		    	if (ForceDir.Z + Location.Z < LowestDesiredZ)
+		    		ForceDir.Z += LowestDesiredZ - (ForceDir.Z + Location.Z);
+		    	ForceDir = Normal(ForceDir);
 		}
 		else
 			ForceDir = Dir;
@@ -203,7 +156,6 @@ simulated function Timer()
     	Velocity =  VelMag * ForceDir;
     	Acceleration += 5 * ForceDir;
 
-    	// Update rocket so it faces in the direction its going.
     	SetRotation(rotator(Velocity));
     }
 }

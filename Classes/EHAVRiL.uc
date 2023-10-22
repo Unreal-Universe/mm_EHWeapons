@@ -8,7 +8,7 @@ var Material BaseMaterial;
 var Material ReticleOFFMaterial;
 var Material ReticleONMaterial;
 var bool bLockedOn;
-var Vehicle HomingTarget;
+var tk_Monster HomingTarget;
 var float LockCheckFreq, LockCheckTime;
 var float MaxLockRange, LockAim;
 var Color CrosshairColor;
@@ -43,14 +43,11 @@ simulated function ActivateReticle(bool bActivate)
 
 simulated function WeaponTick(float deltaTime)
 {
-	local vector StartTrace, LockTrace;
+	local vector StartTrace;
 	local rotator Aim;
 	local float BestAim, BestDist;
-	local bool bLastLockedOn, bBotLock;
-	local Vehicle LastHomingTarget;
-	local Vehicle AIFocus;
-	local Vehicle V;
-	local Actor AlternateTarget;
+	local bool bLastLockedOn;
+	local Monster LastHomingTarget;
 
 	if (Role < ROLE_Authority)
 	{
@@ -60,7 +57,7 @@ simulated function WeaponTick(float deltaTime)
 
 	if (Instigator == None || Instigator.Controller == None)
 	{
-		LoseLock();
+		bLockedOn = false;
 		ActivateReticle(false);
 		return;
 	}
@@ -72,21 +69,15 @@ simulated function WeaponTick(float deltaTime)
 
 	bLastLockedOn = bLockedOn;
 	LastHomingTarget = HomingTarget;
-	bBotLock = true;
 	if (AIController(Instigator.Controller) != None)
 	{
-		AIFocus = Vehicle(AIController(Instigator.Controller).Focus);
-		if ( CanLockOnTo(AIFocus) && ((AIFocus.Controller != None) || (AIFocus != Instigator.Controller.MoveTarget) || AIFocus.HasOccupiedTurret())
-			&& FastTrace(AIFocus.Location, Instigator.Location + Instigator.EyeHeight * vect(0,0,1)) )
+		if (CanLockOnTo(AIController(Instigator.Controller).Focus))
 		{
-			HomingTarget = AIFocus;
+			HomingTarget = tk_Monster(AIController(Instigator.Controller).Focus);
 			bLockedOn = true;
 		}
 		else
-		{
 			bLockedOn = false;
-			bBotLock = false;
-		}
 	}
 	else if ( HomingTarget == None || Normal(HomingTarget.Location - Instigator.Location) Dot vector(Instigator.Controller.Rotation) < LockAim
 		  || VSize(HomingTarget.Location - Instigator.Location) > MaxLockRange
@@ -95,66 +86,27 @@ simulated function WeaponTick(float deltaTime)
 		StartTrace = Instigator.Location + Instigator.EyePosition();
 		Aim = Instigator.GetViewRotation();
 		BestAim = LockAim;
-
-		HomingTarget = Vehicle(Instigator.Controller.PickTarget(BestAim, BestDist, Vector(Aim), StartTrace, MaxLockRange));
+		HomingTarget = tk_Monster(Instigator.Controller.PickTarget(BestAim, BestDist, Vector(Aim), StartTrace, MaxLockRange));
+		bLockedOn = CanLockOnTo(HomingTarget);
 	}
-
-	// If no homing target, check for alternate targets
-	if (HomingTarget == None)
-	{
-		StartTrace = Instigator.Location + Instigator.EyePosition();
-		Aim = Instigator.GetViewRotation();
-
-		for (V = Level.Game.VehicleList; V != None; V = V.NextVehicle)
-		{
-            AlternateTarget = V.AlternateTarget();
-
-            if (AlternateTarget != None)
-            {
-                LockTrace = AlternateTarget.Location - StartTrace;
-                if ( (Normal(LockTrace) dot Vector(Aim)) > LockAim && VSize(LockTrace) < MaxLockRange && FastTrace(AlternateTarget.Location,StartTrace) )
-                {
-                    HomingTarget = V;
-                    if ( AIController(Instigator.Controller) != none)
-                    	AIController(Instigator.Controller).Focus = V;
-                    break;
-                }
-            }
-        }
-    }
-
-	bLockedOn = CanLockOnTo(HomingTarget);
 
 	ActivateReticle(bLockedOn);
 	if (!bLastLockedOn && bLockedOn)
-	{
-		if ( bBotLock && (HomingTarget != None) )
-			HomingTarget.NotifyEnemyLockedOn();
 		if ( PlayerController(Instigator.Controller) != None )
 			PlayerController(Instigator.Controller).ClientPlaySound(Sound'WeaponSounds.LockOn');
-	}
-	else if (bLastLockedOn && !bLockedOn && LastHomingTarget != None)
-		LastHomingTarget.NotifyEnemyLostLock();
 }
 
 function bool CanLockOnTo(Actor Other)
 {
-    local Vehicle V;
-    V = Vehicle(Other);
+	// if ((tk_Monster(Other) != None) && (FriendlyMonsterController(tk_Monster(Other).Controller) == None))
+	if ((tk_Monster(Other) != None))
+		return true;
 
-    if (V == None || V == Instigator)
-        return false;
-
-    if (!Level.Game.bTeamGame)
-        return true;
-
-    return (V.Team != Instigator.PlayerReplicationInfo.Team.TeamIndex);
+	return false;
 }
 
 function LoseLock()
 {
-	if (bLockedOn && HomingTarget != None)
-		HomingTarget.NotifyEnemyLostLock();
 	bLockedOn = false;
 }
 
