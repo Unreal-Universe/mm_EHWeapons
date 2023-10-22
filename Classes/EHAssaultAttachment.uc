@@ -96,10 +96,9 @@ simulated function vector GetTracerStart()
         return p.Weapon.GetEffectStart(); 
     }
 
-
     // 3rd person
 	if ( mMuzFlash3rd != None )
-		return mMuzFlash3rd.Location;
+		return mMuzFlash3rd.Location; //If you change this to TwinGun.MuzFlash3rd.Location the 3rd person tracer shoots from other gun.
 	else
 		return Location;
 }
@@ -117,7 +116,6 @@ simulated function UpdateTracer()
         mTracer = Spawn(mTracerClass);
         AttachToBone(mTracer, 'tip');
     }
-
 
     if (mTracer != None && Level.TimeSeconds > mLastTracerTime + mTracerInterval)
     {
